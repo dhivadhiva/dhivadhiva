@@ -37,7 +37,7 @@ Scroll down below to find what I do, what I am doing, and what I am upto.<br>
   
   
   
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=dhivadhiva&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=dhivadhiva" />
 
 <h4>Badges</h4>     
   <img src="https://images.credly.com/size/340x340/images/53caf8cc-b5e9-4424-b4a7-7b069fa13db4/Machine_Learning_with_Python.png" width="80px">
