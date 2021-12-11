@@ -23,19 +23,15 @@ Scroll down below to find what I do, what I am doing, and what I am upto.<br>
 <i>Want to collaborate, reach me below.</i>
 </p>
 
-
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=dhivadhiva.visitor-badge)
 
 <div align="center">
-  
   
   <h4>Languages and Tools</h4>     
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white&style=plastic) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white&style=plastic) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54&style=plastic) ![R](https://img.shields.io/badge/-R-blue) 
 
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white&style=plastic)  ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white&style=plastic)  ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white&style=plastic)  ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white&style=plastic)  ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white&style=plastic) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white&style=plastic) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-yellow)
-  
-  
   
 <img height="190em" src="https://github-readme-stats.vercel.app/api?username=dhivadhiva" />
 
@@ -58,7 +54,6 @@ Scroll down below to find what I do, what I am doing, and what I am upto.<br>
   <img src="https://images.credly.com/size/340x340/images/98991f46-4c06-4f8b-a3ff-02a7e8768bb2/Google_Certs_IT.png" width="80px">
   <img src="https://images.credly.com/size/340x340/images/edc3e3ad-2aed-42c7-85bb-f7a351e41f3f/IT_Automation_with_Python_2_2x__1_.png" width="80px">
 <br>
-  
   
   <img src="https://activity-graph.herokuapp.com/graph?username=dhivadhiva&theme=github" alt="GitHub Activity Graph" width="100%" />
 
