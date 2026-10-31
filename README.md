@@ -196,9 +196,9 @@ sudo snap install apiworkbench
 | [**Gearwise**](https://github.com/Dhiva-Labs/gearwise) | Logitech, Razer, Corsair and SteelSeries config: DPI, RGB, remaps, macros | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/gearwise?style=flat-square&label=&color=1E3A8A) |
 | [**DiscWriter**](https://github.com/Dhiva-Labs/DiscWriter) | Burn CDs, DVDs and Blu-ray discs | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/DiscWriter?style=flat-square&label=&color=1E3A8A) |
 | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | Quick Share client for Linux, Android, Windows and macOS | Linux | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/NearShare?style=flat-square&label=updated&color=334155) |
-| [**Rover Explorer**](https://github.com/Dhiva-Labs/rover_explorer) | Classic-style file explorer with fast search | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/rover_explorer?style=flat-square&label=&color=1E3A8A) |
+| [**Rover Explorer**](https://github.com/Dhiva-Labs/rover_explorer) | Windows XP-style file explorer with instant search | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/rover_explorer?style=flat-square&label=&color=1E3A8A) |
 | [**Flint Browser**](https://github.com/Dhiva-Labs/FlintBrowser) | Private browser: built-in adblock, secure DNS, reader mode, zero telemetry | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/FlintBrowser?style=flat-square&label=&color=1E3A8A) |
-| [**Luna Media Player**](https://github.com/Dhiva-Labs/Luna-Media-Player) | Media player | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Luna-Media-Player?style=flat-square&label=&color=1E3A8A) |
+| [**Luna Media Player**](https://github.com/Dhiva-Labs/Luna-Media-Player) | Windows XP-era music and video player with a WMP 10-style look | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Luna-Media-Player?style=flat-square&label=&color=1E3A8A) |
 
 </details>
 
@@ -238,7 +238,7 @@ sudo snap install apiworkbench
 | [**HomeDeck**](https://github.com/Dhiva-Labs/HomeDeck) | Home control panel plus an offline voice assistant with a custom wake word | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/HomeDeck?style=flat-square&label=&color=1E3A8A) |
 | [**DoseDrop**](https://github.com/Dhiva-Labs/DoseDrop) | Medication and water reminders that nag until you confirm | Android · Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/DoseDrop?style=flat-square&label=&color=1E3A8A) |
 | [**Flint Mobile**](https://github.com/Dhiva-Labs/FlintMobile) | Private mobile browser with ad blocking and reader mode | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/FlintMobile?style=flat-square&label=&color=1E3A8A) |
-| [**RetroBeat**](https://github.com/Dhiva-Labs/RetroBeat) | Retro-styled music player | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/RetroBeat?style=flat-square&label=&color=1E3A8A) |
+| [**RetroBeat**](https://github.com/Dhiva-Labs/RetroBeat) | Local music player with a One UI look and a Windows Media Player retro mode | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/RetroBeat?style=flat-square&label=&color=1E3A8A) |
 
 </details>
 
@@ -252,7 +252,7 @@ sudo snap install apiworkbench
 | [**Game Boy**](https://github.com/Dhiva-Labs/gameboy) | DMG emulator: blargg suites green, dmg-acid2 pixel-perfect | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/gameboy?style=flat-square&label=updated&color=334155) |
 | [**CHIP-8**](https://github.com/Dhiva-Labs/chip8) | Interpreter with COSMAC VIP quirks, full Timendus test suite green | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/chip8?style=flat-square&label=updated&color=334155) |
 
-**More:** [Developer Toolbox](https://github.com/Dhiva-Labs/developer_toolbox) · [Database Manager](https://github.com/Dhiva-Labs/database_manager) · [Key Deck](https://github.com/Dhiva-Labs/Key_deck) · [ClearSMS](https://github.com/Dhiva-Labs/ClearSMS) · [Smart Compress](https://github.com/Dhiva-Labs/Smart-Compress) · [Creator Toolkit](https://github.com/Dhiva-Labs/creator_toolkit) · [NFC Wallet](https://github.com/Dhiva-Labs/NFC_wallet) · [SysVitals](https://github.com/Dhiva-Labs/SysVitals)
+**More:** [Developer Toolbox](https://github.com/Dhiva-Labs/developer_toolbox) · [Database Manager](https://github.com/Dhiva-Labs/database_manager) · [Key Deck](https://github.com/Dhiva-Labs/Key_deck) · [ClearSMS](https://github.com/Dhiva-Labs/ClearSMS) · [CompressX](https://github.com/Dhiva-Labs/Smart-Compress) · [Creator Toolkit](https://github.com/Dhiva-Labs/creator_toolkit) · [NFC Wallet](https://github.com/Dhiva-Labs/NFC_wallet) · [SysVitals](https://github.com/Dhiva-Labs/SysVitals) · [Sudoku Solver](https://github.com/Dhiva-Labs/sudoku_solver)
 
 </details>
 
