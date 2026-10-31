@@ -28,7 +28,7 @@
 
 I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. My background is in **AI / ML** (M.Tech, IIT Guwahati), and my work spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-At Dhiva Labs I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem.
+At Dhiva Labs I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem and to Coinbase's wallet SDKs.
 
 ```python
 class Dhivakar:
@@ -39,7 +39,8 @@ class Dhivakar:
         self.focus     = ["Cross-platform apps", "Cryptography & Blockchain",
                           "Machine Intelligence", "Embedded Systems", "Full-Stack"]
         self.shipping  = ["Snap Store", "Launchpad PPA", "Microsoft Store", "GitHub Releases"]
-        self.upstream  = ["vtnerd/monero-lws", "monero-project/monero"]
+        self.upstream  = ["vtnerd/monero-lws", "monero-project/monero",
+                          "coinbase/coinbase-wallet-sdk", "base/account-sdk"]
         self.motto     = "Let's build something remarkable."
 ```
 
@@ -153,7 +154,7 @@ An independent software lab that builds finished products and custom engineering
 <a href="https://github.com/Dhiva-Labs"><img src="https://img.shields.io/badge/GitHub_Releases-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Releases" /></a>
 <a href="https://snapcraft.io/publisher/dhivakar1010"><img src="https://img.shields.io/badge/Snap_Store-82BEA0?style=for-the-badge&logo=snapcraft&logoColor=white" alt="Snap Store" /></a>
 <a href="https://launchpad.net/~dhiva-labs/+archive/ubuntu/apps"><img src="https://img.shields.io/badge/Launchpad_PPA-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Launchpad PPA" /></a>
-<img src="https://img.shields.io/badge/Microsoft_Store-0078D4?style=for-the-badge&logoColor=white" alt="Microsoft Store" />
+<a href="https://apps.microsoft.com/search/publisher?name=Dhiva-Labs"><img src="https://img.shields.io/badge/Microsoft_Store-0078D4?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIgMmg5LjV2OS41SDJ6TTEyLjUgMkgyMnY5LjVoLTkuNXpNMiAxMi41aDkuNVYyMkgyek0xMi41IDEyLjVIMjJWMjJoLTkuNXoiLz48L3N2Zz4=" alt="Microsoft Store" /></a>
 
 </div>
 
@@ -172,13 +173,17 @@ sudo snap install apiworkbench
 | Project | What it does | Runs on | Latest |
 | --- | --- | --- | --- |
 | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench) | API client at Postman parity: collections, scripting, load tests | Linux · Windows · Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/ApiWorkbench?style=flat-square&label=&color=1E3A8A) |
-| [**Mock Studio**](https://github.com/Dhiva-Labs/Mock_studio) | Mock API servers with flows and Postman import | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Mock_studio?style=flat-square&label=&color=1E3A8A) |
+| [**Mock Studio**](https://github.com/Dhiva-Labs/Mock_studio) | Mock API servers with flows and Postman import | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Mock_studio?style=flat-square&label=&color=1E3A8A) |
 | [**BranchPilot**](https://github.com/Dhiva-Labs/BranchPilot) | Git GUI: visual commit graph, hunk staging, visual interactive rebase | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/BranchPilot?style=flat-square&label=&color=1E3A8A) |
 | [**DroidDeck**](https://github.com/Dhiva-Labs/DroidDeck) | ADB command center: logcat, app manager, files, wireless pairing, shell | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/DroidDeck?style=flat-square&label=&color=1E3A8A) |
+| [**DhivaLabs Shell**](https://apps.microsoft.com/detail/9P4PP04P6GDX) | Bash for Windows with a separate Git identity and SSH key per profile | Windows | — |
 | [**WinBridge**](https://github.com/Dhiva-Labs/WinBridge) | Build Windows apps from Linux: Go, Rust, .NET, C and Flutter | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/WinBridge?style=flat-square&label=&color=1E3A8A) |
+| [**Delta View**](https://github.com/Dhiva-Labs/Delta_view) | File and folder comparison: diffs, three-way merge, images, JSON/YAML/CSV | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Delta_view?style=flat-square&label=&color=1E3A8A) |
+| [**Developer Toolbox**](https://github.com/Dhiva-Labs/developer_toolbox) | 21 offline developer tools: JSON, JWT, regex, hashes, UUIDs, QR codes | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/developer_toolbox?style=flat-square&label=updated&color=334155) |
+| [**Database Manager**](https://github.com/Dhiva-Labs/database_manager) | Desktop client for SQLite, MySQL, PostgreSQL, MongoDB and LMDB | Desktop | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/database_manager?style=flat-square&label=updated&color=334155) |
 | [**DL Sentinel**](https://github.com/Dhiva-Labs/dl-sentinel) | Security scanning: secrets, vulnerable deps, IaC, smart-contract risks | CLI · API · Dashboard | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl-sentinel?style=flat-square&label=&color=1E3A8A) |
 | [**LogLens**](https://github.com/Dhiva-Labs/loglens) | Terminal log analyzer with live filtering, clustering and export | TUI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/loglens?style=flat-square&label=&color=1E3A8A) |
-| [**Delta View**](https://github.com/Dhiva-Labs/Delta_view) | File and folder comparison | Desktop | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Delta_view?style=flat-square&label=&color=1E3A8A) |
+| [**SysVitals**](https://github.com/Dhiva-Labs/SysVitals) | Processes, connections, open ports and SSD health in one terminal tool | TUI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/SysVitals?style=flat-square&label=&color=1E3A8A) |
 | [**Ubuntu Term**](https://github.com/Dhiva-Labs/ubuntu-term) | Ubuntu-style desktop terminal for Windows | Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/ubuntu-term?style=flat-square&label=&color=1E3A8A) |
 
 </details>
@@ -199,6 +204,9 @@ sudo snap install apiworkbench
 | [**Rover Explorer**](https://github.com/Dhiva-Labs/rover_explorer) | Windows XP-style file explorer with instant search | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/rover_explorer?style=flat-square&label=&color=1E3A8A) |
 | [**Flint Browser**](https://github.com/Dhiva-Labs/FlintBrowser) | Private browser: built-in adblock, secure DNS, reader mode, zero telemetry | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/FlintBrowser?style=flat-square&label=&color=1E3A8A) |
 | [**Luna Media Player**](https://github.com/Dhiva-Labs/Luna-Media-Player) | Windows XP-era music and video player with a WMP 10-style look | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Luna-Media-Player?style=flat-square&label=&color=1E3A8A) |
+| [**CompressX**](https://github.com/Dhiva-Labs/Smart-Compress) | Offline compressor and converter for images, PDFs, video, audio and archives | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/Smart-Compress?style=flat-square&label=updated&color=334155) |
+| [**Creator Toolkit**](https://github.com/Dhiva-Labs/creator_toolkit) | Compress, convert and trim media with Instagram, YouTube and TikTok presets | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/creator_toolkit?style=flat-square&label=updated&color=334155) |
+| [**Key Deck**](https://github.com/Dhiva-Labs/Key_deck) | Turn your phone into a programmable macro pad for your desktop | Android · Linux · Windows | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/Key_deck?style=flat-square&label=updated&color=334155) |
 
 </details>
 
@@ -208,7 +216,7 @@ sudo snap install apiworkbench
 
 | Project | What it does | Runs on | Latest |
 | --- | --- | --- | --- |
-| [**Kilonova**](https://github.com/Dhiva-Labs/kilonova) | Monero wallet with full-node or light-wallet (LWS) sync and multiple wallets | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/kilonova?style=flat-square&label=updated&color=334155) |
+| [**Kilonova**](https://github.com/Dhiva-Labs/kilonova) | Monero wallet with full-node or light-wallet (LWS) sync and multiple wallets | Linux · Windows · Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/kilonova?include_prereleases&style=flat-square&label=&color=1E3A8A) |
 | [**poolwatch**](https://github.com/Dhiva-Labs/poolwatch) | htop for your mempool: Monero, Oxen, Beldex, Bitcoin | TUI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/poolwatch?style=flat-square&label=&color=1E3A8A) |
 | [**lmdb-lws-backup**](https://github.com/Dhiva-Labs/lmdb-lws-backup) | Encrypted hot backups for monero-lws LMDB databases | CLI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/lmdb-lws-backup?style=flat-square&label=&color=1E3A8A) |
 
@@ -233,12 +241,15 @@ sudo snap install apiworkbench
 
 | Project | What it does | Runs on | Latest |
 | --- | --- | --- | --- |
-| [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | SSH terminal, SFTP and remote desktop with strict host-key checks | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/SecureShellGo?style=flat-square&label=&color=1E3A8A) |
+| [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | SSH terminal, SFTP and remote desktop with strict host-key checks | Android · Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/SecureShellGo?style=flat-square&label=&color=1E3A8A) |
 | [**SpaceSweep**](https://github.com/Dhiva-Labs/SpaceSweep) | Storage optimiser: duplicates, cache, junk, large files. No ads | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/SpaceSweep?style=flat-square&label=&color=1E3A8A) |
 | [**HomeDeck**](https://github.com/Dhiva-Labs/HomeDeck) | Home control panel plus an offline voice assistant with a custom wake word | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/HomeDeck?style=flat-square&label=&color=1E3A8A) |
-| [**DoseDrop**](https://github.com/Dhiva-Labs/DoseDrop) | Medication and water reminders that nag until you confirm | Android · Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/DoseDrop?style=flat-square&label=&color=1E3A8A) |
+| [**DoseDrop**](https://github.com/Dhiva-Labs/DoseDrop) | Medication and water reminders that nag until you confirm | Android · Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/DoseDrop?style=flat-square&label=&color=1E3A8A) |
 | [**Flint Mobile**](https://github.com/Dhiva-Labs/FlintMobile) | Private mobile browser with ad blocking and reader mode | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/FlintMobile?style=flat-square&label=&color=1E3A8A) |
 | [**RetroBeat**](https://github.com/Dhiva-Labs/RetroBeat) | Local music player with a One UI look and a Windows Media Player retro mode | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/RetroBeat?style=flat-square&label=&color=1E3A8A) |
+| [**ClearSMS**](https://github.com/Dhiva-Labs/ClearSMS) | Ad-free SMS app with an on-device smart inbox and one-tap OTP copy | Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/ClearSMS?style=flat-square&label=updated&color=334155) |
+| [**NFC Wallet**](https://github.com/Dhiva-Labs/NFC_wallet) | Store, secure and clone NFC cards, keys and tags, all on-device | Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/NFC_wallet?style=flat-square&label=updated&color=334155) |
+| [**Sudoku Solver**](https://github.com/Dhiva-Labs/sudoku_solver) | Snap a Sudoku and solve it with on-device OCR | Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/sudoku_solver?style=flat-square&label=updated&color=334155) |
 
 </details>
 
@@ -248,11 +259,10 @@ sudo snap install apiworkbench
 
 | Project | What it does | Runs on | Latest |
 | --- | --- | --- | --- |
+| [**Dhiva Tools**](https://tools.dhivalabs.com/) | Free image, PDF, developer and SEO tools; files never leave your browser | Browser | ![](https://img.shields.io/website?url=https%3A%2F%2Ftools.dhivalabs.com&style=flat-square&label=&up_message=live&up_color=1E3A8A) |
 | [**DL Image Tools**](https://github.com/Dhiva-Labs/dl-image-tools) | Compress, resize, convert and crop images in Chrome with no uploads | Chrome | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl-image-tools?style=flat-square&label=&color=1E3A8A) |
 | [**Game Boy**](https://github.com/Dhiva-Labs/gameboy) | DMG emulator: blargg suites green, dmg-acid2 pixel-perfect | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/gameboy?style=flat-square&label=updated&color=334155) |
 | [**CHIP-8**](https://github.com/Dhiva-Labs/chip8) | Interpreter with COSMAC VIP quirks, full Timendus test suite green | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/chip8?style=flat-square&label=updated&color=334155) |
-
-**More:** [Developer Toolbox](https://github.com/Dhiva-Labs/developer_toolbox) · [Database Manager](https://github.com/Dhiva-Labs/database_manager) · [Key Deck](https://github.com/Dhiva-Labs/Key_deck) · [ClearSMS](https://github.com/Dhiva-Labs/ClearSMS) · [CompressX](https://github.com/Dhiva-Labs/Smart-Compress) · [Creator Toolkit](https://github.com/Dhiva-Labs/creator_toolkit) · [NFC Wallet](https://github.com/Dhiva-Labs/NFC_wallet) · [SysVitals](https://github.com/Dhiva-Labs/SysVitals) · [Sudoku Solver](https://github.com/Dhiva-Labs/sudoku_solver)
 
 </details>
 
@@ -273,7 +283,7 @@ sudo snap install apiworkbench
 <!-- ===== UPSTREAM ===== -->
 ## 🌍 Upstream Contributions
 
-Fixes and features for **monero-lws**, the Monero light-wallet server, and the **Monero** wallet itself.
+Fixes and features for **monero-lws**, the Monero light-wallet server, and the **Monero** wallet itself, plus a telemetry fix for Coinbase's wallet SDKs.
 
 | Project | Pull request | Status |
 | --- | --- | --- |
@@ -287,6 +297,8 @@ Fixes and features for **monero-lws**, the Monero light-wallet server, and the *
 | | CI: run unit tests in a Debug build | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/314?style=flat-square&label=%23314)](https://github.com/vtnerd/monero-lws/pull/314) |
 | | Add `delete_accounts` to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/315?style=flat-square&label=%23315)](https://github.com/vtnerd/monero-lws/pull/315) |
 | [**monero-project/monero**](https://github.com/monero-project/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | wallet: don't wrap outgoing amounts with unknown input key images | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11641?style=flat-square&label=%2311641)](https://github.com/monero-project/monero/pull/11641) |
+| [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
+| [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
 
 <!-- ===== SPONSOR ===== -->
 ## 💖 Sponsor
