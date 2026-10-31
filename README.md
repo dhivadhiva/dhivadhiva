@@ -26,7 +26,7 @@
 <!-- ===== ABOUT ===== -->
 ## 👋 About
 
-I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. My background is in **AI / ML** (PG Certification, E&ICT Academy, IIT Guwahati), and my work spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
+I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. My background is in **AI / ML** (PG Certification, IIT Guwahati), and my work spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
 At Dhiva Labs I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem and to Coinbase's wallet SDKs.
 
@@ -35,7 +35,7 @@ class Dhivakar:
     def __init__(self):
         self.role      = "Founder & Principal Investigator @ Dhiva Labs"
         self.based_in  = "Chennai, India"
-        self.education = "PG Certification, AI & ML — E&ICT Academy, IIT Guwahati"
+        self.education = "PG Certification, AI & ML — IIT Guwahati"
         self.focus     = ["Cross-platform apps", "Cryptography & Blockchain",
                           "Machine Intelligence", "Embedded Systems", "Full-Stack"]
         self.shipping  = ["Snap Store", "Launchpad PPA", "Microsoft Store", "GitHub Releases"]
