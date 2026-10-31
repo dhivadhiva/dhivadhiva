@@ -197,7 +197,7 @@ sudo snap install apiworkbench
 | [**DiscWriter**](https://github.com/Dhiva-Labs/DiscWriter) | Burn CDs, DVDs and Blu-ray discs | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/DiscWriter?style=flat-square&label=&color=1E3A8A) |
 | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | Quick Share client for Linux, Android, Windows and macOS | Linux | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/NearShare?style=flat-square&label=updated&color=334155) |
 | [**Rover Explorer**](https://github.com/Dhiva-Labs/rover_explorer) | Windows XP-style file explorer with instant search | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/rover_explorer?style=flat-square&label=&color=1E3A8A) |
-| [**Flint Browser**](https://github.com/Dhiva-Labs/FlintBrowser) | Private browser: built-in adblock, secure DNS, reader mode, zero telemetry | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/FlintBrowser?style=flat-square&label=&color=1E3A8A) |
+| [**Flint Browser**](https://github.com/Dhiva-Labs/FlintBrowser) | Private browser: built-in adblock, secure DNS, reader mode, zero telemetry | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/FlintBrowser?style=flat-square&label=&color=1E3A8A) |
 | [**Luna Media Player**](https://github.com/Dhiva-Labs/Luna-Media-Player) | Windows XP-era music and video player with a WMP 10-style look | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Luna-Media-Player?style=flat-square&label=&color=1E3A8A) |
 
 </details>
