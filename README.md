@@ -1,5 +1,5 @@
 <!-- ===== HEADER ===== -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:3C3C3D&height=200&section=header&text=Dhivakar%20Rajaram&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Founder%20@%20Dhiva%20Labs%20%C2%B7%20Open-source%20apps%20for%20Linux,%20Windows%20%26%20Android&descAlignY=58&descSize=18" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:3C3C3D&height=200&section=header&text=Dhivakar%20Rajaram&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Founder%20@%20Dhiva%20Labs%20%C2%B7%20Open-source%20apps%20for%20Linux,%20Windows%20and%20Android&descAlignY=58&descSize=18" alt="header" />
 
 <div align="center">
   <img src="./dhivakar.jpeg" width="140" style="border-radius: 50%;" alt="Dhivakar Rajaram" />
