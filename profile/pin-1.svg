@@ -109,7 +109,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >CrossShell</text>
+      >CloneStudio</text>
     </g>
       </g>
     
@@ -122,7 +122,7 @@
     
 
     <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">Two machines, one desk: SSH both ways, files, port forwards</tspan><tspan dy="1.2em" x="25">and remote desktop between Linux and Windows on your...</tspan>
+      <tspan dy="1.2em" x="25">Move everything to your new Linux computer &#8212; Wi-Fi, direct</tspan><tspan dy="1.2em" x="25">cable, or USB drive. Beginner-proof migration with...</tspan>
     </text>
 
     <g transform="translate(30, 65)">

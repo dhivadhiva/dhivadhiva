@@ -11,13 +11,25 @@ on:
 permissions:
   contents: write
 
+# One refresh at a time, so two runs never race to push.
+concurrency:
+  group: profile-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   cards:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     env:
       GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v6
+
+      - name: README sections and profile numbers
+        # Rewrites the marked blocks of README.md and profile/numbers.json,
+        # and outputs pin1..pin6: the repositories to feature today.
+        id: sections
+        run: python3 .github/scripts/profile_sections.py
 
       - name: Stats card
         uses: stats-organization/github-readme-stats-action@v2
@@ -27,114 +39,66 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - name: Pin - CloudDrop
+      - name: Pin 1
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Dhiva-Labs&repo=CloudDrop&theme=tokyonight&hide_border=true&description_lines_count=2
-          path: profile/pin-clouddrop.svg
+          options: username=Dhiva-Labs&repo=${{ steps.sections.outputs.pin1 }}&theme=tokyonight&hide_border=true&description_lines_count=2
+          path: profile/pin-1.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Pin - CrossShell
+      - name: Pin 2
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Dhiva-Labs&repo=CrossShell&theme=tokyonight&hide_border=true&description_lines_count=2
-          path: profile/pin-crossshell.svg
+          options: username=Dhiva-Labs&repo=${{ steps.sections.outputs.pin2 }}&theme=tokyonight&hide_border=true&description_lines_count=2
+          path: profile/pin-2.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Pin - DiskRescue
+      - name: Pin 3
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Dhiva-Labs&repo=DiskRescue&theme=tokyonight&hide_border=true&description_lines_count=2
-          path: profile/pin-diskrescue.svg
+          options: username=Dhiva-Labs&repo=${{ steps.sections.outputs.pin3 }}&theme=tokyonight&hide_border=true&description_lines_count=2
+          path: profile/pin-3.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Pin - Kilonova
+      - name: Pin 4
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Dhiva-Labs&repo=kilonova&theme=tokyonight&hide_border=true&description_lines_count=2
-          path: profile/pin-kilonova.svg
+          options: username=Dhiva-Labs&repo=${{ steps.sections.outputs.pin4 }}&theme=tokyonight&hide_border=true&description_lines_count=2
+          path: profile/pin-4.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Pin - BranchPilot
+      - name: Pin 5
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Dhiva-Labs&repo=BranchPilot&theme=tokyonight&hide_border=true&description_lines_count=2
-          path: profile/pin-branchpilot.svg
+          options: username=Dhiva-Labs&repo=${{ steps.sections.outputs.pin5 }}&theme=tokyonight&hide_border=true&description_lines_count=2
+          path: profile/pin-5.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Pin - Gearwise
+      - name: Pin 6
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=Dhiva-Labs&repo=gearwise&theme=tokyonight&hide_border=true&description_lines_count=2
-          path: profile/pin-gearwise.svg
+          options: username=Dhiva-Labs&repo=${{ steps.sections.outputs.pin6 }}&theme=tokyonight&hide_border=true&description_lines_count=2
+          path: profile/pin-6.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Profile numbers
-        run: |
-          set -euo pipefail
-          U=dhivadhiva
-          ORG=Dhiva-Labs
-
-          search() {
-            gh api graphql -f q="$1" \
-              -f query='query($q:String!){search(query:$q,type:ISSUE,first:1){issueCount}}' \
-              --jq .data.search.issueCount
-          }
-          prs=$(search "author:$U is:pr")
-          merged=$(search "author:$U is:pr is:merged")
-          issues=$(search "author:$U is:issue")
-          upstream=$(search "author:$U is:pr is:merged -org:$ORG -user:$U")
-
-          commits=0; contributions=0
-          since=$(gh api "users/$U" --jq '.created_at[:4]')
-          for y in $(seq "$since" "$(date -u +%Y)"); do
-            read -r c t < <(gh api graphql -f login="$U" \
-              -f from="${y}-01-01T00:00:00Z" -f to="${y}-12-31T23:59:59Z" \
-              -f query='query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions contributionCalendar{totalContributions}}}}' \
-              --jq '.data.user.contributionsCollection | "\(.totalCommitContributions) \(.contributionCalendar.totalContributions)"')
-            commits=$((commits + c)); contributions=$((contributions + t))
-          done
-
-          repos=$(gh api "orgs/$ORG" --jq .public_repos)
-          stars=$(gh api --paginate "orgs/$ORG/repos?type=public&per_page=100" --jq '.[].stargazers_count' | awk '{s+=$1} END {print s+0}')
-          releases=0
-          for r in $(gh api --paginate "orgs/$ORG/repos?type=public&per_page=100" --jq '.[] | select(.fork | not) | .name'); do
-            n=$(gh api --paginate "repos/$ORG/$r/releases?per_page=100" --jq length | awk '{s+=$1} END {print s+0}')
-            releases=$((releases + n))
-          done
-
-          mkdir -p profile
-          jq -n \
-            --argjson commits "$commits" --argjson contributions "$contributions" \
-            --argjson prs "$prs" --argjson merged "$merged" --argjson issues "$issues" \
-            --argjson upstream "$upstream" --argjson repos "$repos" \
-            --argjson stars "$stars" --argjson releases "$releases" \
-            --arg updated "$(date -u +%Y-%m-%d)" \
-            '$ARGS.named' > profile/numbers.json
-          cat profile/numbers.json
-
-      - name: Upstream PRs and browser extensions
-        # Rewrites the UPSTREAM and EXTENSIONS blocks of README.md from the
-        # GitHub search API and the public addons.mozilla.org API.
-        run: python3 .github/scripts/profile_sections.py
 
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile README.md
+          git add -A profile README.md
           git diff --cached --quiet && exit 0
           git commit -m "chore: refresh profile cards"
           git push
 
   snake:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: Platane/snk@v3
         with:
