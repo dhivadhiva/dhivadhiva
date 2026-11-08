@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">DHIVAKAR R&#39;s GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 27, Total Commits  : 1690, Total PRs: 235, Total PRs Merged: 205, Merged PRs Percentage: 87.23, Total PRs Reviewed: 1, Total Issues: 46, Contributed to (last year): 53</desc>
+        <desc id="descId">Total Stars Earned: 27, Total Commits  : 1696, Total PRs: 251, Total PRs Merged: 207, Merged PRs Percentage: 82.47, Total PRs Reviewed: 1, Total Issues: 47, Contributed to (last year): 54</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 102.09464778333923;
+        stroke-dashoffset: 101.39991413846701;
       }
     }
   
@@ -199,7 +199,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >235</text>
+      >251</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -214,7 +214,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged"
-      >205</text>
+      >207</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -229,7 +229,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged_percentage"
-      >87.23 %</text>
+      >82.47 %</text>
     </g>
   </g><g transform="translate(0, 125)">
     <g class="stagger" style="animation-delay: 1200ms" transform="translate(25, 0)">
@@ -259,7 +259,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >46</text>
+      >47</text>
     </g>
   </g><g transform="translate(0, 175)">
     <g class="stagger" style="animation-delay: 1500ms" transform="translate(25, 0)">
@@ -274,7 +274,7 @@
         x="224.01"
         y="12.5"
         data-testid="contribs"
-      >53</text>
+      >54</text>
     </g>
   </g>
     </svg>
