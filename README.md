@@ -28,7 +28,7 @@
 
 I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. My background is in **AI / ML** (PG Certification, IIT Guwahati), and my work spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-At Dhiva Labs I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem and to Coinbase's wallet SDKs.
+At Dhiva Labs I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem, to Google's **safe-bindings** and **protobuf.dart**, and to Coinbase's wallet SDKs.
 
 ```python
 class Dhivakar:
@@ -38,9 +38,12 @@ class Dhivakar:
         self.education = "PG Certification, AI & ML — IIT Guwahati"
         self.focus     = ["Cross-platform apps", "Cryptography & Blockchain",
                           "Machine Intelligence", "Embedded Systems", "Full-Stack"]
-        self.shipping  = ["Snap Store", "Launchpad PPA", "Microsoft Store", "GitHub Releases"]
+        self.shipping  = ["Snap Store", "Launchpad PPA", "Microsoft Store",
+                          "Chrome Web Store", "Firefox Add-ons", "GitHub Releases"]
         self.upstream  = ["vtnerd/monero-lws", "monero-project/monero",
-                          "coinbase/coinbase-wallet-sdk", "base/account-sdk"]
+                          "seraphis-migration/monero", "google/safe-bindings",
+                          "google/protobuf.dart", "coinbase/coinbase-wallet-sdk",
+                          "base/account-sdk"]
         self.motto     = "Let's build something remarkable."
 ```
 
@@ -155,6 +158,8 @@ An independent software lab that builds finished products and custom engineering
 <a href="https://snapcraft.io/publisher/dhivakar1010"><img src="https://img.shields.io/badge/Snap_Store-82BEA0?style=for-the-badge&logo=snapcraft&logoColor=white" alt="Snap Store" /></a>
 <a href="https://launchpad.net/~dhiva-labs/+archive/ubuntu/apps"><img src="https://img.shields.io/badge/Launchpad_PPA-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Launchpad PPA" /></a>
 <a href="https://apps.microsoft.com/search/publisher?name=Dhiva-Labs"><img src="https://img.shields.io/badge/Microsoft_Store-0078D4?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIgMmg5LjV2OS41SDJ6TTEyLjUgMkgyMnY5LjVoLTkuNXpNMiAxMi41aDkuNVYyMkgyek0xMi41IDEyLjVIMjJWMjJoLTkuNXoiLz48L3N2Zz4=" alt="Microsoft Store" /></a>
+<a href="https://chromewebstore.google.com/detail/dl-image-tools/ighlhdddbockbcooddmeajncpgihlcob"><img src="https://img.shields.io/badge/Chrome_Web_Store-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store" /></a>
+<a href="https://addons.mozilla.org/en-US/firefox/user/20302614/"><img src="https://img.shields.io/badge/Firefox_Add--ons-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Firefox Add-ons" /></a>
 
 </div>
 
@@ -179,8 +184,8 @@ sudo snap install apiworkbench
 | [**DhivaLabs Shell**](https://apps.microsoft.com/detail/9P4PP04P6GDX) | Bash for Windows with a separate Git identity and SSH key per profile | Windows | — |
 | [**WinBridge**](https://github.com/Dhiva-Labs/WinBridge) | Build Windows apps from Linux: Go, Rust, .NET, C and Flutter | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/WinBridge?style=flat-square&label=&color=1E3A8A) |
 | [**Delta View**](https://github.com/Dhiva-Labs/Delta_view) | File and folder comparison: diffs, three-way merge, images, JSON/YAML/CSV | Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Delta_view?style=flat-square&label=&color=1E3A8A) |
-| [**Developer Toolbox**](https://github.com/Dhiva-Labs/developer_toolbox) | 21 offline developer tools: JSON, JWT, regex, hashes, UUIDs, QR codes | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/developer_toolbox?style=flat-square&label=updated&color=334155) |
-| [**Database Manager**](https://github.com/Dhiva-Labs/database_manager) | Desktop client for SQLite, MySQL, PostgreSQL, MongoDB and LMDB | Desktop | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/database_manager?style=flat-square&label=updated&color=334155) |
+| [**Developer Toolbox**](https://github.com/Dhiva-Labs/developer_toolbox) | 21 offline developer tools: JSON, JWT, regex, hashes, UUIDs, QR codes | Linux · Windows · Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/developer_toolbox?include_prereleases&style=flat-square&label=&color=1E3A8A) |
+| [**Database Manager**](https://github.com/Dhiva-Labs/database_manager) | Desktop client for SQLite, MySQL, PostgreSQL, MongoDB and LMDB | Desktop | ![](https://img.shields.io/github/v/release/Dhiva-Labs/database_manager?include_prereleases&style=flat-square&label=&color=1E3A8A) |
 | [**DL Sentinel**](https://github.com/Dhiva-Labs/dl-sentinel) | Security scanning: secrets, vulnerable deps, IaC, smart-contract risks | CLI · API · Dashboard | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl-sentinel?style=flat-square&label=&color=1E3A8A) |
 | [**LogLens**](https://github.com/Dhiva-Labs/loglens) | Terminal log analyzer with live filtering, clustering and export | TUI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/loglens?style=flat-square&label=&color=1E3A8A) |
 | [**SysVitals**](https://github.com/Dhiva-Labs/SysVitals) | Processes, connections, open ports and SSD health in one terminal tool | TUI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/SysVitals?style=flat-square&label=&color=1E3A8A) |
@@ -206,12 +211,12 @@ sudo snap install apiworkbench
 | [**Luna Media Player**](https://github.com/Dhiva-Labs/Luna-Media-Player) | Windows XP-era music and video player with a WMP 10-style look | Linux | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Luna-Media-Player?style=flat-square&label=&color=1E3A8A) |
 | [**CompressX**](https://github.com/Dhiva-Labs/Smart-Compress) | Offline compressor and converter for images, PDFs, video, audio and archives | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/Smart-Compress?style=flat-square&label=updated&color=334155) |
 | [**Creator Toolkit**](https://github.com/Dhiva-Labs/creator_toolkit) | Compress, convert and trim media with Instagram, YouTube and TikTok presets | Linux · Windows · Android | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/creator_toolkit?style=flat-square&label=updated&color=334155) |
-| [**Key Deck**](https://github.com/Dhiva-Labs/Key_deck) | Turn your phone into a programmable macro pad for your desktop | Android · Linux · Windows | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/Key_deck?style=flat-square&label=updated&color=334155) |
+| [**Key Deck**](https://github.com/Dhiva-Labs/Key_deck) | Turn your phone into a programmable macro pad for your desktop | Android · Linux · Windows | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Key_deck?include_prereleases&style=flat-square&label=&color=1E3A8A) |
 
 </details>
 
 <details>
-<summary><b>🔐 Crypto & Privacy</b></summary>
+<summary><b>🔐 Security, Crypto & Privacy</b></summary>
 <br/>
 
 | Project | What it does | Runs on | Latest |
@@ -219,6 +224,7 @@ sudo snap install apiworkbench
 | [**Kilonova**](https://github.com/Dhiva-Labs/kilonova) | Monero wallet with full-node or light-wallet (LWS) sync and multiple wallets | Linux · Windows · Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/kilonova?include_prereleases&style=flat-square&label=&color=1E3A8A) |
 | [**poolwatch**](https://github.com/Dhiva-Labs/poolwatch) | htop for your mempool: Monero, Oxen, Beldex, Bitcoin | TUI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/poolwatch?style=flat-square&label=&color=1E3A8A) |
 | [**lmdb-lws-backup**](https://github.com/Dhiva-Labs/lmdb-lws-backup) | Encrypted hot backups for monero-lws LMDB databases | CLI | ![](https://img.shields.io/github/v/release/Dhiva-Labs/lmdb-lws-backup?style=flat-square&label=&color=1E3A8A) |
+| [**Kilnfile**](https://github.com/Dhiva-Labs/kilnfile) | Memory-safe content disarm and reconstruction: rebuilds untrusted files with Rust parsers via google/safe-bindings | CLI · API · SDK | ![](https://img.shields.io/badge/design_stage-334155?style=flat-square) |
 
 </details>
 
@@ -230,8 +236,8 @@ sudo snap install apiworkbench
 | --- | --- | --- | --- |
 | [**LocalRAG**](https://github.com/Dhiva-Labs/localrag) | Offline, self-hosted RAG with page-level citations | Docker | ![](https://img.shields.io/github/v/release/Dhiva-Labs/localrag?style=flat-square&label=&color=1E3A8A) |
 | [**SignVox**](https://github.com/Dhiva-Labs/SignVox) | Sign at the front camera and it speaks for you, fully offline | Android | ![](https://img.shields.io/github/v/release/Dhiva-Labs/SignVox?style=flat-square&label=&color=1E3A8A) |
-| [**MarkDrop**](https://github.com/Dhiva-Labs/markdrop) | Turn anything into Markdown: extension, desktop, API, bot, MCP | Multi-platform | ![](https://img.shields.io/github/v/release/Dhiva-Labs/markdrop?style=flat-square&label=&color=1E3A8A) |
-| [**DL Prism**](https://github.com/Dhiva-Labs/dl_prism) | Local-first AI gateway: policy routing, failover, cost budgets | Server | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/dl_prism?style=flat-square&label=updated&color=334155) |
+| [**MarkDrop**](https://github.com/Dhiva-Labs/markdrop) | Turn anything into Markdown: Chrome and Firefox clipper, desktop, Android, API, Telegram bot, Claude MCP | Multi-platform | ![](https://img.shields.io/github/v/release/Dhiva-Labs/markdrop?style=flat-square&label=&color=1E3A8A) |
+| [**DL Prism**](https://github.com/Dhiva-Labs/dl_prism) | Local-first AI gateway: one OpenAI-compatible endpoint, policy routing, failover, cost budgets, MCP | Linux · Windows · Firefox | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl_prism?style=flat-square&label=&color=1E3A8A) |
 
 </details>
 
@@ -254,15 +260,26 @@ sudo snap install apiworkbench
 </details>
 
 <details>
-<summary><b>🎮 Web & Emulators</b></summary>
+<summary><b>🌐 Browser, Web & Emulators</b></summary>
 <br/>
 
 | Project | What it does | Runs on | Latest |
 | --- | --- | --- | --- |
 | [**Dhiva Tools**](https://tools.dhivalabs.com/) | Free image, PDF, developer and SEO tools; files never leave your browser | Browser | ![](https://img.shields.io/website?url=https%3A%2F%2Ftools.dhivalabs.com&style=flat-square&label=&up_message=live&up_color=1E3A8A) |
-| [**DL Image Tools**](https://github.com/Dhiva-Labs/dl-image-tools) | Compress, resize, convert and crop images in Chrome with no uploads | Chrome | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl-image-tools?style=flat-square&label=&color=1E3A8A) |
+| [**DL Image Tools**](https://github.com/Dhiva-Labs/dl-image-tools) | Compress, resize, convert and crop images in the browser with no uploads | Chrome · Firefox | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl-image-tools?style=flat-square&label=&color=1E3A8A) |
+| [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | Hides secrets and personal data before you paste into AI chats, fully on-device | Chrome · Firefox | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Cloakpaste?style=flat-square&label=&color=1E3A8A) |
 | [**Game Boy**](https://github.com/Dhiva-Labs/gameboy) | DMG emulator: blargg suites green, dmg-acid2 pixel-perfect | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/gameboy?style=flat-square&label=updated&color=334155) |
 | [**CHIP-8**](https://github.com/Dhiva-Labs/chip8) | Interpreter with COSMAC VIP quirks, full Timendus test suite green | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/chip8?style=flat-square&label=updated&color=334155) |
+
+**🦊 Browser extensions** on Firefox Add-ons and the Chrome Web Store, listed from the stores daily:
+
+<!-- EXTENSIONS:START -->
+| Extension | What it does | Firefox | Chrome |
+| --- | --- | --- | --- |
+| [**Cloakpaste**](https://addons.mozilla.org/en-US/firefox/addon/cloakpaste/) | Hides emails, keys, card numbers and names before you paste into AI chats | [![](https://img.shields.io/amo/v/cloakpaste?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/cloakpaste/) [![](https://img.shields.io/amo/users/cloakpaste?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/cloakpaste/) | — |
+| [**DL Image Tools**](https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/) | Compress, resize, convert, crop and edit images locally in your browser | [![](https://img.shields.io/amo/v/dl-image-tools?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/) [![](https://img.shields.io/amo/users/dl-image-tools?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/) | [![](https://img.shields.io/chrome-web-store/v/ighlhdddbockbcooddmeajncpgihlcob?style=flat-square&label=&color=4285F4)](https://chromewebstore.google.com/detail/ighlhdddbockbcooddmeajncpgihlcob) |
+| [**Markdrop Clipper**](https://addons.mozilla.org/en-US/firefox/addon/markdrop-clipper/) | Convert web pages, selections, images and YouTube videos to clean Markdown | [![](https://img.shields.io/amo/v/markdrop-clipper?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/markdrop-clipper/) [![](https://img.shields.io/amo/users/markdrop-clipper?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/markdrop-clipper/) | — |
+<!-- EXTENSIONS:END -->
 
 </details>
 
@@ -270,11 +287,11 @@ sudo snap install apiworkbench
 <summary><b>🔬 Research Projects</b></summary>
 <br/>
 
-- **Blockchain Privacy Integration**: privacy-preserving protocols on-chain
-- **Neural Face Detection**: deep-learning facial recognition
-- **Crypto Forecasting Engine**: time-series prediction for crypto markets
+- **Memory-safe CDR** ([Kilnfile](https://github.com/Dhiva-Labs/kilnfile)): rebuilding untrusted files so no C or C++ code ever parses attacker-controlled bytes
+- **FCMP++ in light-wallet sync**: carrying Monero's full-chain membership proof data through daemon JSON into monero-lws ([monero-lws#317](https://github.com/vtnerd/monero-lws/pull/317), [seraphis-migration#509](https://github.com/seraphis-migration/monero/pull/509))
+- **Bulletproofs++ and account abstraction**: from the papers to production blockchain systems
+- **Offline machine intelligence**: self-hosted RAG with page-level citations ([LocalRAG](https://github.com/Dhiva-Labs/localrag)) and on-device sign-language recognition ([SignVox](https://github.com/Dhiva-Labs/SignVox))
 - **WebAssembly ↔ Microcontroller Bridge**: WASM runtime for embedded hardware
-- **ML Customer Segmentation**: clustering for marketing analytics
 
 </details>
 
@@ -283,22 +300,31 @@ sudo snap install apiworkbench
 <!-- ===== UPSTREAM ===== -->
 ## 🌍 Upstream Contributions
 
-Fixes and features for **monero-lws**, the Monero light-wallet server, and the **Monero** wallet itself, plus a telemetry fix for Coinbase's wallet SDKs.
+Pull requests sent upstream to the projects I build on, from Monero's light-wallet server and wallet to Google's safe-bindings and protobuf.dart. This list is generated from GitHub every day, so new ones show up here on their own.
+
+<!-- UPSTREAM:START -->
+**17 pull requests** to **7 projects**: **8 merged**, **8 open**.
 
 | Project | Pull request | Status |
 | --- | --- | --- |
+| [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
+| [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | [**vtnerd/monero-lws**](https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix builds with assertions enabled | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/307?style=flat-square&label=%23307)](https://github.com/vtnerd/monero-lws/pull/307) |
-| | Start only one websocket close per `/feed` connection | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/308?style=flat-square&label=%23308)](https://github.com/vtnerd/monero-lws/pull/308) |
-| | Decrypt encrypted payment ids per account | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/309?style=flat-square&label=%23309)](https://github.com/vtnerd/monero-lws/pull/309) |
-| | Pick up new accounts while waiting at the top of the chain | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/310?style=flat-square&label=%23310)](https://github.com/vtnerd/monero-lws/pull/310) |
-| | Fix remaining timeout in `do_wait()` after `EINTR` | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/311?style=flat-square&label=%23311)](https://github.com/vtnerd/monero-lws/pull/311) |
-| | Keep height index in step with `scan_height` on rescan and import | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/312?style=flat-square&label=%23312)](https://github.com/vtnerd/monero-lws/pull/312) |
-| | Add `webhook_add` and `webhook_list` to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/313?style=flat-square&label=%23313)](https://github.com/vtnerd/monero-lws/pull/313) |
-| | CI: run unit tests in a Debug build | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/314?style=flat-square&label=%23314)](https://github.com/vtnerd/monero-lws/pull/314) |
-| | Add `delete_accounts` to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/315?style=flat-square&label=%23315)](https://github.com/vtnerd/monero-lws/pull/315) |
-| [**monero-project/monero**](https://github.com/monero-project/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | wallet: don't wrap outgoing amounts with unknown input key images | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11641?style=flat-square&label=%2311641)](https://github.com/monero-project/monero/pull/11641) |
-| [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
+|  | Start only one websocket close per /feed connection | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/308?style=flat-square&label=%23308)](https://github.com/vtnerd/monero-lws/pull/308) |
+|  | Decrypt encrypted payment ids per account | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/309?style=flat-square&label=%23309)](https://github.com/vtnerd/monero-lws/pull/309) |
+|  | Pick up new accounts while waiting at the top of the chain | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/310?style=flat-square&label=%23310)](https://github.com/vtnerd/monero-lws/pull/310) |
+|  | Fix remaining timeout in do_wait() after EINTR | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/311?style=flat-square&label=%23311)](https://github.com/vtnerd/monero-lws/pull/311) |
+|  | Keep height index in step with scan_height on rescan and import | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/312?style=flat-square&label=%23312)](https://github.com/vtnerd/monero-lws/pull/312) |
+|  | Add webhook_add and webhook_list to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/313?style=flat-square&label=%23313)](https://github.com/vtnerd/monero-lws/pull/313) |
+|  | Run unit tests in a Debug build | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/314?style=flat-square&label=%23314)](https://github.com/vtnerd/monero-lws/pull/314) |
+|  | Add delete_accounts to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/315?style=flat-square&label=%23315)](https://github.com/vtnerd/monero-lws/pull/315) |
+|  | Read FCMP++ data of the prunable part from daemon JSON | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/317?style=flat-square&label=%23317)](https://github.com/vtnerd/monero-lws/pull/317) |
+| [**seraphis-migration/monero**](https://github.com/seraphis-migration/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | Include FCMP++ data in rctSig JSON | [![](https://img.shields.io/github/issues/detail/state/seraphis-migration/monero/509?style=flat-square&label=%23509)](https://github.com/seraphis-migration/monero/pull/509) |
 | [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
+| [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
+| [**monero-project/monero**](https://github.com/monero-project/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | Recheck restore heights estimated without a daemon | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11640?style=flat-square&label=%2311640)](https://github.com/monero-project/monero/pull/11640) |
+|  | Don't wrap outgoing amounts with unknown input key images | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11641?style=flat-square&label=%2311641)](https://github.com/monero-project/monero/pull/11641) |
+<!-- UPSTREAM:END -->
 
 <!-- ===== SPONSOR ===== -->
 ## 💖 Sponsor
