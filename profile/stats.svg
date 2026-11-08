@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">DHIVAKAR R&#39;s GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 27, Total Commits  : 1697, Total PRs: 251, Total PRs Merged: 207, Merged PRs Percentage: 82.47, Total PRs Reviewed: 1, Total Issues: 47, Contributed to (last year): 54</desc>
+        <desc id="descId">Total Stars Earned: 27, Total Commits  : 1699, Total PRs: 252, Total PRs Merged: 208, Merged PRs Percentage: 82.54, Total PRs Reviewed: 1, Total Issues: 47, Contributed to (last year): 54</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 101.39095602227088;
+        stroke-dashoffset: 101.34639854331586;
       }
     }
   
@@ -199,7 +199,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >251</text>
+      >252</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -214,7 +214,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged"
-      >207</text>
+      >208</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -229,7 +229,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged_percentage"
-      >82.47 %</text>
+      >82.54 %</text>
     </g>
   </g><g transform="translate(0, 125)">
     <g class="stagger" style="animation-delay: 1200ms" transform="translate(25, 0)">

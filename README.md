@@ -98,6 +98,7 @@ class Dhivakar:
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [Build activity, releases, languages and featured cards daily](https://github.com/dhivadhiva/dhivadhiva/pull/1) in [dhivadhiva/dhivadhiva](https://github.com/dhivadhiva/dhivadhiva) · <sub>Nov 8</sub>
 - 🟢 **Opened** [Refuse unsafe paths from the peer and never run its install script](https://github.com/Dhiva-Labs/CloneStudio/pull/4) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 8</sub>
 - 🟢 **Opened** [Test corpus generators](https://github.com/Dhiva-Labs/kilnfile/pull/5) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
 - 🟢 **Opened** [Kilnfile-worker with the Linux sandbox](https://github.com/Dhiva-Labs/kilnfile/pull/4) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
@@ -105,7 +106,6 @@ class Dhivakar:
 - 🟢 **Opened** [M0: prove the build (two bindings in one binary, own Crubit bridge)](https://github.com/Dhiva-Labs/kilnfile/pull/2) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
 - 🟢 **Opened** [Design, roadmap and README](https://github.com/Dhiva-Labs/kilnfile/pull/1) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
 - 🟢 **Opened** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 8</sub>
-- 🟣 **Merged** [Show the browser extensions on Firefox and Chrome](https://github.com/dhivadhiva/dhivakar1010.com/pull/3) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 8</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
