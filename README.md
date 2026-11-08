@@ -75,22 +75,68 @@ class Dhivakar:
   <img height="170" src="https://streak-stats.demolab.com/?user=dhivadhiva&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </div>
 
+<!-- LANGS:START -->
+<div align="center">
+  <sub>Code across 49 Dhiva Labs repositories, by size</sub><br/>
+  <img src="https://img.shields.io/badge/Dart-44.5%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-27.6%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/C-7.1%25-555555?style=flat-square" alt="C" />
+  <img src="https://img.shields.io/badge/TypeScript-4.7%25-3178c6?style=flat-square" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-3.7%25-f1e05a?style=flat-square" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Shell-2.7%25-89e051?style=flat-square" alt="Shell" />
+  <img src="https://img.shields.io/badge/Python-2.6%25-3572A5?style=flat-square" alt="Python" />
+  <img src="https://img.shields.io/badge/C%2B%2B-1.9%25-f34b7d?style=flat-square" alt="C++" />
+</div>
+<!-- LANGS:END -->
+
 <p align="center">
-  <sub>Refreshed daily by GitHub Actions</sub>
+  <sub>Numbers, languages, activity, releases, featured cards, extensions and upstream PRs are rebuilt daily by GitHub Actions</sub>
   <img src="https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.updated&label=updated&color=334155" alt="Last updated" />
 </p>
+
+<!-- ===== ACTIVITY ===== -->
+## ⚡ Recent Activity
+
+<!-- ACTIVITY:START -->
+- 🟢 **Opened** [Refuse unsafe paths from the peer and never run its install script](https://github.com/Dhiva-Labs/CloneStudio/pull/4) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 8</sub>
+- 🟢 **Opened** [Test corpus generators](https://github.com/Dhiva-Labs/kilnfile/pull/5) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
+- 🟢 **Opened** [Kilnfile-worker with the Linux sandbox](https://github.com/Dhiva-Labs/kilnfile/pull/4) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
+- 🟢 **Opened** [Go CLI, worker protocol and runner](https://github.com/Dhiva-Labs/kilnfile/pull/3) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
+- 🟢 **Opened** [M0: prove the build (two bindings in one binary, own Crubit bridge)](https://github.com/Dhiva-Labs/kilnfile/pull/2) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
+- 🟢 **Opened** [Design, roadmap and README](https://github.com/Dhiva-Labs/kilnfile/pull/1) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
+- 🟢 **Opened** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 8</sub>
+- 🟣 **Merged** [Show the browser extensions on Firefox and Chrome](https://github.com/dhivadhiva/dhivakar1010.com/pull/3) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 8</sub>
+<!-- ACTIVITY:END -->
+
+<!-- ===== RELEASES ===== -->
+## 🚀 Latest Releases
+
+<!-- RELEASES:START -->
+| Project | Release | Published |
+| --- | --- | --- |
+| [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) | [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0) | Nov 7 |
+| [**dl-image-tools**](https://github.com/Dhiva-Labs/dl-image-tools) | [`v1.0.1`](https://github.com/Dhiva-Labs/dl-image-tools/releases/tag/v1.0.1) | Nov 4 |
+| [**markdrop**](https://github.com/Dhiva-Labs/markdrop) | [`v0.1.1`](https://github.com/Dhiva-Labs/markdrop/releases/tag/v0.1.1) | Nov 4 |
+| [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.1`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.1) | Nov 4 |
+| [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.5.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.5.1) | Nov 3 |
+| [**DroidDeck**](https://github.com/Dhiva-Labs/DroidDeck) | [`v1.0.4`](https://github.com/Dhiva-Labs/DroidDeck/releases/tag/v1.0.4) | Nov 2 |
+<!-- RELEASES:END -->
 
 <!-- ===== FEATURED ===== -->
 ## ⭐ Featured Projects
 
+<!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/CloudDrop"><img src="./profile/pin-clouddrop.svg" alt="CloudDrop" /></a>
-  <a href="https://github.com/Dhiva-Labs/CrossShell"><img src="./profile/pin-crossshell.svg" alt="CrossShell" /></a>
-  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-diskrescue.svg" alt="DiskRescue" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-kilonova.svg" alt="Kilonova" /></a>
-  <a href="https://github.com/Dhiva-Labs/BranchPilot"><img src="./profile/pin-branchpilot.svg" alt="BranchPilot" /></a>
-  <a href="https://github.com/Dhiva-Labs/gearwise"><img src="./profile/pin-gearwise.svg" alt="Gearwise" /></a>
+  <a href="https://github.com/Dhiva-Labs/CloneStudio"><img src="./profile/pin-1.svg" alt="CloneStudio" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilnfile"><img src="./profile/pin-2.svg" alt="kilnfile" /></a>
+  <a href="https://github.com/Dhiva-Labs/rover_explorer"><img src="./profile/pin-3.svg" alt="rover_explorer" /></a>
+  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-4.svg" alt="DiskRescue" /></a>
+  <a href="https://github.com/Dhiva-Labs/dl_prism"><img src="./profile/pin-5.svg" alt="dl_prism" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-6.svg" alt="kilonova" /></a>
 </div>
+
+<p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
+<!-- FEATURED:END -->
 
 <!-- ===== TECH STACK ===== -->
 ## 🛠️ Tech Stack

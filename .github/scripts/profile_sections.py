@@ -1,24 +1,44 @@
 #!/usr/bin/env python3
-"""Regenerate the data-driven blocks of README.md.
+"""Regenerate the data-driven parts of the profile.
 
 Run by .github/workflows/profile.yml. Needs `gh` (authenticated) for the
-GitHub search and plain HTTPS for the public addons.mozilla.org API.
+GitHub API and plain HTTPS for the public addons.mozilla.org API. To try it
+locally:  python3 .github/scripts/profile_sections.py
 
-Blocks are delimited by marker comments and rewritten in place:
+README.md blocks are delimited by marker comments and rewritten in place:
 
+  <!-- LANGS:START --> ... <!-- LANGS:END -->
+      languages across ORG's public repositories, by code size;
+  <!-- ACTIVITY:START --> ... <!-- ACTIVITY:END -->
+      USER's most recent public pull requests, anywhere on GitHub;
+  <!-- RELEASES:START --> ... <!-- RELEASES:END -->
+      the newest release of the most recently released ORG repositories;
+  <!-- FEATURED:START --> ... <!-- FEATURED:END -->
+      pin cards for the ORG repositories with the most recent pushes
+      (the card images are rendered by the workflow from the pin1..pinN
+      step outputs this script writes to $GITHUB_OUTPUT);
   <!-- UPSTREAM:START --> ... <!-- UPSTREAM:END -->
       every pull request by USER outside ORG and USER's own repos,
       grouped by repository, newest repository first;
   <!-- EXTENSIONS:START --> ... <!-- EXTENSIONS:END -->
       every public extension published on Firefox Add-ons by AMO_AUTHOR,
       with its Chrome Web Store listing when CHROME_IDS knows one.
+
+profile/numbers.json holds the counters behind the shields.io dynamic badges.
+
+The whole run is a dozen small API calls: one GraphQL query covers every ORG
+repository (stars, releases, languages), so nothing is fetched per repo and
+memory use stays at a few megabytes.
 """
 import json
+import os
 import re
 import subprocess
 import sys
+import urllib.parse
 import urllib.request
 from collections import OrderedDict
+from datetime import datetime, timezone
 from pathlib import Path
 
 USER = "dhivadhiva"
@@ -28,8 +48,17 @@ AMO_AUTHOR = "20302614"  # https://addons.mozilla.org/en-US/firefox/user/2030261
 CHROME_IDS = {
     "dl-image-tools": "ighlhdddbockbcooddmeajncpgihlcob",
 }
-README = Path(__file__).resolve().parents[2] / "README.md"
+ROOT = Path(__file__).resolve().parents[2]
+README = ROOT / "README.md"
+NUMBERS = ROOT / "profile" / "numbers.json"
 SHIELD = "https://img.shields.io"
+
+# ORG repositories that are not products and are never featured.
+NOT_FEATURED = {".github", "Dhiva-Labs", "intern-training"}
+PINS = 6            # must match the number of "Pin" steps in the workflow
+ACTIVITY_ROWS = 8
+RELEASE_ROWS = 6
+LANGUAGES = 8
 
 
 def gh_graphql(query, **variables):
@@ -37,7 +66,182 @@ def gh_graphql(query, **variables):
     for k, v in variables.items():
         cmd += ["-f", f"{k}={v}"]
     out = subprocess.run(cmd, check=True, capture_output=True, text=True).stdout
-    return json.loads(out)
+    data = json.loads(out)
+    if data.get("errors"):
+        sys.exit(f"GraphQL error: {data['errors']}")
+    return data
+
+
+def search_count(q):
+    query = "query($q:String!){search(query:$q,type:ISSUE,first:1){issueCount}}"
+    return gh_graphql(query, q=q)["data"]["search"]["issueCount"]
+
+
+def day(iso):
+    """2026-11-08T22:22:47Z -> 'Nov 8'."""
+    d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    return f"{d:%b} {d.day}"
+
+
+def cell(text):
+    """Make free text safe inside a markdown table cell or link label."""
+    return (text or "").strip().replace("\n", " ").replace("|", "\\|").replace("<", "&lt;")
+
+
+# ---------------------------------------------------------------------------
+# Organization repositories: one query for stars, releases and languages
+# ---------------------------------------------------------------------------
+def org_repos():
+    """Public, non-fork, non-archived ORG repositories, most recent push first."""
+    query = """
+    query($org:String!, $after:String) {
+      organization(login:$org) {
+        repositories(first:100, after:$after, isFork:false, privacy:PUBLIC,
+                     orderBy:{field:PUSHED_AT, direction:DESC}) {
+          pageInfo { hasNextPage endCursor }
+          nodes {
+            name url isArchived pushedAt stargazerCount
+            releases(first:1, orderBy:{field:CREATED_AT, direction:DESC}) {
+              totalCount
+              nodes { tagName name url publishedAt isPrerelease }
+            }
+            languages(first:10, orderBy:{field:SIZE, direction:DESC}) {
+              edges { size node { name color } }
+            }
+          }
+        }
+      }
+    }"""
+    repos, after = [], None
+    while True:
+        data = gh_graphql(query, org=ORG, **({"after": after} if after else {}))
+        page = data["data"]["organization"]["repositories"]
+        repos += [r for r in page["nodes"] if not r["isArchived"]]
+        if not page["pageInfo"]["hasNextPage"]:
+            return repos
+        after = page["pageInfo"]["endCursor"]
+
+
+def langs_block(repos):
+    size, color = {}, {}
+    for r in repos:
+        for e in r["languages"]["edges"]:
+            n = e["node"]["name"]
+            size[n] = size.get(n, 0) + e["size"]
+            color[n] = (e["node"]["color"] or "#334155").lstrip("#")
+    total = sum(size.values()) or 1
+    top = sorted(size, key=size.get, reverse=True)[:LANGUAGES]
+    badges = []
+    for n in top:
+        label = urllib.parse.quote(n.replace("-", "--").replace("_", "__"), safe="")
+        pct = f"{100 * size[n] / total:.1f}%25"
+        badges.append(f'  <img src="{SHIELD}/badge/{label}-{pct}-{color[n]}?style=flat-square" alt="{n}" />')
+    return "\n".join(
+        ['<div align="center">',
+         f"  <sub>Code across {len(repos)} Dhiva Labs repositories, by size</sub><br/>"]
+        + badges + ["</div>"])
+
+
+def releases_block(repos):
+    latest = [(n["publishedAt"], r, n) for r in repos
+              for n in r["releases"]["nodes"] if n["publishedAt"]]
+    latest.sort(key=lambda x: x[0], reverse=True)
+    lines = ["| Project | Release | Published |", "| --- | --- | --- |"]
+    for published, r, n in latest[:RELEASE_ROWS]:
+        label = f"[`{cell(n['tagName'])}`]({n['url']})"
+        if n["isPrerelease"]:
+            label += " <sub>pre-release</sub>"
+        lines.append(f"| [**{r['name']}**]({r['url']}) | {label} | {day(published)} |")
+    return "\n".join(lines)
+
+
+def featured(repos):
+    return [r for r in repos if r["name"] not in NOT_FEATURED][:PINS]
+
+
+def featured_block(pins):
+    lines = ['<div align="center">']
+    for i, r in enumerate(pins, 1):
+        lines.append(f'  <a href="{r["url"]}"><img src="./profile/pin-{i}.svg" alt="{r["name"]}" /></a>')
+    lines += ["</div>", "",
+              '<p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>']
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Recent activity: the newest public pull requests, wherever they are
+# ---------------------------------------------------------------------------
+def recent_prs():
+    query = """
+    query($q:String!) {
+      search(query:$q, type:ISSUE, first:40) {
+        nodes { ... on PullRequest {
+          number title url state createdAt mergedAt closedAt
+          repository { nameWithOwner url isPrivate }
+        } }
+      }
+    }"""
+    q = f"author:{USER} is:pr is:public sort:updated-desc"
+    nodes = gh_graphql(query, q=q)["data"]["search"]["nodes"]
+    prs = [n for n in nodes if n and not n["repository"]["isPrivate"]]
+    for pr in prs:
+        pr["when"] = pr["mergedAt"] or pr["closedAt"] or pr["createdAt"]
+    prs.sort(key=lambda p: p["when"], reverse=True)
+    return prs[:ACTIVITY_ROWS]
+
+
+def activity_block(prs):
+    verb = {"MERGED": "🟣 **Merged**", "OPEN": "🟢 **Opened**", "CLOSED": "🔴 **Closed**"}
+    lines = []
+    for pr in prs:
+        repo = pr["repository"]
+        lines.append(f"- {verb[pr['state']]} [{clean_title(pr['title'])}]({pr['url']}) "
+                     f"in [{repo['nameWithOwner']}]({repo['url']}) · <sub>{day(pr['when'])}</sub>")
+    return "\n".join(lines) or "_No public pull requests yet._"
+
+
+# ---------------------------------------------------------------------------
+# Counters for the shields.io dynamic badges
+# ---------------------------------------------------------------------------
+def contribution_totals():
+    """(commits, contributions) summed over every year of the account."""
+    query = """
+    query($login:String!, $from:DateTime!, $to:DateTime!) {
+      user(login:$login) {
+        createdAt
+        contributionsCollection(from:$from, to:$to) {
+          totalCommitContributions
+          contributionCalendar { totalContributions }
+        }
+      }
+    }"""
+    def year(y):
+        v = {"login": USER, "from": f"{y}-01-01T00:00:00Z", "to": f"{y}-12-31T23:59:59Z"}
+        return gh_graphql(query, **v)["data"]["user"]
+    this_year = datetime.now(timezone.utc).year
+    first = year(this_year)
+    commits = contributions = 0
+    for y in range(int(first["createdAt"][:4]), this_year + 1):
+        c = (first if y == this_year else year(y))["contributionsCollection"]
+        commits += c["totalCommitContributions"]
+        contributions += c["contributionCalendar"]["totalContributions"]
+    return commits, contributions
+
+
+def numbers(repos, upstream):
+    commits, contributions = contribution_totals()
+    return OrderedDict([
+        ("commits", commits),
+        ("contributions", contributions),
+        ("prs", search_count(f"author:{USER} is:pr")),
+        ("merged", search_count(f"author:{USER} is:pr is:merged")),
+        ("issues", search_count(f"author:{USER} is:issue")),
+        ("upstream", sum(1 for p in upstream if p["merged"])),
+        ("repos", len(repos)),
+        ("stars", sum(r["stargazerCount"] for r in repos)),
+        ("releases", sum(r["releases"]["totalCount"] for r in repos)),
+        ("updated", f"{datetime.now(timezone.utc):%Y-%m-%d}"),
+    ])
 
 
 def upstream_prs():
@@ -133,11 +337,32 @@ def replace_block(text, tag, body):
 
 def main():
     text = README.read_text(encoding="utf-8")
+
+    repos = org_repos()
+    pins = featured(repos)
+    text = replace_block(text, "LANGS", langs_block(repos))
+    text = replace_block(text, "RELEASES", releases_block(repos))
+    text = replace_block(text, "FEATURED", featured_block(pins))
+
+    text = replace_block(text, "ACTIVITY", activity_block(recent_prs()))
+
     prs = upstream_prs()
     text = replace_block(text, "UPSTREAM", upstream_block(prs))
     addons = amo_extensions()
     text = replace_block(text, "EXTENSIONS", extensions_block(addons))
+
+    stats = numbers(repos, prs)
+    NUMBERS.write_text(json.dumps(stats, indent=2) + "\n", encoding="utf-8")
     README.write_text(text, encoding="utf-8")
+
+    # Tell the workflow which repositories to render pin cards for.
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+            for i, r in enumerate(pins, 1):
+                out.write(f"pin{i}={r['name']}\n")
+
+    print(json.dumps(stats, indent=2))
+    print("featured:", ", ".join(r["name"] for r in pins))
     print(f"upstream: {len(prs)} PRs in {len({p['repository']['nameWithOwner'] for p in prs})} repos; "
           f"extensions: {len(addons)}")
 
