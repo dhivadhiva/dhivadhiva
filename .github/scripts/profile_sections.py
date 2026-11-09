@@ -22,7 +22,14 @@ README.md blocks are delimited by marker comments and rewritten in place:
       grouped by repository, newest repository first;
   <!-- EXTENSIONS:START --> ... <!-- EXTENSIONS:END -->
       every public extension published on Firefox Add-ons by AMO_AUTHOR,
-      with its Chrome Web Store listing when CHROME_IDS knows one.
+      with its Chrome Web Store listing when CHROME_IDS knows one;
+  <!-- BRIEFING:START --> ... <!-- BRIEFING:END -->
+      the daily mission briefing inside the dossier: a hint of the day that
+      rotates with the date, the newest pull request and release, and the
+      power level derived from the contribution count;
+  <!-- HEROES:START --> ... <!-- HEROES:END -->
+      the Hall of Heroes: everyone who opened an issue on this repository
+      titled "I have the stones" (the reward for finding the Easter eggs).
 
 profile/numbers.json holds the counters behind the shields.io dynamic badges.
 
@@ -59,6 +66,37 @@ PINS = 6            # must match the number of "Pin" steps in the workflow
 ACTIVITY_ROWS = 8
 RELEASE_ROWS = 6
 LANGUAGES = 8
+HEROES = 40
+HEROES_TITLE = "I have the stones"
+
+# Power level, by lifetime contributions. The last threshold that fits wins.
+RANKS = [
+    (0, "Recruit"),
+    (250, "Agent of S.H.I.E.L.D."),
+    (1000, "Level 7"),
+    (2000, "Avenger"),
+    (5000, "Founding Avenger"),
+    (10000, "Sorcerer Supreme"),
+    (25000, "Cosmic Entity"),
+]
+
+# One per day of the year, so the briefing changes every morning.
+HINTS = [
+    "Hint: six stones are hiding above this dossier. Hover each one.",
+    "Hint: the footer has a post-credits scene. Hover over it.",
+    "Hint: the source of this README has a Level 7 message at the very top.",
+    "Debugging is just time travel with a worse interface.",
+    "Rust is the arc reactor. Flutter is the suit. Coffee is the vibranium.",
+    "The daily build is the only Avenger that never misses a call.",
+    "Snap. Half the bugs are gone. The other half are in the issue tracker.",
+    "Every unsafe block is a Skrull. Trust nothing until it is verified.",
+    "The suit upgrades itself: one mark per open-source repository.",
+    "Whatever it takes: ship it, then fix it upstream.",
+    "With great compute comes great responsibility.",
+    "Multiverse rule: one codebase, every operating system.",
+    "A merged upstream PR is the only infinity gauntlet worth wearing.",
+    "Found all six stones? Open an issue titled \"I have the stones\".",
+]
 
 
 def gh_graphql(query, **variables):
@@ -230,7 +268,7 @@ def contribution_totals():
 
 def numbers(repos, upstream):
     commits, contributions = contribution_totals()
-    return OrderedDict([
+    stats = OrderedDict([
         ("commits", commits),
         ("contributions", contributions),
         ("prs", search_count(f"author:{USER} is:pr")),
@@ -242,6 +280,9 @@ def numbers(repos, upstream):
         ("releases", sum(r["releases"]["totalCount"] for r in repos)),
         ("updated", f"{datetime.now(timezone.utc):%Y-%m-%d}"),
     ])
+    stats["rank"] = rank(stats["contributions"])
+    stats["suit"] = f"Mark {stats['repos']}"
+    return stats
 
 
 def upstream_prs():
@@ -327,6 +368,89 @@ def extensions_block(addons):
     return "\n".join(lines)
 
 
+def rank(contributions):
+    return [name for floor, name in RANKS if contributions >= floor][-1]
+
+
+def briefing_block(stats, recent, repos):
+    """The dossier's daily mission briefing."""
+    now = datetime.now(timezone.utc)
+    hint = HINTS[now.timetuple().tm_yday % len(HINTS)]
+    lines = [
+        "**📡 Daily mission briefing** · <sub>regenerated " + f"{now:%b} {now.day}" + "</sub>",
+        "",
+        f"> {hint}",
+        "",
+        "| | |",
+        "| --- | --- |",
+        f"| **Power level** | **{stats['rank']}** · {stats['contributions']:,} contributions, "
+        f"{stats['merged']} pull requests merged |",
+        f"| **Suit** | **{stats['suit']}** · {stats['repos']} open-source repositories, "
+        f"{stats['releases']} releases shipped |",
+    ]
+    if recent:
+        pr = recent[0]
+        state = {"MERGED": "merged", "OPEN": "opened", "CLOSED": "closed"}[pr["state"]]
+        lines.append(f"| **Latest mission** | [{clean_title(pr['title'])}]({pr['url']}) "
+                     f"in [{pr['repository']['nameWithOwner']}]({pr['repository']['url']}), "
+                     f"{state} {day(pr['when'])} |")
+    latest = [(n["publishedAt"], r, n) for r in repos
+              for n in r["releases"]["nodes"] if n["publishedAt"]]
+    if latest:
+        published, r, n = max(latest, key=lambda x: x[0])
+        lines.append(f"| **Latest drop** | [**{r['name']}**]({r['url']}) "
+                     f"[`{cell(n['tagName'])}`]({n['url']}), {day(published)} |")
+    if repos:
+        r = repos[0]
+        lines.append(f"| **Currently assembling** | [**{r['name']}**]({r['url']}), "
+                     f"last push {day(r['pushedAt'])} |")
+    return "\n".join(lines)
+
+
+def heroes():
+    """People who opened an issue titled HEROES_TITLE on this repository."""
+    query = """
+    query($q:String!) {
+      search(query:$q, type:ISSUE, first:100) {
+        nodes { ... on Issue {
+          title url createdAt
+          author { login url }
+        } }
+      }
+    }"""
+    q = f'repo:{USER}/{USER} is:issue "{HEROES_TITLE}" in:title sort:created-asc'
+    nodes = gh_graphql(query, q=q)["data"]["search"]["nodes"]
+    seen, found = set(), []
+    for n in nodes:
+        if not n or not n.get("author") or HEROES_TITLE.lower() not in n["title"].lower():
+            continue
+        login = n["author"]["login"]
+        if login in seen or login == USER:
+            continue
+        seen.add(login)
+        found.append({"login": login, "url": n["author"]["url"],
+                      "issue": n["url"], "when": n["createdAt"]})
+    found.sort(key=lambda h: h["when"])
+    return found[:HEROES]
+
+
+def heroes_block(found):
+    if not found:
+        return ("<p align=\"center\"><sub>Nobody has collected all six stones yet. "
+                "Be the first: find them, then open an issue titled "
+                f"<b>\"{HEROES_TITLE}\"</b>.</sub></p>")
+    lines = ['<p align="center">']
+    for h in found:
+        login = h["login"].replace('"', "")
+        lines.append(f'  <a href="{h["issue"]}" title="{login} · {day(h["when"])}">'
+                     f'<img src="https://github.com/{login}.png?size=96" width="56" height="56" '
+                     f'style="border-radius: 50%;" alt="{login}" /></a>')
+    lines += ["</p>",
+              f'<p align="center"><sub>{len(found)} hero{"es" if len(found) != 1 else ""} '
+              "so far. Hover an avatar for the name and the day they found the stones.</sub></p>"]
+    return "\n".join(lines)
+
+
 def replace_block(text, tag, body):
     start, end = f"<!-- {tag}:START -->", f"<!-- {tag}:END -->"
     pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
@@ -344,7 +468,8 @@ def main():
     text = replace_block(text, "RELEASES", releases_block(repos))
     text = replace_block(text, "FEATURED", featured_block(pins))
 
-    text = replace_block(text, "ACTIVITY", activity_block(recent_prs()))
+    recent = recent_prs()
+    text = replace_block(text, "ACTIVITY", activity_block(recent))
 
     prs = upstream_prs()
     text = replace_block(text, "UPSTREAM", upstream_block(prs))
@@ -352,6 +477,9 @@ def main():
     text = replace_block(text, "EXTENSIONS", extensions_block(addons))
 
     stats = numbers(repos, prs)
+    text = replace_block(text, "BRIEFING", briefing_block(stats, recent, repos))
+    found = heroes()
+    text = replace_block(text, "HEROES", heroes_block(found))
     NUMBERS.write_text(json.dumps(stats, indent=2) + "\n", encoding="utf-8")
     README.write_text(text, encoding="utf-8")
 
@@ -364,7 +492,7 @@ def main():
     print(json.dumps(stats, indent=2))
     print("featured:", ", ".join(r["name"] for r in pins))
     print(f"upstream: {len(prs)} PRs in {len({p['repository']['nameWithOwner'] for p in prs})} repos; "
-          f"extensions: {len(addons)}")
+          f"extensions: {len(addons)}; heroes: {len(found)}")
 
 
 if __name__ == "__main__":

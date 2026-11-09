@@ -1,11 +1,27 @@
+<!--
+  ╔════════════════════════════════════════════════════════════════════╗
+  ║  LEVEL 7 CLEARANCE GRANTED. You read the source. Fury would hire   ║
+  ║  you on the spot.                                                  ║
+  ║                                                                    ║
+  ║  Three Easter eggs are hidden on this page:                        ║
+  ║    1. Six Infinity Stones are scattered through the About section. ║
+  ║    2. The classified dossier below it opens, if you dare.          ║
+  ║    3. The footer has a post-credits scene. Hover over it.          ║
+  ║                                                                    ║
+  ║  Found all six stones? Open an issue on this repo titled           ║
+  ║  "I have the stones" and the daily build pins your avatar in the   ║
+  ║  Hall of Heroes. Excelsior.                                        ║
+  ╚════════════════════════════════════════════════════════════════════╝
+-->
+
 <!-- ===== HEADER ===== -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:3C3C3D&height=200&section=header&text=Dhivakar%20Rajaram&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Founder%20@%20Dhiva%20Labs%20%C2%B7%20Open-source%20apps%20for%20Linux,%20Windows%20and%20Android&descAlignY=58&descSize=18" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:3C3C3D&height=200&section=header&text=Dhivakar%20Rajaram&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Founder%20@%20Dhiva%20Labs%20%C2%B7%20Assembling%20open-source%20apps%20for%20Linux,%20Windows%20and%20Android&descAlignY=58&descSize=18" alt="header" />
 
 <div align="center">
-  <img src="./dhivakar.jpeg" width="140" style="border-radius: 50%;" alt="Dhivakar Rajaram" />
+  <img src="./dhivakar.jpeg" width="140" style="border-radius: 50%;" alt="Dhivakar Rajaram" title="Not a Skrull. Probably." />
   <br/>
   <a href="https://dhivakar1010.com/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=3B82F6&center=true&vCenter=true&width=620&lines=Shipping+open-source+apps+for+Linux%2C+Windows+%26+Android;Rust+%C2%B7+Flutter+%C2%B7+C%2B%2B+%C2%B7+Python+%C2%B7+Go;Contributing+fixes+upstream+to+Monero;Applied+Cryptography+%26+Machine+Intelligence;Bridging+whitepapers+and+production" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=3B82F6&center=true&vCenter=true&width=720&lines=The+power+of+code+compiles+you.;Part+engineer%2C+part+Avenger%3A+assembling+open-source+for+Linux%2C+Windows+%26+Android;Rust+is+the+arc+reactor.+Flutter+is+the+suit.;With+great+compute+comes+great+responsibility;Snap.+Half+the+bugs+are+gone.;Whatever+it+takes%3A+ship+it%2C+then+fix+it+upstream;Hint%3A+this+README+has+Easter+eggs.+View+the+source." alt="Typing SVG" />
   </a>
 
   <p>
@@ -21,31 +37,112 @@
   <img src="https://komarev.com/ghpvc/?username=dhivadhiva&style=flat-square&color=0F172A&label=Profile+Views" alt="Profile views" />
   <a href="https://github.com/dhivadhiva?tab=followers"><img src="https://img.shields.io/github/followers/dhivadhiva?style=flat-square&color=1E3A8A&label=Followers" alt="Followers" /></a>
   <a href="https://github.com/Dhiva-Labs"><img src="https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.repos&label=Open-source%20repos&color=3B82F6" alt="Open-source repos" /></a>
+  <img src="https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.suit&label=Suit&color=B91C1C&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIgZmlsbD0iIzdkZDNmYyIvPjwvc3ZnPg==" alt="Suit mark" title="One mark per open-source repository. The suit upgrades itself." />
 </div>
 
 <!-- ===== ABOUT ===== -->
-## 👋 About
+## 🦸 About · the origin story
 
-I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. My background is in **AI / ML** (PG Certification, IIT Guwahati), and my work spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
+I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. No vibranium, no super-soldier serum: a background in **AI / ML** (PG Certification, IIT Guwahati), a lot of Rust, and work that spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-At Dhiva Labs I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem, to Google's **safe-bindings** and **protobuf.dart**, and to Coinbase's wallet SDKs.
+Dhiva Labs is my Stark Tower, minus the budget. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem, to Google's **safe-bindings** and **protobuf.dart**, and to Coinbase's wallet SDKs.
 
-```python
-class Dhivakar:
-    def __init__(self):
-        self.role      = "Founder & Principal Investigator @ Dhiva Labs"
-        self.based_in  = "Chennai, India"
-        self.education = "PG Certification, AI & ML — IIT Guwahati"
-        self.focus     = ["Cross-platform apps", "Cryptography & Blockchain",
-                          "Machine Intelligence", "Embedded Systems", "Full-Stack"]
-        self.shipping  = ["Snap Store", "Launchpad PPA", "Microsoft Store",
-                          "Chrome Web Store", "Firefox Add-ons", "GitHub Releases"]
-        self.upstream  = ["vtnerd/monero-lws", "monero-project/monero",
-                          "seraphis-migration/monero", "google/safe-bindings",
-                          "google/protobuf.dart", "coinbase/coinbase-wallet-sdk",
-                          "base/account-sdk"]
-        self.motto     = "Let's build something remarkable."
+```rust
+//! suit_up.rs · recompiled every morning by the GitHub Actions arc reactor
+
+struct Dhivakar {
+    role:      &'static str,
+    based_in:  &'static str,
+    education: &'static str,
+    focus:     [&'static str; 5],
+    shipping:  [&'static str; 6],
+    upstream:  [&'static str; 7],
+}
+
+impl Avenger for Dhivakar {
+    fn suit_up() -> Self {
+        Self {
+            role:      "Founder & Principal Investigator @ Dhiva Labs",
+            based_in:  "Chennai, India (Earth-616)",
+            education: "PG Certification, AI & ML — IIT Guwahati",
+            focus:     ["Cross-platform apps", "Cryptography & Blockchain",
+                        "Machine Intelligence", "Embedded Systems", "Full-Stack"],
+            shipping:  ["Snap Store", "Launchpad PPA", "Microsoft Store",
+                        "Chrome Web Store", "Firefox Add-ons", "GitHub Releases"],
+            upstream:  ["vtnerd/monero-lws", "monero-project/monero",
+                        "seraphis-migration/monero", "google/safe-bindings",
+                        "google/protobuf.dart", "coinbase/coinbase-wallet-sdk",
+                        "base/account-sdk"],
+        }
+    }
+
+    fn motto(&self) -> &'static str {
+        "The power of code compiles you."
+    }
+
+    fn weakness(&self) -> Option<&'static str> {
+        Some("an unmerged upstream pull request")
+    }
+}
 ```
+
+<!-- Easter egg 1: the six stones. Each one powers a different corner of the lab. -->
+<div align="center">
+  <sub>Six stones, six superpowers. Collect them all.</sub><br/>
+  <a href="#-dhiva-labs" title="Space Stone · one codebase, every operating system"><img src="https://img.shields.io/badge/Space-Cross--platform_apps-1D4ED8?style=for-the-badge&labelColor=0F172A" alt="Space Stone: cross-platform apps" /></a>
+  <a href="#-tech-stack" title="Mind Stone · models that run offline, on your device"><img src="https://img.shields.io/badge/Mind-Machine_Intelligence-CA8A04?style=for-the-badge&labelColor=0F172A" alt="Mind Stone: machine intelligence" /></a>
+  <a href="#-dhiva-labs" title="Reality Stone · firmware, drivers and emulators that touch real hardware"><img src="https://img.shields.io/badge/Reality-Embedded_%26_Hardware-B91C1C?style=for-the-badge&labelColor=0F172A" alt="Reality Stone: embedded and hardware" /></a>
+  <br/>
+  <a href="#-tech-stack" title="Power Stone · Rust, and C++ made memory-safe"><img src="https://img.shields.io/badge/Power-Rust_%26_Memory_Safety-7E22CE?style=for-the-badge&labelColor=0F172A" alt="Power Stone: Rust and memory safety" /></a>
+  <a href="#-by-the-numbers" title="Time Stone · this page rebuilds itself every day at 06:00 IST"><img src="https://img.shields.io/badge/Time-Rebuilt_daily_by_Actions-15803D?style=for-the-badge&labelColor=0F172A" alt="Time Stone: rebuilt daily" /></a>
+  <a href="#-upstream-contributions" title="Soul Stone · open source, and fixes sent back upstream"><img src="https://img.shields.io/badge/Soul-Open_source%2C_upstream_first-C2410C?style=for-the-badge&labelColor=0F172A" alt="Soul Stone: open source, upstream first" /></a>
+</div>
+
+<br/>
+
+<!-- Easter egg 2: the dossier. -->
+<details>
+<summary><b>🕶️ CLASSIFIED · S.H.I.E.L.D. dossier · Level 7 clearance required</b> <sub>(click if you dare)</sub></summary>
+<br/>
+
+| Field | Record |
+| --- | --- |
+| **Codename** | `dhivadhiva` |
+| **Base of operations** | Chennai, India · Earth-616 |
+| **Powers** | Reads whitepapers and ships products. Makes C++ safe with Rust. Compiles for three operating systems before breakfast. |
+| **Weakness** | An unmerged upstream pull request |
+| **Arc reactor** | Rust · Dart / Flutter · C / C++ · Python · Go |
+| **Suit** | Mark ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.repos&label=&color=B91C1C) · one mark per open-source repository, upgraded automatically |
+| **Power level** | ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.rank&label=&color=7E22CE) · ranked daily from ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.contributions&label=&color=334155) contributions |
+| **Known associates** | Monero, Google safe-bindings, protobuf.dart, Coinbase wallet SDKs, Microsoft CMake Tools, Discord Embedded App SDK |
+| **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
+
+<!-- BRIEFING:START -->
+**📡 Daily mission briefing** · <sub>regenerated Nov 9</sub>
+
+> The daily build is the only Avenger that never misses a call.
+
+| | |
+| --- | --- |
+| **Power level** | **Avenger** · 2,131 contributions, 240 pull requests merged |
+| **Suit** | **Mark 49** · 49 open-source repositories, 84 releases shipped |
+| **Latest mission** | [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova), merged Nov 9 |
+| **Latest drop** | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0), Nov 7 |
+| **Currently assembling** | [**chip8**](https://github.com/Dhiva-Labs/chip8), last push Nov 9 |
+<!-- BRIEFING:END -->
+
+</details>
+
+<!-- ===== HALL OF HEROES ===== -->
+<details>
+<summary><b>🏛️ Hall of Heroes</b> <sub>everyone who collected all six stones</sub></summary>
+<br/>
+
+<!-- HEROES:START -->
+<p align="center"><sub>Nobody has collected all six stones yet. Be the first: find them, then open an issue titled <b>"I have the stones"</b>.</sub></p>
+<!-- HEROES:END -->
+
+</details>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/output/github-snake-dark.svg" />
@@ -98,14 +195,14 @@ class Dhivakar:
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Update russh to 0.65 and rustls to 0.23.46](https://github.com/Dhiva-Labs/CloudDrop/pull/25) in [Dhiva-Labs/CloudDrop](https://github.com/Dhiva-Labs/CloudDrop) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Do not fail a finished transfer when the sender leaves before the ack](https://github.com/Dhiva-Labs/CloneStudio/pull/5) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
 - 🟢 **Opened** [Fix build-before-run skipping the build when relaunching within 10 seconds (#5132)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) in [microsoft/vscode-cmake-tools](https://github.com/microsoft/vscode-cmake-tools) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Refuse unsafe paths from the peer and never run its install script](https://github.com/Dhiva-Labs/CloneStudio/pull/4) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Open files on Windows without going through cmd.exe](https://github.com/Dhiva-Labs/rover_explorer/pull/7) in [Dhiva-Labs/rover_explorer](https://github.com/Dhiva-Labs/rover_explorer) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update dio_http2_adapter to 2.9.0](https://github.com/Dhiva-Labs/ApiWorkbench/pull/58) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update tokio and anyhow in the lockfile](https://github.com/Dhiva-Labs/DiskRescue/pull/14) in [Dhiva-Labs/DiskRescue](https://github.com/Dhiva-Labs/DiskRescue) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Update tokio to 1.54.1](https://github.com/Dhiva-Labs/gearwise/pull/4) in [Dhiva-Labs/gearwise](https://github.com/Dhiva-Labs/gearwise) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Update vite, source-map-js and nanoid in the lockfile](https://github.com/Dhiva-Labs/dl-sentinel/pull/4) in [Dhiva-Labs/dl-sentinel](https://github.com/Dhiva-Labs/dl-sentinel) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Update zstd to 0.14.3](https://github.com/Dhiva-Labs/CrossShell/pull/5) in [Dhiva-Labs/CrossShell](https://github.com/Dhiva-Labs/CrossShell) · <sub>Nov 9</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -127,12 +224,12 @@ class Dhivakar:
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/CloneStudio"><img src="./profile/pin-1.svg" alt="CloneStudio" /></a>
-  <a href="https://github.com/Dhiva-Labs/rover_explorer"><img src="./profile/pin-2.svg" alt="rover_explorer" /></a>
-  <a href="https://github.com/Dhiva-Labs/ApiWorkbench"><img src="./profile/pin-3.svg" alt="ApiWorkbench" /></a>
-  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-4.svg" alt="DiskRescue" /></a>
-  <a href="https://github.com/Dhiva-Labs/gearwise"><img src="./profile/pin-5.svg" alt="gearwise" /></a>
-  <a href="https://github.com/Dhiva-Labs/dl-sentinel"><img src="./profile/pin-6.svg" alt="dl-sentinel" /></a>
+  <a href="https://github.com/Dhiva-Labs/chip8"><img src="./profile/pin-1.svg" alt="chip8" /></a>
+  <a href="https://github.com/Dhiva-Labs/gameboy"><img src="./profile/pin-2.svg" alt="gameboy" /></a>
+  <a href="https://github.com/Dhiva-Labs/dl-image-tools"><img src="./profile/pin-3.svg" alt="dl-image-tools" /></a>
+  <a href="https://github.com/Dhiva-Labs/sudoku_solver"><img src="./profile/pin-4.svg" alt="sudoku_solver" /></a>
+  <a href="https://github.com/Dhiva-Labs/NFC_wallet"><img src="./profile/pin-5.svg" alt="NFC_wallet" /></a>
+  <a href="https://github.com/Dhiva-Labs/ClearSMS"><img src="./profile/pin-6.svg" alt="ClearSMS" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
@@ -416,4 +513,4 @@ Dhiva Labs is independent and self-funded. Sponsorships go straight into putting
 </div>
 
 <!-- ===== FOOTER ===== -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3C3C3D,50:1E3A8A,100:0F172A&height=120&section=footer&text=Let's%20build%20something%20remarkable&fontSize=20&fontColor=ffffff&fontAlignY=70" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3C3C3D,50:1E3A8A,100:0F172A&height=120&section=footer&text=The%20power%20of%20code%20compiles%20you&fontSize=20&fontColor=ffffff&fontAlignY=70" alt="footer" title="Post-credits scene: iOS and macOS are next. Dhivakar Rajaram will return." />
