@@ -109,7 +109,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >rover_explorer</text>
+      >gameboy</text>
     </g>
       </g>
     
@@ -122,14 +122,14 @@
     
 
     <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">Windows XP-style file explorer for Linux and Windows &#8212; with</tspan><tspan dy="1.2em" x="25">the search companion dog, and search that is actually...</tspan>
+      <tspan dy="1.2em" x="25">Game Boy (DMG) emulator in C++20/SDL2 &#8212; blargg</tspan><tspan dy="1.2em" x="25">CPU/timing suites green, dmg-acid2 pixel-perfect, 4-channel...</tspan>
     </text>
 
     <g transform="translate(30, 65)">
       <g transform="translate(0, 0)">
     <g data-testid="primary-lang">
-      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#00B4AB" />
-      <text data-testid="lang-name" class="gray" x="15">Dart</text>
+      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#f34b7d" />
+      <text data-testid="lang-name" class="gray" x="15">C++</text>
     </g>
     </g>
     </g>
