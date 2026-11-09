@@ -79,7 +79,7 @@ class Dhivakar:
 <div align="center">
   <sub>Code across 49 Dhiva Labs repositories, by size</sub><br/>
   <img src="https://img.shields.io/badge/Dart-44.5%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-27.6%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/Rust-27.5%25-dea584?style=flat-square" alt="Rust" />
   <img src="https://img.shields.io/badge/C-7.1%25-555555?style=flat-square" alt="C" />
   <img src="https://img.shields.io/badge/TypeScript-4.7%25-3178c6?style=flat-square" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-3.7%25-f1e05a?style=flat-square" alt="JavaScript" />
@@ -98,14 +98,14 @@ class Dhivakar:
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
-- 🟣 **Merged** [Build activity, releases, languages and featured cards daily](https://github.com/dhivadhiva/dhivadhiva/pull/1) in [dhivadhiva/dhivadhiva](https://github.com/dhivadhiva/dhivadhiva) · <sub>Nov 8</sub>
-- 🟢 **Opened** [Refuse unsafe paths from the peer and never run its install script](https://github.com/Dhiva-Labs/CloneStudio/pull/4) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 8</sub>
-- 🟢 **Opened** [Test corpus generators](https://github.com/Dhiva-Labs/kilnfile/pull/5) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
-- 🟢 **Opened** [Kilnfile-worker with the Linux sandbox](https://github.com/Dhiva-Labs/kilnfile/pull/4) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
-- 🟢 **Opened** [Go CLI, worker protocol and runner](https://github.com/Dhiva-Labs/kilnfile/pull/3) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
-- 🟢 **Opened** [M0: prove the build (two bindings in one binary, own Crubit bridge)](https://github.com/Dhiva-Labs/kilnfile/pull/2) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
-- 🟢 **Opened** [Design, roadmap and README](https://github.com/Dhiva-Labs/kilnfile/pull/1) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 8</sub>
-- 🟢 **Opened** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 8</sub>
+- 🟢 **Opened** [Fix build-before-run skipping the build when relaunching within 10 seconds (#5132)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) in [microsoft/vscode-cmake-tools](https://github.com/microsoft/vscode-cmake-tools) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Refuse unsafe paths from the peer and never run its install script](https://github.com/Dhiva-Labs/CloneStudio/pull/4) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Open files on Windows without going through cmd.exe](https://github.com/Dhiva-Labs/rover_explorer/pull/7) in [Dhiva-Labs/rover_explorer](https://github.com/Dhiva-Labs/rover_explorer) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Update dio_http2_adapter to 2.9.0](https://github.com/Dhiva-Labs/ApiWorkbench/pull/58) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Update tokio and anyhow in the lockfile](https://github.com/Dhiva-Labs/DiskRescue/pull/14) in [Dhiva-Labs/DiskRescue](https://github.com/Dhiva-Labs/DiskRescue) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Update tokio to 1.54.1](https://github.com/Dhiva-Labs/gearwise/pull/4) in [Dhiva-Labs/gearwise](https://github.com/Dhiva-Labs/gearwise) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Update vite, source-map-js and nanoid in the lockfile](https://github.com/Dhiva-Labs/dl-sentinel/pull/4) in [Dhiva-Labs/dl-sentinel](https://github.com/Dhiva-Labs/dl-sentinel) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Update zstd to 0.14.3](https://github.com/Dhiva-Labs/CrossShell/pull/5) in [Dhiva-Labs/CrossShell](https://github.com/Dhiva-Labs/CrossShell) · <sub>Nov 9</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -128,11 +128,11 @@ class Dhivakar:
 <!-- FEATURED:START -->
 <div align="center">
   <a href="https://github.com/Dhiva-Labs/CloneStudio"><img src="./profile/pin-1.svg" alt="CloneStudio" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilnfile"><img src="./profile/pin-2.svg" alt="kilnfile" /></a>
-  <a href="https://github.com/Dhiva-Labs/rover_explorer"><img src="./profile/pin-3.svg" alt="rover_explorer" /></a>
+  <a href="https://github.com/Dhiva-Labs/rover_explorer"><img src="./profile/pin-2.svg" alt="rover_explorer" /></a>
+  <a href="https://github.com/Dhiva-Labs/ApiWorkbench"><img src="./profile/pin-3.svg" alt="ApiWorkbench" /></a>
   <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-4.svg" alt="DiskRescue" /></a>
-  <a href="https://github.com/Dhiva-Labs/dl_prism"><img src="./profile/pin-5.svg" alt="dl_prism" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-6.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/gearwise"><img src="./profile/pin-5.svg" alt="gearwise" /></a>
+  <a href="https://github.com/Dhiva-Labs/dl-sentinel"><img src="./profile/pin-6.svg" alt="dl-sentinel" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
@@ -349,10 +349,12 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the projects I build on, from Monero's light-wallet server and wallet to Google's safe-bindings and protobuf.dart. This list is generated from GitHub every day, so new ones show up here on their own.
 
 <!-- UPSTREAM:START -->
-**17 pull requests** to **7 projects**: **8 merged**, **8 open**.
+**19 pull requests** to **9 projects**: **8 merged**, **10 open**.
 
 | Project | Pull request | Status |
 | --- | --- | --- |
+| [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
+| [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
 | [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
 | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | [**vtnerd/monero-lws**](https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix builds with assertions enabled | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/307?style=flat-square&label=%23307)](https://github.com/vtnerd/monero-lws/pull/307) |
