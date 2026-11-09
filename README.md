@@ -15,13 +15,13 @@
 -->
 
 <!-- ===== HEADER ===== -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:3C3C3D&height=200&section=header&text=Dhivakar%20Rajaram&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Founder%20@%20Dhiva%20Labs%20%C2%B7%20Assembling%20open-source%20apps%20for%20Linux,%20Windows%20and%20Android&descAlignY=58&descSize=18" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:450A0A,45:B91C1C,100:F59E0B&height=200&section=header&text=Dhivakar%20Rajaram&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Founder%20@%20Dhiva%20Labs%20%C2%B7%20Assembling%20open-source%20apps%20for%20Linux,%20Windows%20and%20Android&descAlignY=58&descSize=18" alt="header" />
 
 <div align="center">
   <img src="./dhivakar.jpeg" width="140" style="border-radius: 50%;" alt="Dhivakar Rajaram" title="Not a Skrull. Probably." />
   <br/>
   <a href="https://dhivakar1010.com/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=3B82F6&center=true&vCenter=true&width=720&lines=The+power+of+code+compiles+you.;Part+engineer%2C+part+Avenger%3A+assembling+open-source+for+Linux%2C+Windows+%26+Android;Rust+is+the+arc+reactor.+Flutter+is+the+suit.;With+great+compute+comes+great+responsibility;Snap.+Half+the+bugs+are+gone.;Whatever+it+takes%3A+ship+it%2C+then+fix+it+upstream;Hint%3A+this+README+has+Easter+eggs.+View+the+source." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=3B82F6&center=true&vCenter=true&width=720&lines=The+power+of+code+compiles+you.;I+am+Iron+Man.+Well%2C+I+compile+Rust+for+a+living.+Close+enough.;Part+engineer%2C+part+Avenger%3A+assembling+open-source+for+Linux%2C+Windows+%26+Android;Rust+is+the+arc+reactor.+Flutter+is+the+suit.;J.A.R.V.I.S.%2C+run+the+House+Party+Protocol%3A+every+app%2C+every+platform.;With+great+compute+comes+great+responsibility;Snap.+Half+the+bugs+are+gone.;Whatever+it+takes%3A+ship+it%2C+then+fix+it+upstream;Hint%3A+this+README+has+Easter+eggs.+View+the+source." alt="Typing SVG" />
   </a>
 
   <p>
@@ -38,6 +38,10 @@
   <a href="https://github.com/dhivadhiva?tab=followers"><img src="https://img.shields.io/github/followers/dhivadhiva?style=flat-square&color=1E3A8A&label=Followers" alt="Followers" /></a>
   <a href="https://github.com/Dhiva-Labs"><img src="https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.repos&label=Open-source%20repos&color=3B82F6" alt="Open-source repos" /></a>
   <img src="https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.suit&label=Suit&color=B91C1C&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIgZmlsbD0iIzdkZDNmYyIvPjwvc3ZnPg==" alt="Suit mark" title="One mark per open-source repository. The suit upgrades itself." />
+  <br/><br/>
+  <img src="./profile/hud.svg" width="100%" alt="J.A.R.V.I.S. heads-up display: arc reactor online, boot sequence with today's numbers, suit integrity by language" title="J.A.R.V.I.S. reboots every morning at 06:00 IST with fresh numbers" />
+  <br/>
+  <sub>J.A.R.V.I.S. reboots every morning at 06:00 IST with that day's numbers. Mark I was built in a cave. This one is built by GitHub Actions.</sub>
 </div>
 
 <!-- ===== ABOUT ===== -->
@@ -45,7 +49,7 @@
 
 I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. No vibranium, no super-soldier serum: a background in **AI / ML** (PG Certification, IIT Guwahati), a lot of Rust, and work that spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-Dhiva Labs is my Stark Tower, minus the budget. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem, to Google's **safe-bindings** and **protobuf.dart**, and to Coinbase's wallet SDKs.
+Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem, to Google's **safe-bindings** and **protobuf.dart**, and to Coinbase's wallet SDKs.
 
 ```rust
 //! suit_up.rs · recompiled every morning by the GitHub Actions arc reactor
@@ -83,7 +87,14 @@ impl Avenger for Dhivakar {
     fn weakness(&self) -> Option<&'static str> {
         Some("an unmerged upstream pull request")
     }
+
+    /// Every suit, every platform, at once. The daily build calls this.
+    fn house_party_protocol(&self) -> Vec<Deploy> {
+        self.shipping.iter().map(Deploy::everything_to).collect()
+    }
 }
+
+// J.A.R.V.I.S. is the HUD above. F.R.I.D.A.Y. is on backorder.
 ```
 
 <!-- Easter egg 1: the six stones. Each one powers a different corner of the lab. -->
@@ -115,16 +126,18 @@ impl Avenger for Dhivakar {
 | **Suit** | Mark ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.repos&label=&color=B91C1C) · one mark per open-source repository, upgraded automatically |
 | **Power level** | ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.rank&label=&color=7E22CE) · ranked daily from ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.contributions&label=&color=334155) contributions |
 | **Known associates** | Monero, Google safe-bindings, protobuf.dart, Coinbase wallet SDKs, Microsoft CMake Tools, Discord Embedded App SDK |
+| **A.I. assistant** | J.A.R.V.I.S., running on GitHub Actions. Reboots daily at 06:00 IST, never asks for a raise. |
+| **Protocols** | **House Party**: every app on every platform, deployed at once · **Clean Slate**: `clippy -D warnings` before every release · **Veronica**: the daily build that drops a fresh suit each morning |
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
 **📡 Daily mission briefing** · <sub>regenerated Nov 9</sub>
 
-> The daily build is the only Avenger that never misses a call.
+> Whatever it takes: ship it, then fix it upstream.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,132 contributions, 221 pull requests merged |
+| **Power level** | **Avenger** · 2,132 contributions, 240 pull requests merged |
 | **Suit** | **Mark 49** · 49 open-source repositories, 84 releases shipped |
 | **Latest mission** | [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova), merged Nov 9 |
 | **Latest drop** | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0), Nov 7 |
@@ -513,4 +526,4 @@ Dhiva Labs is independent and self-funded. Sponsorships go straight into putting
 </div>
 
 <!-- ===== FOOTER ===== -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3C3C3D,50:1E3A8A,100:0F172A&height=120&section=footer&text=The%20power%20of%20code%20compiles%20you&fontSize=20&fontColor=ffffff&fontAlignY=70" alt="footer" title="Post-credits scene: iOS and macOS are next. Dhivakar Rajaram will return." />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,55:B91C1C,100:450A0A&height=120&section=footer&text=The%20power%20of%20code%20compiles%20you&fontSize=20&fontColor=ffffff&fontAlignY=70" alt="footer" title="Post-credits scene: iOS and macOS are next. Dhivakar Rajaram will return." />

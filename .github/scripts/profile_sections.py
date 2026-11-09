@@ -32,6 +32,10 @@ README.md blocks are delimited by marker comments and rewritten in place:
       titled "I have the stones" (the reward for finding the Easter eggs).
 
 profile/numbers.json holds the counters behind the shields.io dynamic badges.
+profile/hud.svg is the animated J.A.R.V.I.S. heads-up display: an arc reactor,
+a looping boot sequence that reads the day's numbers, and suit-integrity bars
+for the top languages. Pure SVG with CSS animations, so GitHub renders it in
+an <img> tag with no scripts.
 
 The whole run is a dozen small API calls: one GraphQL query covers every ORG
 repository (stars, releases, languages), so nothing is fetched per repo and
@@ -58,6 +62,7 @@ CHROME_IDS = {
 ROOT = Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
 NUMBERS = ROOT / "profile" / "numbers.json"
+HUD = ROOT / "profile" / "hud.svg"
 SHIELD = "https://img.shields.io"
 
 # ORG repositories that are not products and are never featured.
@@ -96,6 +101,11 @@ HINTS = [
     "Multiverse rule: one codebase, every operating system.",
     "A merged upstream PR is the only infinity gauntlet worth wearing.",
     "Found all six stones? Open an issue titled \"I have the stones\".",
+    "House Party Protocol: every app, on every platform, at once.",
+    "J.A.R.V.I.S. runs on GitHub Actions now. He is fine with it.",
+    "The suit is nanotech. It is also 44% Dart.",
+    "Mark I was built in a cave. Mark 49 was built in Chennai.",
+    "Repulsors charged. Lints at zero. Deploying.",
 ]
 
 
@@ -160,7 +170,8 @@ def org_repos():
         after = page["pageInfo"]["endCursor"]
 
 
-def langs_block(repos):
+def language_shares(repos, limit=LANGUAGES):
+    """[(name, percent, hex color without '#')] for the biggest languages."""
     size, color = {}, {}
     for r in repos:
         for e in r["languages"]["edges"]:
@@ -168,12 +179,16 @@ def langs_block(repos):
             size[n] = size.get(n, 0) + e["size"]
             color[n] = (e["node"]["color"] or "#334155").lstrip("#")
     total = sum(size.values()) or 1
-    top = sorted(size, key=size.get, reverse=True)[:LANGUAGES]
+    top = sorted(size, key=size.get, reverse=True)[:limit]
+    return [(n, 100 * size[n] / total, color[n]) for n in top]
+
+
+def langs_block(repos):
     badges = []
-    for n in top:
+    for n, share, color in language_shares(repos):
         label = urllib.parse.quote(n.replace("-", "--").replace("_", "__"), safe="")
-        pct = f"{100 * size[n] / total:.1f}%25"
-        badges.append(f'  <img src="{SHIELD}/badge/{label}-{pct}-{color[n]}?style=flat-square" alt="{n}" />')
+        pct = f"{share:.1f}%25"
+        badges.append(f'  <img src="{SHIELD}/badge/{label}-{pct}-{color}?style=flat-square" alt="{n}" />')
     return "\n".join(
         ['<div align="center">',
          f"  <sub>Code across {len(repos)} Dhiva Labs repositories, by size</sub><br/>"]
@@ -451,6 +466,126 @@ def heroes_block(found):
     return "\n".join(lines)
 
 
+def xml(text):
+    return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                .replace('"', "&quot;"))
+
+
+def hud_svg(stats, recent, repos):
+    """The animated J.A.R.V.I.S. heads-up display, written to profile/hud.svg."""
+    W, H = 880, 330
+    now = datetime.now(timezone.utc)
+    merged_pct = round(100 * stats["merged"] / max(stats["prs"], 1))
+    mission = clean_title(recent[0]["title"]) if recent else "standing by"
+    if len(mission) > 44:
+        mission = mission[:43].rstrip() + "…"
+    lines = [
+        f"Good morning, sir. Loading suit {stats['suit']}…",
+        f"Arc reactor: {stats['contributions']:,} contributions · {stats['commits']:,} commits",
+        f"Armory: {stats['repos']} open-source repositories · {stats['releases']} releases shipped",
+        f"Pull requests merged: {stats['merged']} of {stats['prs']} ({merged_pct}%)",
+        f"Latest mission: {mission}",
+        f"Threat scan: 0 unsafe blocks. Clearance: {stats['rank'].upper()}",
+        "All systems nominal.",
+    ]
+    langs = language_shares(repos, 5)
+
+    # One 18 s loop: the boot lines appear one by one and hold, the bars grow,
+    # then everything resets for the next pass.
+    loop = 18.0
+    css = [
+        "text{font-family:'Fira Code','JetBrains Mono',ui-monospace,Consolas,monospace}",
+        ".k{fill:#7DD3FC;letter-spacing:.18em;font-size:10px}",
+        ".l{fill:#E2E8F0;font-size:13px;opacity:0;animation:boot %.0fs linear infinite}" % loop,
+        ".dim{fill:#64748B;font-size:11px}",
+        ".gold{fill:#F59E0B}.green{fill:#4ADE80}",
+        ".ring{transform-origin:150px 150px;transform-box:view-box}",
+        ".spin{animation:spin 14s linear infinite}",
+        ".spinr{animation:spin 9s linear infinite reverse}",
+        ".core{transform-origin:150px 150px;transform-box:view-box;animation:pulse 2.4s ease-in-out infinite}",
+        ".glow{transform-origin:150px 150px;transform-box:view-box;animation:glow 2.4s ease-in-out infinite}",
+        ".bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow %.0fs ease-out infinite}" % loop,
+        ".cur{animation:blink 1s steps(2,start) infinite}",
+        ".scan{animation:scan 6s linear infinite}",
+        "@keyframes spin{to{transform:rotate(360deg)}}",
+        "@keyframes pulse{0%,100%{transform:scale(.94)}50%{transform:scale(1.04)}}",
+        "@keyframes glow{0%,100%{opacity:.35}50%{opacity:.8}}",
+        "@keyframes blink{to{visibility:hidden}}",
+        "@keyframes scan{from{transform:translateY(-10px)}to{transform:translateY(%dpx)}}" % H,
+        "@keyframes boot{0%%{opacity:0}var(--in)%%{opacity:0}var(--on)%%{opacity:1}93%%{opacity:1}97%%{opacity:0}100%%{opacity:0}}",
+        "@keyframes grow{0%,10%{transform:scaleX(0)}30%{transform:scaleX(1)}93%{transform:scaleX(1)}97%,100%{transform:scaleX(0)}}",
+    ]
+    # CSS variables do not work inside @keyframes percentages, so emit one rule per line.
+    css = [c for c in css if "var(--in)" not in c]
+    for i in range(len(lines)):
+        start = 3 + i * 8          # percent of the loop at which line i starts fading in
+        css.append("@keyframes boot%d{0%%,%d%%{opacity:0}%d%%{opacity:1}93%%{opacity:1}97%%,100%%{opacity:0}}"
+                   % (i, start, start + 3))
+        css.append(".l%d{animation-name:boot%d}" % (i, i))
+
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+        f'role="img" aria-label="J.A.R.V.I.S. heads-up display">',
+        "<style>" + "".join(css) + "</style>",
+        "<defs>",
+        '<radialGradient id="core"><stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#7DD3FC"/>'
+        '<stop offset="1" stop-color="#0EA5E9" stop-opacity=".2"/></radialGradient>',
+        '<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/>'
+        '<stop offset="1" stop-color="#111827"/></linearGradient>',
+        '<linearGradient id="frame" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B91C1C"/>'
+        '<stop offset=".5" stop-color="#F59E0B"/><stop offset="1" stop-color="#B91C1C"/></linearGradient>',
+        '<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>',
+        '<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">'
+        '<path d="M24 0H0V24" fill="none" stroke="#1E293B" stroke-width=".6"/></pattern>',
+        '<clipPath id="clip"><rect width="%d" height="%d" rx="14"/></clipPath>' % (W, H),
+        "</defs>",
+        f'<rect width="{W}" height="{H}" rx="14" fill="url(#bg)"/>',
+        f'<rect width="{W}" height="{H}" rx="14" fill="url(#grid)" opacity=".7"/>',
+        f'<rect x=".75" y=".75" width="{W-1.5}" height="{H-1.5}" rx="13.5" fill="none" stroke="url(#frame)" stroke-width="1.5"/>',
+        # scan line
+        f'<g clip-path="url(#clip)"><rect class="scan" width="{W}" height="3" fill="#38BDF8" opacity=".12"/></g>',
+        # arc reactor
+        f'<g transform="translate(0 15)">',
+        '<circle class="glow" cx="150" cy="150" r="70" fill="#38BDF8" filter="url(#blur)"/>',
+        '<circle cx="150" cy="150" r="104" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity=".3"/>',
+        '<circle class="ring spin" cx="150" cy="150" r="90" fill="none" stroke="#7DD3FC" stroke-width="11" '
+        'stroke-dasharray="24 11" opacity=".85"/>',
+        '<circle class="ring spinr" cx="150" cy="150" r="70" fill="none" stroke="#BAE6FD" stroke-width="3" '
+        'stroke-dasharray="5 7" opacity=".9"/>',
+        '<circle class="core" cx="150" cy="150" r="46" fill="url(#core)"/>',
+        '<polygon class="core" points="150,116 182,170 118,170" fill="none" stroke="#F0F9FF" stroke-width="3" '
+        'stroke-linejoin="round" opacity=".95"/>',
+        '<text x="150" y="282" text-anchor="middle" class="k">ARC REACTOR</text>',
+        '<text x="150" y="300" text-anchor="middle" class="k green" style="font-size:11px">● ONLINE</text>',
+        f'<text x="150" y="40" text-anchor="middle" class="k gold">{xml(stats["suit"].upper())}</text>',
+        "</g>",
+        # divider
+        '<line x1="312" y1="28" x2="312" y2="302" stroke="#1E3A8A" stroke-width="1"/>',
+        # boot sequence
+        '<text x="336" y="42" class="k">J.A.R.V.I.S.</text>',
+        f'<text x="{W-28}" y="42" text-anchor="end" class="dim">boot sequence · {now:%b} {now.day}</text>',
+    ]
+    y = 70
+    for i, line in enumerate(lines):
+        cur = ' <tspan class="cur">▌</tspan>' if i == len(lines) - 1 else ""
+        out.append(f'<text x="336" y="{y}" class="l l{i}"><tspan class="gold">›</tspan> {xml(line)}{cur}</text>')
+        y += 21
+    # suit integrity bars
+    y += 4
+    out.append(f'<text x="336" y="{y}" class="k">SUIT INTEGRITY · CODE BY LANGUAGE</text>')
+    y += 14
+    bar_x, bar_w = 430, W - 430 - 28
+    for i, (name, share, color) in enumerate(langs):
+        out.append(f'<text x="336" y="{y+10}" class="dim" style="fill:#CBD5E1">{xml(name)}</text>')
+        out.append(f'<rect x="{bar_x}" y="{y}" width="{bar_w}" height="12" rx="6" fill="#1E293B"/>')
+        out.append(f'<rect class="bar" x="{bar_x}" y="{y}" width="{bar_w * share / 100:.1f}" height="12" rx="6" '
+                   f'fill="#{color}" style="animation-delay:{0.15*i:.2f}s"/>')
+        out.append(f'<text x="{W-28}" y="{y+10}" text-anchor="end" class="dim">{share:.1f}%</text>')
+        y += 17
+    out.append("</svg>")
+    return "\n".join(out)
+
+
 def replace_block(text, tag, body):
     start, end = f"<!-- {tag}:START -->", f"<!-- {tag}:END -->"
     pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
@@ -481,6 +616,7 @@ def main():
     found = heroes()
     text = replace_block(text, "HEROES", heroes_block(found))
     NUMBERS.write_text(json.dumps(stats, indent=2) + "\n", encoding="utf-8")
+    HUD.write_text(hud_svg(stats, recent, repos), encoding="utf-8")
     README.write_text(text, encoding="utf-8")
 
     # Tell the workflow which repositories to render pin cards for.
