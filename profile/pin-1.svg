@@ -109,7 +109,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >chip8</text>
+      >DoseDrop</text>
     </g>
       </g>
     
@@ -122,14 +122,14 @@
     
 
     <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">CHIP-8 interpreter in C++20/SDL2, COSMAC VIP quirks, full</tspan><tspan dy="1.2em" x="25">Timendus test suite green</tspan>
+      <tspan dy="1.2em" x="25">Medication &#38; water reminders that nag until you confirm &#8212;</tspan><tspan dy="1.2em" x="25">Flutter app for Android and Linux desktop</tspan>
     </text>
 
     <g transform="translate(30, 65)">
       <g transform="translate(0, 0)">
     <g data-testid="primary-lang">
-      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#f34b7d" />
-      <text data-testid="lang-name" class="gray" x="15">C++</text>
+      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#00B4AB" />
+      <text data-testid="lang-name" class="gray" x="15">Dart</text>
     </g>
     </g>
     </g>

@@ -109,7 +109,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >ClearSMS</text>
+      >FlintBrowser</text>
     </g>
       </g>
     
@@ -122,14 +122,14 @@
     
 
     <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">Clean, ad-free SMS app for Android with an on-device smart</tspan><tspan dy="1.2em" x="25">inbox &#8212; Personal, Transactions, OTP and Promotions tabs,...</tspan>
+      <tspan dy="1.2em" x="25">Fast, private, batteries-included web browser &#8212; built-in</tspan><tspan dy="1.2em" x="25">adblock, secure DNS, turbo downloads, reader mode. Zero...</tspan>
     </text>
 
     <g transform="translate(30, 65)">
       <g transform="translate(0, 0)">
     <g data-testid="primary-lang">
-      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#00B4AB" />
-      <text data-testid="lang-name" class="gray" x="15">Dart</text>
+      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#f1e05a" />
+      <text data-testid="lang-name" class="gray" x="15">JavaScript</text>
     </g>
     </g>
     </g>
