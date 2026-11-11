@@ -138,11 +138,11 @@ impl Avenger for Dhivakar {
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,187 contributions, 244 pull requests merged |
+| **Power level** | **Avenger** · 2,190 contributions, 224 pull requests merged |
 | **Suit** | **Mark 49** · 49 open-source repositories, 85 releases shipped |
 | **Latest mission** | [Fix out-of-bounds write, use-after-free and memory blowup](https://github.com/google/safe-bindings/pull/265) in [google/safe-bindings](https://github.com/google/safe-bindings), opened Nov 11 |
 | **Latest drop** | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0), Nov 10 |
-| **Currently assembling** | [**CrossShell**](https://github.com/Dhiva-Labs/CrossShell), last push Nov 11 |
+| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 11 |
 <!-- BRIEFING:END -->
 
 </details>

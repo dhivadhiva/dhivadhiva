@@ -27,9 +27,9 @@
 <text x="336" y="42" class="k">J.A.R.V.I.S.</text>
 <text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 11</text>
 <text x="336" y="70" class="l l0"><tspan class="gold">›</tspan> Good morning, sir. Loading suit Mark 49…</text>
-<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,187 contributions · 1,806 commits</text>
+<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,190 contributions · 1,809 commits</text>
 <text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 49 open-source repositories · 85 releases shipped</text>
-<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 244 of 291 (84%)</text>
+<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 224 of 270 (83%)</text>
 <text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Fix out-of-bounds write, use-after-free and…</text>
 <text x="336" y="175" class="l l5"><tspan class="gold">›</tspan> Threat scan: 0 unsafe blocks. Clearance: AVENGER</text>
 <text x="336" y="196" class="l l6"><tspan class="gold">›</tspan> All systems nominal. <tspan class="cur">▌</tspan></text>
