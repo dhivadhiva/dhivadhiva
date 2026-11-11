@@ -131,17 +131,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 10</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 11</sub>
 
-> With great compute comes great responsibility.
+> Multiverse rule: one codebase, every operating system.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,156 contributions, 221 pull requests merged |
+| **Power level** | **Avenger** · 2,170 contributions, 223 pull requests merged |
 | **Suit** | **Mark 49** · 49 open-source repositories, 84 releases shipped |
-| **Latest mission** | [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune), opened Nov 9 |
+| **Latest mission** | [Show 50+ projects in place of the released count](https://github.com/dhivadhiva/dhivakar1010.com/pull/4) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com), merged Nov 10 |
 | **Latest drop** | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0), Nov 7 |
-| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 9 |
+| **Currently assembling** | [**HomeDeck**](https://github.com/Dhiva-Labs/HomeDeck), last push Nov 10 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -208,14 +208,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [Show 50+ projects in place of the released count](https://github.com/dhivadhiva/dhivakar1010.com/pull/4) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 10</sub>
+- 🟢 **Opened** [Constrain the lifetime of results that borrow `text`](https://github.com/google/safe-bindings/pull/260) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 10</sub>
+- 🟣 **Merged** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 10</sub>
 - 🟢 **Opened** [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update russh to 0.65 and rustls to 0.23.46](https://github.com/Dhiva-Labs/CloudDrop/pull/25) in [Dhiva-Labs/CloudDrop](https://github.com/Dhiva-Labs/CloudDrop) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Do not fail a finished transfer when the sender leaves before the ack](https://github.com/Dhiva-Labs/CloneStudio/pull/5) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
 - 🟢 **Opened** [Fix build-before-run skipping the build when relaunching within 10 seconds (#5132)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) in [microsoft/vscode-cmake-tools](https://github.com/microsoft/vscode-cmake-tools) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Refuse unsafe paths from the peer and never run its install script](https://github.com/Dhiva-Labs/CloneStudio/pull/4) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Open files on Windows without going through cmd.exe](https://github.com/Dhiva-Labs/rover_explorer/pull/7) in [Dhiva-Labs/rover_explorer](https://github.com/Dhiva-Labs/rover_explorer) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Update dio_http2_adapter to 2.9.0](https://github.com/Dhiva-Labs/ApiWorkbench/pull/58) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 9</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -237,12 +237,12 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/DoseDrop"><img src="./profile/pin-1.svg" alt="DoseDrop" /></a>
-  <a href="https://github.com/Dhiva-Labs/SpaceSweep"><img src="./profile/pin-2.svg" alt="SpaceSweep" /></a>
-  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-3.svg" alt="SecureShellGo" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-4.svg" alt="kilonova" /></a>
-  <a href="https://github.com/Dhiva-Labs/Luna-Media-Player"><img src="./profile/pin-5.svg" alt="Luna-Media-Player" /></a>
-  <a href="https://github.com/Dhiva-Labs/FlintBrowser"><img src="./profile/pin-6.svg" alt="FlintBrowser" /></a>
+  <a href="https://github.com/Dhiva-Labs/HomeDeck"><img src="./profile/pin-1.svg" alt="HomeDeck" /></a>
+  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-2.svg" alt="NearShare" /></a>
+  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-3.svg" alt="DiskRescue" /></a>
+  <a href="https://github.com/Dhiva-Labs/DoseDrop"><img src="./profile/pin-4.svg" alt="DoseDrop" /></a>
+  <a href="https://github.com/Dhiva-Labs/SpaceSweep"><img src="./profile/pin-5.svg" alt="SpaceSweep" /></a>
+  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-6.svg" alt="SecureShellGo" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
@@ -459,14 +459,15 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the projects I build on, from Monero's light-wallet server and wallet to Google's safe-bindings and protobuf.dart. This list is generated from GitHub every day, so new ones show up here on their own.
 
 <!-- UPSTREAM:START -->
-**20 pull requests** to **10 projects**: **8 merged**, **11 open**.
+**21 pull requests** to **10 projects**: **9 merged**, **11 open**.
 
 | Project | Pull request | Status |
 | --- | --- | --- |
+| [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
+|  | Constrain the lifetime of results that borrow `text` | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/260?style=flat-square&label=%23260)](https://github.com/google/safe-bindings/pull/260) |
 | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 | [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
 | [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
-| [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
 | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | [**vtnerd/monero-lws**](https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix builds with assertions enabled | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/307?style=flat-square&label=%23307)](https://github.com/vtnerd/monero-lws/pull/307) |
 |  | Start only one websocket close per /feed connection | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/308?style=flat-square&label=%23308)](https://github.com/vtnerd/monero-lws/pull/308) |
