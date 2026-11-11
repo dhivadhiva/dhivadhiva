@@ -49,7 +49,7 @@
 
 I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. No vibranium, no super-soldier serum: a background in **AI / ML** (PG Certification, IIT Guwahati), a lot of Rust, and work that spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the **Monero** ecosystem, to Google's **safe-bindings** and **protobuf.dart**, and to Coinbase's wallet SDKs.
+Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the organizations whose code I build on: the **Monero** ecosystem (8 merged in monero-lws), **Google** (2 merged in safe-bindings, plus protobuf.dart), **Microsoft** (CMake Tools for VS Code), **Discord** (Embedded App SDK) and **Coinbase** and **Base** (wallet SDKs). The newest release is [**Circuit Lab**](https://circuitlab.dhivalabs.com), a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser.
 
 ```rust
 //! suit_up.rs · recompiled every morning by the GitHub Actions arc reactor
@@ -60,7 +60,7 @@ struct Dhivakar {
     education: &'static str,
     focus:     [&'static str; 5],
     shipping:  [&'static str; 6],
-    upstream:  [&'static str; 7],
+    upstream:  [&'static str; 10],
 }
 
 impl Avenger for Dhivakar {
@@ -75,8 +75,9 @@ impl Avenger for Dhivakar {
                         "Chrome Web Store", "Firefox Add-ons", "GitHub Releases"],
             upstream:  ["vtnerd/monero-lws", "monero-project/monero",
                         "seraphis-migration/monero", "google/safe-bindings",
-                        "google/protobuf.dart", "coinbase/coinbase-wallet-sdk",
-                        "base/account-sdk"],
+                        "google/protobuf.dart", "microsoft/vscode-cmake-tools",
+                        "discord/embedded-app-sdk", "coinbase/coinbase-wallet-sdk",
+                        "base/account-sdk", "unstablebuild/rune"],
         }
     }
 
@@ -125,7 +126,7 @@ impl Avenger for Dhivakar {
 | **Arc reactor** | Rust · Dart / Flutter · C / C++ · Python · Go |
 | **Suit** | Mark ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.repos&label=&color=B91C1C) · one mark per open-source repository, upgraded automatically |
 | **Power level** | ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.rank&label=&color=7E22CE) · ranked daily from ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.contributions&label=&color=334155) contributions |
-| **Known associates** | Monero, Google safe-bindings, protobuf.dart, Coinbase wallet SDKs, Microsoft CMake Tools, Discord Embedded App SDK |
+| **Known associates** | Monero (monero-lws, wallet, FCMP++), Google (safe-bindings, protobuf.dart), Microsoft (CMake Tools), Discord (Embedded App SDK), Coinbase and Base (wallet SDKs), Rune |
 | **A.I. assistant** | J.A.R.V.I.S., running on GitHub Actions. Reboots daily at 06:00 IST, never asks for a raise. |
 | **Protocols** | **House Party**: every app on every platform, deployed at once · **Clean Slate**: `clippy -D warnings` before every release · **Veronica**: the daily build that drops a fresh suit each morning |
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
@@ -137,11 +138,11 @@ impl Avenger for Dhivakar {
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,170 contributions, 223 pull requests merged |
-| **Suit** | **Mark 49** · 49 open-source repositories, 84 releases shipped |
-| **Latest mission** | [Show 50+ projects in place of the released count](https://github.com/dhivadhiva/dhivakar1010.com/pull/4) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com), merged Nov 10 |
-| **Latest drop** | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0), Nov 7 |
-| **Currently assembling** | [**HomeDeck**](https://github.com/Dhiva-Labs/HomeDeck), last push Nov 10 |
+| **Power level** | **Avenger** · 2,187 contributions, 244 pull requests merged |
+| **Suit** | **Mark 49** · 49 open-source repositories, 85 releases shipped |
+| **Latest mission** | [Fix out-of-bounds write, use-after-free and memory blowup](https://github.com/google/safe-bindings/pull/265) in [google/safe-bindings](https://github.com/google/safe-bindings), opened Nov 11 |
+| **Latest drop** | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0), Nov 10 |
+| **Currently assembling** | [**CrossShell**](https://github.com/Dhiva-Labs/CrossShell), last push Nov 11 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -188,7 +189,7 @@ impl Avenger for Dhivakar {
 <!-- LANGS:START -->
 <div align="center">
   <sub>Code across 49 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-44.5%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Dart-44.6%25-00B4AB?style=flat-square" alt="Dart" />
   <img src="https://img.shields.io/badge/Rust-27.5%25-dea584?style=flat-square" alt="Rust" />
   <img src="https://img.shields.io/badge/C-7.1%25-555555?style=flat-square" alt="C" />
   <img src="https://img.shields.io/badge/TypeScript-4.7%25-3178c6?style=flat-square" alt="TypeScript" />
@@ -208,14 +209,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟢 **Opened** [Fix out-of-bounds write, use-after-free and memory blowup](https://github.com/google/safe-bindings/pull/265) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 11</sub>
+- 🟣 **Merged** [Constrain the lifetime of results that borrow `text`](https://github.com/google/safe-bindings/pull/260) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 11</sub>
 - 🟣 **Merged** [Show 50+ projects in place of the released count](https://github.com/dhivadhiva/dhivakar1010.com/pull/4) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 10</sub>
-- 🟢 **Opened** [Constrain the lifetime of results that borrow `text`](https://github.com/google/safe-bindings/pull/260) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 10</sub>
 - 🟣 **Merged** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 10</sub>
 - 🟢 **Opened** [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update russh to 0.65 and rustls to 0.23.46](https://github.com/Dhiva-Labs/CloudDrop/pull/25) in [Dhiva-Labs/CloudDrop](https://github.com/Dhiva-Labs/CloudDrop) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Do not fail a finished transfer when the sender leaves before the ack](https://github.com/Dhiva-Labs/CloneStudio/pull/5) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
-- 🟢 **Opened** [Fix build-before-run skipping the build when relaunching within 10 seconds (#5132)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) in [microsoft/vscode-cmake-tools](https://github.com/microsoft/vscode-cmake-tools) · <sub>Nov 9</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -224,12 +225,12 @@ impl Avenger for Dhivakar {
 <!-- RELEASES:START -->
 | Project | Release | Published |
 | --- | --- | --- |
+| [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) | [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0) | Nov 10 |
 | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) | [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0) | Nov 7 |
 | [**dl-image-tools**](https://github.com/Dhiva-Labs/dl-image-tools) | [`v1.0.1`](https://github.com/Dhiva-Labs/dl-image-tools/releases/tag/v1.0.1) | Nov 4 |
 | [**markdrop**](https://github.com/Dhiva-Labs/markdrop) | [`v0.1.1`](https://github.com/Dhiva-Labs/markdrop/releases/tag/v0.1.1) | Nov 4 |
 | [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.1`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.1) | Nov 4 |
 | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.5.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.5.1) | Nov 3 |
-| [**DroidDeck**](https://github.com/Dhiva-Labs/DroidDeck) | [`v1.0.4`](https://github.com/Dhiva-Labs/DroidDeck/releases/tag/v1.0.4) | Nov 2 |
 <!-- RELEASES:END -->
 
 <!-- ===== FEATURED ===== -->
@@ -237,12 +238,12 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/HomeDeck"><img src="./profile/pin-1.svg" alt="HomeDeck" /></a>
-  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-2.svg" alt="NearShare" /></a>
-  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-3.svg" alt="DiskRescue" /></a>
-  <a href="https://github.com/Dhiva-Labs/DoseDrop"><img src="./profile/pin-4.svg" alt="DoseDrop" /></a>
-  <a href="https://github.com/Dhiva-Labs/SpaceSweep"><img src="./profile/pin-5.svg" alt="SpaceSweep" /></a>
-  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-6.svg" alt="SecureShellGo" /></a>
+  <a href="https://github.com/Dhiva-Labs/CrossShell"><img src="./profile/pin-1.svg" alt="CrossShell" /></a>
+  <a href="https://github.com/Dhiva-Labs/HomeDeck"><img src="./profile/pin-2.svg" alt="HomeDeck" /></a>
+  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-3.svg" alt="NearShare" /></a>
+  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-4.svg" alt="DiskRescue" /></a>
+  <a href="https://github.com/Dhiva-Labs/DoseDrop"><img src="./profile/pin-5.svg" alt="DoseDrop" /></a>
+  <a href="https://github.com/Dhiva-Labs/SpaceSweep"><img src="./profile/pin-6.svg" alt="SpaceSweep" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
@@ -422,6 +423,7 @@ sudo snap install apiworkbench
 | Project | What it does | Runs on | Latest |
 | --- | --- | --- | --- |
 | [**Dhiva Tools**](https://tools.dhivalabs.com/) | Free image, PDF, developer and SEO tools; files never leave your browser | Browser | ![](https://img.shields.io/website?url=https%3A%2F%2Ftools.dhivalabs.com&style=flat-square&label=&up_message=live&up_color=1E3A8A) |
+| [**Circuit Lab**](https://circuitlab.dhivalabs.com) <sub>[source](https://github.com/dhivadhiva/circuit_lab)</sub> | Learn electronics on a simulated bench: 88 Arduino, ESP32 and Pico projects, a circuit designer and a code editor | Browser · Linux · Windows | ![](https://img.shields.io/github/v/release/dhivadhiva/circuit_lab?style=flat-square&label=&color=1E3A8A) |
 | [**DL Image Tools**](https://github.com/Dhiva-Labs/dl-image-tools) | Compress, resize, convert and crop images in the browser with no uploads | Chrome · Firefox | ![](https://img.shields.io/github/v/release/Dhiva-Labs/dl-image-tools?style=flat-square&label=&color=1E3A8A) |
 | [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | Hides secrets and personal data before you paste into AI chats, fully on-device | Chrome · Firefox | ![](https://img.shields.io/github/v/release/Dhiva-Labs/Cloakpaste?style=flat-square&label=&color=1E3A8A) |
 | [**Game Boy**](https://github.com/Dhiva-Labs/gameboy) | DMG emulator: blargg suites green, dmg-acid2 pixel-perfect | C++20 / SDL2 | ![](https://img.shields.io/github/last-commit/Dhiva-Labs/gameboy?style=flat-square&label=updated&color=334155) |
@@ -432,6 +434,8 @@ sudo snap install apiworkbench
 <!-- EXTENSIONS:START -->
 | Extension | What it does | Firefox | Chrome |
 | --- | --- | --- | --- |
+| [**DL Prism Companion**](https://addons.mozilla.org/en-US/firefox/addon/dl-prism-companion/) | Chat with your local DL Prism AI gateway, pick models, and see routing decisions right from the browser toolbar | [![](https://img.shields.io/amo/v/dl-prism-companion?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/dl-prism-companion/) [![](https://img.shields.io/amo/users/dl-prism-companion?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/dl-prism-companion/) | — |
+| [**Kilonova**](https://addons.mozilla.org/en-US/firefox/addon/kilonova/) | A Monero wallet | [![](https://img.shields.io/amo/v/kilonova?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/kilonova/) [![](https://img.shields.io/amo/users/kilonova?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/kilonova/) | — |
 | [**Cloakpaste**](https://addons.mozilla.org/en-US/firefox/addon/cloakpaste/) | Hides emails, keys, card numbers and names before you paste into AI chats | [![](https://img.shields.io/amo/v/cloakpaste?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/cloakpaste/) [![](https://img.shields.io/amo/users/cloakpaste?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/cloakpaste/) | — |
 | [**DL Image Tools**](https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/) | Compress, resize, convert, crop and edit images locally in your browser | [![](https://img.shields.io/amo/v/dl-image-tools?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/) [![](https://img.shields.io/amo/users/dl-image-tools?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/) | [![](https://img.shields.io/chrome-web-store/v/ighlhdddbockbcooddmeajncpgihlcob?style=flat-square&label=&color=4285F4)](https://chromewebstore.google.com/detail/ighlhdddbockbcooddmeajncpgihlcob) |
 | [**Markdrop Clipper**](https://addons.mozilla.org/en-US/firefox/addon/markdrop-clipper/) | Convert web pages, selections, images and YouTube videos to clean Markdown | [![](https://img.shields.io/amo/v/markdrop-clipper?style=flat-square&label=&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/markdrop-clipper/) [![](https://img.shields.io/amo/users/markdrop-clipper?style=flat-square&label=users&color=334155)](https://addons.mozilla.org/en-US/firefox/addon/markdrop-clipper/) | — |
@@ -456,34 +460,44 @@ sudo snap install apiworkbench
 <!-- ===== UPSTREAM ===== -->
 ## 🌍 Upstream Contributions
 
-Pull requests sent upstream to the projects I build on, from Monero's light-wallet server and wallet to Google's safe-bindings and protobuf.dart. This list is generated from GitHub every day, so new ones show up here on their own.
+Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**21 pull requests** to **10 projects**: **9 merged**, **11 open**.
+**10 merged** and **11 in review**, across **10 projects** at **7 organizations**: Monero, Google, Microsoft, Discord, Coinbase, Base and Rune.
 
-| Project | Pull request | Status |
-| --- | --- | --- |
-| [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
-|  | Constrain the lifetime of results that borrow `text` | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/260?style=flat-square&label=%23260)](https://github.com/google/safe-bindings/pull/260) |
-| [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
-| [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
-| [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
-| [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
-| [**vtnerd/monero-lws**](https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix builds with assertions enabled | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/307?style=flat-square&label=%23307)](https://github.com/vtnerd/monero-lws/pull/307) |
-|  | Start only one websocket close per /feed connection | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/308?style=flat-square&label=%23308)](https://github.com/vtnerd/monero-lws/pull/308) |
-|  | Decrypt encrypted payment ids per account | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/309?style=flat-square&label=%23309)](https://github.com/vtnerd/monero-lws/pull/309) |
-|  | Pick up new accounts while waiting at the top of the chain | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/310?style=flat-square&label=%23310)](https://github.com/vtnerd/monero-lws/pull/310) |
-|  | Fix remaining timeout in do_wait() after EINTR | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/311?style=flat-square&label=%23311)](https://github.com/vtnerd/monero-lws/pull/311) |
-|  | Keep height index in step with scan_height on rescan and import | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/312?style=flat-square&label=%23312)](https://github.com/vtnerd/monero-lws/pull/312) |
-|  | Add webhook_add and webhook_list to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/313?style=flat-square&label=%23313)](https://github.com/vtnerd/monero-lws/pull/313) |
-|  | Run unit tests in a Debug build | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/314?style=flat-square&label=%23314)](https://github.com/vtnerd/monero-lws/pull/314) |
-|  | Add delete_accounts to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/315?style=flat-square&label=%23315)](https://github.com/vtnerd/monero-lws/pull/315) |
-|  | Read FCMP++ data of the prunable part from daemon JSON | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/317?style=flat-square&label=%23317)](https://github.com/vtnerd/monero-lws/pull/317) |
-| [**seraphis-migration/monero**](https://github.com/seraphis-migration/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | Include FCMP++ data in rctSig JSON | [![](https://img.shields.io/github/issues/detail/state/seraphis-migration/monero/509?style=flat-square&label=%23509)](https://github.com/seraphis-migration/monero/pull/509) |
-| [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
-| [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
-| [**monero-project/monero**](https://github.com/monero-project/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | Recheck restore heights estimated without a daemon | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11640?style=flat-square&label=%2311640)](https://github.com/monero-project/monero/pull/11640) |
-|  | Don't wrap outgoing amounts with unknown input key images | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11641?style=flat-square&label=%2311641)](https://github.com/monero-project/monero/pull/11641) |
+<p align="center">
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 8 merged, 4 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 2 merged, 2 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Amicrosoft/vscode-cmake-tools&type=pullrequests" title="Microsoft · 0 merged, 1 in review"><img src="https://github.com/microsoft.png?size=88" width="44" height="44" alt="Microsoft" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Adiscord/embedded-app-sdk&type=pullrequests" title="Discord · 0 merged, 1 in review"><img src="https://github.com/discord.png?size=88" width="44" height="44" alt="Discord" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Acoinbase/coinbase-wallet-sdk&type=pullrequests" title="Coinbase · 0 merged, 1 in review"><img src="https://github.com/coinbase.png?size=88" width="44" height="44" alt="Coinbase" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Abase/account-sdk&type=pullrequests" title="Base · 0 merged, 1 in review"><img src="https://github.com/base.png?size=88" width="44" height="44" alt="Base" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 0 merged, 1 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
+</p>
+
+| Organization | Project | Pull request | Status |
+| --- | --- | --- | --- |
+| <img src="https://github.com/monero-project.png?size=40" width="20" height="20" alt="Monero" /> **Monero** | [**vtnerd/monero-lws**](https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix builds with assertions enabled | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/307?style=flat-square&label=%23307)](https://github.com/vtnerd/monero-lws/pull/307) |
+|  |  | Start only one websocket close per /feed connection | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/308?style=flat-square&label=%23308)](https://github.com/vtnerd/monero-lws/pull/308) |
+|  |  | Decrypt encrypted payment ids per account | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/309?style=flat-square&label=%23309)](https://github.com/vtnerd/monero-lws/pull/309) |
+|  |  | Pick up new accounts while waiting at the top of the chain | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/310?style=flat-square&label=%23310)](https://github.com/vtnerd/monero-lws/pull/310) |
+|  |  | Fix remaining timeout in do_wait() after EINTR | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/311?style=flat-square&label=%23311)](https://github.com/vtnerd/monero-lws/pull/311) |
+|  |  | Keep height index in step with scan_height on rescan and import | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/312?style=flat-square&label=%23312)](https://github.com/vtnerd/monero-lws/pull/312) |
+|  |  | Add webhook_add and webhook_list to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/313?style=flat-square&label=%23313)](https://github.com/vtnerd/monero-lws/pull/313) |
+|  |  | Run unit tests in a Debug build | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/314?style=flat-square&label=%23314)](https://github.com/vtnerd/monero-lws/pull/314) |
+|  |  | Add delete_accounts to monero-lws-admin | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/315?style=flat-square&label=%23315)](https://github.com/vtnerd/monero-lws/pull/315) |
+|  |  | Read FCMP++ data of the prunable part from daemon JSON | [![](https://img.shields.io/github/issues/detail/state/vtnerd/monero-lws/317?style=flat-square&label=%23317)](https://github.com/vtnerd/monero-lws/pull/317) |
+|  | [**seraphis-migration/monero**](https://github.com/seraphis-migration/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | Include FCMP++ data in rctSig JSON | [![](https://img.shields.io/github/issues/detail/state/seraphis-migration/monero/509?style=flat-square&label=%23509)](https://github.com/seraphis-migration/monero/pull/509) |
+|  | [**monero-project/monero**](https://github.com/monero-project/monero/pulls?q=is%3Apr+author%3Adhivadhiva) | Don't wrap outgoing amounts with unknown input key images | [![](https://img.shields.io/github/issues/detail/state/monero-project/monero/11641?style=flat-square&label=%2311641)](https://github.com/monero-project/monero/pull/11641) |
+| <img src="https://github.com/google.png?size=40" width="20" height="20" alt="Google" /> **Google** | [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
+|  |  | Constrain the lifetime of results that borrow `text` | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/260?style=flat-square&label=%23260)](https://github.com/google/safe-bindings/pull/260) |
+|  |  | Fix out-of-bounds write, use-after-free and memory blowup | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/265?style=flat-square&label=%23265)](https://github.com/google/safe-bindings/pull/265) |
+|  | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
+| <img src="https://github.com/microsoft.png?size=40" width="20" height="20" alt="Microsoft" /> **Microsoft** | [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
+| <img src="https://github.com/discord.png?size=40" width="20" height="20" alt="Discord" /> **Discord** | [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
+| <img src="https://github.com/coinbase.png?size=40" width="20" height="20" alt="Coinbase" /> **Coinbase** | [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
+| <img src="https://github.com/base.png?size=40" width="20" height="20" alt="Base" /> **Base** | [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
+| <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 <!-- UPSTREAM:END -->
 
 <!-- ===== SPONSOR ===== -->

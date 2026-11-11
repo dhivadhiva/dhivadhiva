@@ -27,20 +27,20 @@
 <text x="336" y="42" class="k">J.A.R.V.I.S.</text>
 <text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 11</text>
 <text x="336" y="70" class="l l0"><tspan class="gold">›</tspan> Good morning, sir. Loading suit Mark 49…</text>
-<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,170 contributions · 1,790 commits</text>
-<text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 49 open-source repositories · 84 releases shipped</text>
-<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 223 of 269 (83%)</text>
-<text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Show 50+ projects in place of the released…</text>
+<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,187 contributions · 1,806 commits</text>
+<text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 49 open-source repositories · 85 releases shipped</text>
+<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 244 of 291 (84%)</text>
+<text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Fix out-of-bounds write, use-after-free and…</text>
 <text x="336" y="175" class="l l5"><tspan class="gold">›</tspan> Threat scan: 0 unsafe blocks. Clearance: AVENGER</text>
 <text x="336" y="196" class="l l6"><tspan class="gold">›</tspan> All systems nominal. <tspan class="cur">▌</tspan></text>
 <text x="336" y="221" class="k">SUIT INTEGRITY · CODE BY LANGUAGE</text>
 <text x="336" y="245" class="dim" style="fill:#CBD5E1">Dart</text>
 <rect x="430" y="235" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="235" width="187.9" height="12" rx="6" fill="#00B4AB" style="animation-delay:0.00s"/>
-<text x="852" y="245" text-anchor="end" class="dim">44.5%</text>
+<rect class="bar" x="430" y="235" width="188.1" height="12" rx="6" fill="#00B4AB" style="animation-delay:0.00s"/>
+<text x="852" y="245" text-anchor="end" class="dim">44.6%</text>
 <text x="336" y="262" class="dim" style="fill:#CBD5E1">Rust</text>
 <rect x="430" y="252" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="252" width="116.2" height="12" rx="6" fill="#dea584" style="animation-delay:0.15s"/>
+<rect class="bar" x="430" y="252" width="116.1" height="12" rx="6" fill="#dea584" style="animation-delay:0.15s"/>
 <text x="852" y="262" text-anchor="end" class="dim">27.5%</text>
 <text x="336" y="279" class="dim" style="fill:#CBD5E1">C</text>
 <rect x="430" y="269" width="422" height="12" rx="6" fill="#1E293B"/>

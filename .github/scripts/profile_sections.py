@@ -12,14 +12,16 @@ README.md blocks are delimited by marker comments and rewritten in place:
   <!-- ACTIVITY:START --> ... <!-- ACTIVITY:END -->
       USER's most recent public pull requests, anywhere on GitHub;
   <!-- RELEASES:START --> ... <!-- RELEASES:END -->
-      the newest release of the most recently released ORG repositories;
+      the newest release of the most recently released public repositories,
+      in ORG and USER's own (non-fork) repos;
   <!-- FEATURED:START --> ... <!-- FEATURED:END -->
       pin cards for the ORG repositories with the most recent pushes
       (the card images are rendered by the workflow from the pin1..pinN
       step outputs this script writes to $GITHUB_OUTPUT);
   <!-- UPSTREAM:START --> ... <!-- UPSTREAM:END -->
-      every pull request by USER outside ORG and USER's own repos,
-      grouped by repository, newest repository first;
+      every merged or open pull request by USER outside ORG and USER's own
+      repos, grouped by the organization that owns the project (UPSTREAM_ORGS
+      names them), organizations with the most merged pull requests first;
   <!-- EXTENSIONS:START --> ... <!-- EXTENSIONS:END -->
       every public extension published on Firefox Add-ons by AMO_AUTHOR,
       with its Chrome Web Store listing when CHROME_IDS knows one;
@@ -72,6 +74,25 @@ ACTIVITY_ROWS = 8
 RELEASE_ROWS = 6
 LANGUAGES = 8
 HEROES = 40
+
+# Upstream owner login -> the organization shown on the profile. Projects in
+# the same ecosystem share a name (monero-lws is maintained by vtnerd; the
+# FCMP++ work lives in seraphis-migration). Unknown owners show their login
+# and sort last. Organizations with more merged pull requests come first;
+# ties keep the order of this table.
+UPSTREAM_ORGS = {
+    "monero-project": "Monero",
+    "vtnerd": "Monero",
+    "seraphis-migration": "Monero",
+    "google": "Google",
+    "microsoft": "Microsoft",
+    "discord": "Discord",
+    "coinbase": "Coinbase",
+    "base": "Base",
+    "unstablebuild": "Rune",
+}
+# The avatar shown for an organization, when its name covers several owners.
+UPSTREAM_AVATARS = {"Monero": "monero-project"}
 HEROES_TITLE = "I have the stones"
 
 # Power level, by lifetime contributions. The last threshold that fits wins.
@@ -165,6 +186,39 @@ def org_repos():
         data = gh_graphql(query, org=ORG, **({"after": after} if after else {}))
         page = data["data"]["organization"]["repositories"]
         repos += [r for r in page["nodes"] if not r["isArchived"]]
+        if not page["pageInfo"]["hasNextPage"]:
+            return repos
+        after = page["pageInfo"]["endCursor"]
+
+
+def user_released_repos():
+    """USER's own public, non-fork, non-archived repositories with a release.
+
+    Some products (Circuit Lab, for one) live on the personal account rather
+    than in ORG; without these their releases never reach the profile.
+    """
+    query = """
+    query($login:String!, $after:String) {
+      user(login:$login) {
+        repositories(first:100, after:$after, isFork:false, privacy:PUBLIC,
+                     ownerAffiliations:OWNER, orderBy:{field:PUSHED_AT, direction:DESC}) {
+          pageInfo { hasNextPage endCursor }
+          nodes {
+            name url isArchived pushedAt
+            releases(first:1, orderBy:{field:CREATED_AT, direction:DESC}) {
+              totalCount
+              nodes { tagName name url publishedAt isPrerelease }
+            }
+          }
+        }
+      }
+    }"""
+    repos, after = [], None
+    while True:
+        data = gh_graphql(query, login=USER, **({"after": after} if after else {}))
+        page = data["data"]["user"]["repositories"]
+        repos += [r for r in page["nodes"]
+                  if not r["isArchived"] and r["releases"]["totalCount"]]
         if not page["pageInfo"]["hasNextPage"]:
             return repos
         after = page["pageInfo"]["endCursor"]
@@ -281,7 +335,7 @@ def contribution_totals():
     return commits, contributions
 
 
-def numbers(repos, upstream):
+def numbers(repos, upstream, shipped):
     commits, contributions = contribution_totals()
     stats = OrderedDict([
         ("commits", commits),
@@ -292,7 +346,7 @@ def numbers(repos, upstream):
         ("upstream", sum(1 for p in upstream if p["merged"])),
         ("repos", len(repos)),
         ("stars", sum(r["stargazerCount"] for r in repos)),
-        ("releases", sum(r["releases"]["totalCount"] for r in repos)),
+        ("releases", sum(r["releases"]["totalCount"] for r in shipped)),
         ("updated", f"{datetime.now(timezone.utc):%Y-%m-%d}"),
     ])
     stats["rank"] = rank(stats["contributions"])
@@ -327,28 +381,77 @@ def clean_title(title):
     return title.replace("|", "\\|").replace("<", "&lt;")
 
 
+def upstream_org(repo):
+    """'google/safe-bindings' -> 'Google'."""
+    owner = repo.split("/")[0]
+    return UPSTREAM_ORGS.get(owner.lower(), owner)
+
+
 def upstream_block(prs):
-    by_repo = OrderedDict()
-    for pr in prs:  # newest first, so the first repo seen is the most recent one
-        by_repo.setdefault(pr["repository"]["nameWithOwner"], []).append(pr)
-    merged = sum(1 for p in prs if p["merged"])
-    open_ = sum(1 for p in prs if p["state"] == "OPEN")
+    """Merged and open upstream pull requests, grouped by organization.
+
+    Pull requests closed without a merge are left out: they are not
+    contributions. Organizations with the most merged pull requests come
+    first; inside one, projects with the most merged pull requests, then
+    merged before open.
+    """
+    prs = [p for p in prs if p["merged"] or p["state"] == "OPEN"]
+    if not prs:
+        return "_No upstream pull requests yet._"
+    orgs = OrderedDict()
+    for pr in prs:
+        repo = pr["repository"]["nameWithOwner"]
+        orgs.setdefault(upstream_org(repo), OrderedDict()).setdefault(repo, []).append(pr)
+
+    def merged(items):
+        return sum(1 for p in items if p["merged"])
+
+    priority = list(OrderedDict.fromkeys(UPSTREAM_ORGS.values()))
+
+    def org_key(item):
+        name, repos = item
+        allprs = [p for items in repos.values() for p in items]
+        return (-merged(allprs), priority.index(name) if name in priority else len(priority))
+
+    ordered = sorted(orgs.items(), key=org_key)
+    total_merged = merged(prs)
+    total_open = len(prs) - total_merged
+    names = [n for n, _ in ordered]
+    listed = ", ".join(names[:-1]) + f" and {names[-1]}" if len(names) > 1 else names[0]
+
+    def avatar(name, repos, size):
+        owner = UPSTREAM_AVATARS.get(name) or next(iter(repos)).split("/")[0]
+        return (f'<img src="https://github.com/{owner}.png?size={size * 2}" '
+                f'width="{size}" height="{size}" alt="{name}" />')
+
     lines = [
-        f"**{len(prs)} pull requests** to **{len(by_repo)} projects**: "
-        f"**{merged} merged**, **{open_} open**.",
+        f"**{total_merged} merged** and **{total_open} in review**, across "
+        f"**{sum(len(r) for _, r in ordered)} projects** at **{len(ordered)} organizations**: "
+        f"{listed}.",
         "",
-        "| Project | Pull request | Status |",
-        "| --- | --- | --- |",
+        '<p align="center">',
     ]
-    for repo, items in by_repo.items():
-        url = items[0]["repository"]["url"]
-        first = f"[**{repo}**]({url}/pulls?q=is%3Apr+author%3A{USER})"
-        for pr in sorted(items, key=lambda p: p["number"]):
-            owner, name = repo.split("/")
-            badge = (f"[![]({SHIELD}/github/issues/detail/state/{owner}/{name}/{pr['number']}"
-                     f"?style=flat-square&label=%23{pr['number']})]({pr['url']})")
-            lines.append(f"| {first} | {clean_title(pr['title'])} | {badge} |")
-            first = ""
+    for name, repos in ordered:
+        allprs = [p for items in repos.values() for p in items]
+        m = merged(allprs)
+        tip = f"{name} · {m} merged, {len(allprs) - m} in review"
+        q = urllib.parse.quote(f"is:pr author:{USER} " + " ".join(f"repo:{r}" for r in repos))
+        url = f"https://github.com/search?q={q}&type=pullrequests"
+        lines.append(f'  <a href="{url}" title="{tip}">{avatar(name, repos, 44)}</a>&nbsp;&nbsp;')
+    lines += ["</p>", "",
+              "| Organization | Project | Pull request | Status |",
+              "| --- | --- | --- | --- |"]
+    for name, repos in ordered:
+        org_cell = f"{avatar(name, repos, 20)} **{name}**"
+        for repo, items in sorted(repos.items(), key=lambda kv: -merged(kv[1])):
+            url = items[0]["repository"]["url"]
+            proj_cell = f"[**{repo}**]({url}/pulls?q=is%3Apr+author%3A{USER})"
+            for pr in sorted(items, key=lambda p: (not p["merged"], p["number"])):
+                owner, rname = repo.split("/")
+                badge = (f"[![]({SHIELD}/github/issues/detail/state/{owner}/{rname}/{pr['number']}"
+                         f"?style=flat-square&label=%23{pr['number']})]({pr['url']})")
+                lines.append(f"| {org_cell} | {proj_cell} | {clean_title(pr['title'])} | {badge} |")
+                org_cell = proj_cell = ""
     return "\n".join(lines)
 
 
@@ -387,7 +490,7 @@ def rank(contributions):
     return [name for floor, name in RANKS if contributions >= floor][-1]
 
 
-def briefing_block(stats, recent, repos):
+def briefing_block(stats, recent, repos, shipped):
     """The dossier's daily mission briefing."""
     now = datetime.now(timezone.utc)
     hint = HINTS[now.timetuple().tm_yday % len(HINTS)]
@@ -409,7 +512,7 @@ def briefing_block(stats, recent, repos):
         lines.append(f"| **Latest mission** | [{clean_title(pr['title'])}]({pr['url']}) "
                      f"in [{pr['repository']['nameWithOwner']}]({pr['repository']['url']}), "
                      f"{state} {day(pr['when'])} |")
-    latest = [(n["publishedAt"], r, n) for r in repos
+    latest = [(n["publishedAt"], r, n) for r in shipped
               for n in r["releases"]["nodes"] if n["publishedAt"]]
     if latest:
         published, r, n = max(latest, key=lambda x: x[0])
@@ -598,9 +701,10 @@ def main():
     text = README.read_text(encoding="utf-8")
 
     repos = org_repos()
+    shipped = repos + user_released_repos()
     pins = featured(repos)
     text = replace_block(text, "LANGS", langs_block(repos))
-    text = replace_block(text, "RELEASES", releases_block(repos))
+    text = replace_block(text, "RELEASES", releases_block(shipped))
     text = replace_block(text, "FEATURED", featured_block(pins))
 
     recent = recent_prs()
@@ -611,8 +715,8 @@ def main():
     addons = amo_extensions()
     text = replace_block(text, "EXTENSIONS", extensions_block(addons))
 
-    stats = numbers(repos, prs)
-    text = replace_block(text, "BRIEFING", briefing_block(stats, recent, repos))
+    stats = numbers(repos, prs, shipped)
+    text = replace_block(text, "BRIEFING", briefing_block(stats, recent, repos, shipped))
     found = heroes()
     text = replace_block(text, "HEROES", heroes_block(found))
     NUMBERS.write_text(json.dumps(stats, indent=2) + "\n", encoding="utf-8")
@@ -627,7 +731,8 @@ def main():
 
     print(json.dumps(stats, indent=2))
     print("featured:", ", ".join(r["name"] for r in pins))
-    print(f"upstream: {len(prs)} PRs in {len({p['repository']['nameWithOwner'] for p in prs})} repos; "
+    print(f"releases from {len(shipped) - len(repos)} personal repos; "
+          f"upstream: {len(prs)} PRs in {len({p['repository']['nameWithOwner'] for p in prs})} repos; "
           f"extensions: {len(addons)}; heroes: {len(found)}")
 
 
