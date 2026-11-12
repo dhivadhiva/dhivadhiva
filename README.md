@@ -132,15 +132,15 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 11</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 12</sub>
 
-> Multiverse rule: one codebase, every operating system.
+> A merged upstream PR is the only infinity gauntlet worth wearing.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,190 contributions, 224 pull requests merged |
+| **Power level** | **Avenger** · 2,191 contributions, 225 pull requests merged |
 | **Suit** | **Mark 49** · 49 open-source repositories, 85 releases shipped |
-| **Latest mission** | [Fix out-of-bounds write, use-after-free and memory blowup](https://github.com/google/safe-bindings/pull/265) in [google/safe-bindings](https://github.com/google/safe-bindings), opened Nov 11 |
+| **Latest mission** | [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune), merged Nov 12 |
 | **Latest drop** | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0), Nov 10 |
 | **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 11 |
 <!-- BRIEFING:END -->
@@ -209,11 +209,11 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune) · <sub>Nov 12</sub>
 - 🟢 **Opened** [Fix out-of-bounds write, use-after-free and memory blowup](https://github.com/google/safe-bindings/pull/265) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 11</sub>
 - 🟣 **Merged** [Constrain the lifetime of results that borrow `text`](https://github.com/google/safe-bindings/pull/260) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 11</sub>
 - 🟣 **Merged** [Show 50+ projects in place of the released count](https://github.com/dhivadhiva/dhivakar1010.com/pull/4) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 10</sub>
 - 🟣 **Merged** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 10</sub>
-- 🟢 **Opened** [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Update russh to 0.65 and rustls to 0.23.46](https://github.com/Dhiva-Labs/CloudDrop/pull/25) in [Dhiva-Labs/CloudDrop](https://github.com/Dhiva-Labs/CloudDrop) · <sub>Nov 9</sub>
 - 🟣 **Merged** [Do not fail a finished transfer when the sender leaves before the ack](https://github.com/Dhiva-Labs/CloneStudio/pull/5) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
@@ -463,16 +463,16 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**10 merged** and **11 in review**, across **10 projects** at **7 organizations**: Monero, Google, Microsoft, Discord, Coinbase, Base and Rune.
+**11 merged** and **10 in review**, across **10 projects** at **7 organizations**: Monero, Google, Rune, Microsoft, Discord, Coinbase and Base.
 
 <p align="center">
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 8 merged, 4 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 2 merged, 2 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 1 merged, 0 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Amicrosoft/vscode-cmake-tools&type=pullrequests" title="Microsoft · 0 merged, 1 in review"><img src="https://github.com/microsoft.png?size=88" width="44" height="44" alt="Microsoft" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Adiscord/embedded-app-sdk&type=pullrequests" title="Discord · 0 merged, 1 in review"><img src="https://github.com/discord.png?size=88" width="44" height="44" alt="Discord" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Acoinbase/coinbase-wallet-sdk&type=pullrequests" title="Coinbase · 0 merged, 1 in review"><img src="https://github.com/coinbase.png?size=88" width="44" height="44" alt="Coinbase" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Abase/account-sdk&type=pullrequests" title="Base · 0 merged, 1 in review"><img src="https://github.com/base.png?size=88" width="44" height="44" alt="Base" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 0 merged, 1 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
 </p>
 
 | Organization | Project | Pull request | Status |
@@ -493,11 +493,11 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
 |  |  | Constrain the lifetime of results that borrow `text` | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/260?style=flat-square&label=%23260)](https://github.com/google/safe-bindings/pull/260) |
 |  |  | Fix out-of-bounds write, use-after-free and memory blowup | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/265?style=flat-square&label=%23265)](https://github.com/google/safe-bindings/pull/265) |
 |  | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
+| <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 | <img src="https://github.com/microsoft.png?size=40" width="20" height="20" alt="Microsoft" /> **Microsoft** | [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
 | <img src="https://github.com/discord.png?size=40" width="20" height="20" alt="Discord" /> **Discord** | [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
 | <img src="https://github.com/coinbase.png?size=40" width="20" height="20" alt="Coinbase" /> **Coinbase** | [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
 | <img src="https://github.com/base.png?size=40" width="20" height="20" alt="Base" /> **Base** | [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
-| <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 <!-- UPSTREAM:END -->
 
 <!-- ===== SPONSOR ===== -->
