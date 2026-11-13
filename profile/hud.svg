@@ -21,37 +21,37 @@
 <polygon class="core" points="150,116 182,170 118,170" fill="none" stroke="#F0F9FF" stroke-width="3" stroke-linejoin="round" opacity=".95"/>
 <text x="150" y="282" text-anchor="middle" class="k">ARC REACTOR</text>
 <text x="150" y="300" text-anchor="middle" class="k green" style="font-size:11px">● ONLINE</text>
-<text x="150" y="40" text-anchor="middle" class="k gold">MARK 49</text>
+<text x="150" y="40" text-anchor="middle" class="k gold">MARK 50</text>
 </g>
 <line x1="312" y1="28" x2="312" y2="302" stroke="#1E3A8A" stroke-width="1"/>
 <text x="336" y="42" class="k">J.A.R.V.I.S.</text>
-<text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 12</text>
-<text x="336" y="70" class="l l0"><tspan class="gold">›</tspan> Good morning, sir. Loading suit Mark 49…</text>
-<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,191 contributions · 1,810 commits</text>
-<text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 49 open-source repositories · 85 releases shipped</text>
-<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 225 of 270 (83%)</text>
-<text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Fix building Rune on platforms other than L…</text>
+<text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 13</text>
+<text x="336" y="70" class="l l0"><tspan class="gold">›</tspan> Good morning, sir. Loading suit Mark 50…</text>
+<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,265 contributions · 1,880 commits</text>
+<text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 50 open-source repositories · 85 releases shipped</text>
+<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 248 of 271 (92%)</text>
+<text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Docs: README overview, engineering highligh…</text>
 <text x="336" y="175" class="l l5"><tspan class="gold">›</tspan> Threat scan: 0 unsafe blocks. Clearance: AVENGER</text>
 <text x="336" y="196" class="l l6"><tspan class="gold">›</tspan> All systems nominal. <tspan class="cur">▌</tspan></text>
 <text x="336" y="221" class="k">SUIT INTEGRITY · CODE BY LANGUAGE</text>
 <text x="336" y="245" class="dim" style="fill:#CBD5E1">Dart</text>
 <rect x="430" y="235" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="235" width="188.1" height="12" rx="6" fill="#00B4AB" style="animation-delay:0.00s"/>
-<text x="852" y="245" text-anchor="end" class="dim">44.6%</text>
+<rect class="bar" x="430" y="235" width="187.0" height="12" rx="6" fill="#00B4AB" style="animation-delay:0.00s"/>
+<text x="852" y="245" text-anchor="end" class="dim">44.3%</text>
 <text x="336" y="262" class="dim" style="fill:#CBD5E1">Rust</text>
 <rect x="430" y="252" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="252" width="116.1" height="12" rx="6" fill="#dea584" style="animation-delay:0.15s"/>
-<text x="852" y="262" text-anchor="end" class="dim">27.5%</text>
+<rect class="bar" x="430" y="252" width="115.3" height="12" rx="6" fill="#dea584" style="animation-delay:0.15s"/>
+<text x="852" y="262" text-anchor="end" class="dim">27.3%</text>
 <text x="336" y="279" class="dim" style="fill:#CBD5E1">C</text>
 <rect x="430" y="269" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="269" width="29.9" height="12" rx="6" fill="#555555" style="animation-delay:0.30s"/>
-<text x="852" y="279" text-anchor="end" class="dim">7.1%</text>
+<rect class="bar" x="430" y="269" width="29.7" height="12" rx="6" fill="#555555" style="animation-delay:0.30s"/>
+<text x="852" y="279" text-anchor="end" class="dim">7.0%</text>
 <text x="336" y="296" class="dim" style="fill:#CBD5E1">TypeScript</text>
 <rect x="430" y="286" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="286" width="19.8" height="12" rx="6" fill="#3178c6" style="animation-delay:0.45s"/>
+<rect class="bar" x="430" y="286" width="19.6" height="12" rx="6" fill="#3178c6" style="animation-delay:0.45s"/>
 <text x="852" y="296" text-anchor="end" class="dim">4.7%</text>
 <text x="336" y="313" class="dim" style="fill:#CBD5E1">JavaScript</text>
 <rect x="430" y="303" width="422" height="12" rx="6" fill="#1E293B"/>
-<rect class="bar" x="430" y="303" width="15.8" height="12" rx="6" fill="#f1e05a" style="animation-delay:0.60s"/>
-<text x="852" y="313" text-anchor="end" class="dim">3.7%</text>
+<rect class="bar" x="430" y="303" width="15.9" height="12" rx="6" fill="#f1e05a" style="animation-delay:0.60s"/>
+<text x="852" y="313" text-anchor="end" class="dim">3.8%</text>
 </svg>

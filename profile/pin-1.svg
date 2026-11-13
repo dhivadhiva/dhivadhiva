@@ -109,7 +109,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >CrossShell</text>
+      >idea-lab</text>
     </g>
       </g>
     
@@ -122,16 +122,11 @@
     
 
     <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">Two machines, one desk: SSH both ways, files, port forwards</tspan><tspan dy="1.2em" x="25">and remote desktop between Linux and Windows on your...</tspan>
+      <tspan dy="1.2em" x="25">Share project ideas, shape them together, and find people to</tspan><tspan dy="1.2em" x="25">build them. Open to everyone.</tspan>
     </text>
 
     <g transform="translate(30, 65)">
-      <g transform="translate(0, 0)">
-    <g data-testid="primary-lang">
-      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#00B4AB" />
-      <text data-testid="lang-name" class="gray" x="15">Dart</text>
-    </g>
-    </g>
+      
     </g>
     
   <svg x="0" y="0"><g transform="translate(-3, 88)">

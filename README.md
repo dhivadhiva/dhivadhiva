@@ -132,17 +132,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 12</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 13</sub>
 
-> A merged upstream PR is the only infinity gauntlet worth wearing.
+> Found all six stones? Open an issue titled "I have the stones".
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,191 contributions, 225 pull requests merged |
-| **Suit** | **Mark 49** · 49 open-source repositories, 85 releases shipped |
-| **Latest mission** | [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune), merged Nov 12 |
+| **Power level** | **Avenger** · 2,265 contributions, 248 pull requests merged |
+| **Suit** | **Mark 50** · 50 open-source repositories, 85 releases shipped |
+| **Latest mission** | [Docs: README overview, engineering highlights, status and test commands](https://github.com/Dhiva-Labs/NearShare/pull/4) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare), merged Nov 12 |
 | **Latest drop** | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0), Nov 10 |
-| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 11 |
+| **Currently assembling** | [**idea-lab**](https://github.com/Dhiva-Labs/idea-lab), last push Nov 12 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -188,15 +188,15 @@ impl Avenger for Dhivakar {
 
 <!-- LANGS:START -->
 <div align="center">
-  <sub>Code across 49 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-44.6%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-27.5%25-dea584?style=flat-square" alt="Rust" />
-  <img src="https://img.shields.io/badge/C-7.1%25-555555?style=flat-square" alt="C" />
+  <sub>Code across 50 Dhiva Labs repositories, by size</sub><br/>
+  <img src="https://img.shields.io/badge/Dart-44.3%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-27.3%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/C-7.0%25-555555?style=flat-square" alt="C" />
   <img src="https://img.shields.io/badge/TypeScript-4.7%25-3178c6?style=flat-square" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-3.7%25-f1e05a?style=flat-square" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/JavaScript-3.8%25-f1e05a?style=flat-square" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-2.8%25-3572A5?style=flat-square" alt="Python" />
   <img src="https://img.shields.io/badge/Shell-2.7%25-89e051?style=flat-square" alt="Shell" />
-  <img src="https://img.shields.io/badge/Python-2.6%25-3572A5?style=flat-square" alt="Python" />
-  <img src="https://img.shields.io/badge/C%2B%2B-1.9%25-f34b7d?style=flat-square" alt="C++" />
+  <img src="https://img.shields.io/badge/C%2B%2B-2.0%25-f34b7d?style=flat-square" alt="C++" />
 </div>
 <!-- LANGS:END -->
 
@@ -209,14 +209,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
-- 🟣 **Merged** [Fix building Rune on platforms other than Linux and macOS](https://github.com/unstablebuild/rune/pull/218) in [unstablebuild/rune](https://github.com/unstablebuild/rune) · <sub>Nov 12</sub>
-- 🟢 **Opened** [Fix out-of-bounds write, use-after-free and memory blowup](https://github.com/google/safe-bindings/pull/265) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 11</sub>
-- 🟣 **Merged** [Constrain the lifetime of results that borrow `text`](https://github.com/google/safe-bindings/pull/260) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 11</sub>
-- 🟣 **Merged** [Show 50+ projects in place of the released count](https://github.com/dhivadhiva/dhivakar1010.com/pull/4) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 10</sub>
-- 🟣 **Merged** [Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern()](https://github.com/google/safe-bindings/pull/257) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 10</sub>
-- 🟣 **Merged** [Update anyhow, tokio and rustls in the core lockfile](https://github.com/Dhiva-Labs/kilonova/pull/56) in [Dhiva-Labs/kilonova](https://github.com/Dhiva-Labs/kilonova) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Update russh to 0.65 and rustls to 0.23.46](https://github.com/Dhiva-Labs/CloudDrop/pull/25) in [Dhiva-Labs/CloudDrop](https://github.com/Dhiva-Labs/CloudDrop) · <sub>Nov 9</sub>
-- 🟣 **Merged** [Do not fail a finished transfer when the sender leaves before the ack](https://github.com/Dhiva-Labs/CloneStudio/pull/5) in [Dhiva-Labs/CloneStudio](https://github.com/Dhiva-Labs/CloneStudio) · <sub>Nov 9</sub>
+- 🟣 **Merged** [Docs: README overview, engineering highlights, status and test commands](https://github.com/Dhiva-Labs/NearShare/pull/4) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 12</sub>
+- 🟣 **Merged** [Add unit tests for the BLE and mDNS discovery modules](https://github.com/Dhiva-Labs/NearShare/pull/5) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 12</sub>
+- 🟣 **Merged** [Make a missing Pillow fixture fail the tests instead of skipping them](https://github.com/Dhiva-Labs/DiskRescue/pull/12) in [Dhiva-Labs/DiskRescue](https://github.com/Dhiva-Labs/DiskRescue) · <sub>Nov 12</sub>
+- 🟣 **Merged** [README: engineering highlights, accurate install and release status, build and test steps](https://github.com/Dhiva-Labs/DiskRescue/pull/11) in [Dhiva-Labs/DiskRescue](https://github.com/Dhiva-Labs/DiskRescue) · <sub>Nov 12</sub>
+- 🟣 **Merged** [Test corpus generators](https://github.com/Dhiva-Labs/kilnfile/pull/5) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
+- 🟣 **Merged** [Kilnfile-worker with the Linux sandbox](https://github.com/Dhiva-Labs/kilnfile/pull/4) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
+- 🟣 **Merged** [Go CLI, worker protocol and runner](https://github.com/Dhiva-Labs/kilnfile/pull/3) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
+- 🟣 **Merged** [M0: prove the build (two bindings in one binary, own Crubit bridge)](https://github.com/Dhiva-Labs/kilnfile/pull/2) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -238,12 +238,12 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/CrossShell"><img src="./profile/pin-1.svg" alt="CrossShell" /></a>
-  <a href="https://github.com/Dhiva-Labs/HomeDeck"><img src="./profile/pin-2.svg" alt="HomeDeck" /></a>
+  <a href="https://github.com/Dhiva-Labs/idea-lab"><img src="./profile/pin-1.svg" alt="idea-lab" /></a>
+  <a href="https://github.com/Dhiva-Labs/BranchPilot"><img src="./profile/pin-2.svg" alt="BranchPilot" /></a>
   <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-3.svg" alt="NearShare" /></a>
   <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-4.svg" alt="DiskRescue" /></a>
-  <a href="https://github.com/Dhiva-Labs/DoseDrop"><img src="./profile/pin-5.svg" alt="DoseDrop" /></a>
-  <a href="https://github.com/Dhiva-Labs/SpaceSweep"><img src="./profile/pin-6.svg" alt="SpaceSweep" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilnfile"><img src="./profile/pin-5.svg" alt="kilnfile" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-6.svg" alt="kilonova" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
