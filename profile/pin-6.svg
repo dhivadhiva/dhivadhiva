@@ -109,7 +109,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >kilonova</text>
+      >DiskRescue</text>
     </g>
       </g>
     
@@ -122,7 +122,7 @@
     
 
     <text class="description" x="25" y="-5"> 
-      <tspan dy="1.2em" x="25">Open-source Monero wallet for Linux, Windows and</tspan><tspan dy="1.2em" x="25">Android. Full-node or light-wallet (LWS) sync, multiple...</tspan>
+      <tspan dy="1.2em" x="25">Recover photos and videos from failing hard disks, SSDs,</tspan><tspan dy="1.2em" x="25">USB drives and SD cards, and repair damaged JPEG, PNG,...</tspan>
     </text>
 
     <g transform="translate(30, 65)">

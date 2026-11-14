@@ -132,17 +132,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 13</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 14</sub>
 
-> Found all six stones? Open an issue titled "I have the stones".
+> House Party Protocol: every app, on every platform, at once.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,265 contributions, 248 pull requests merged |
-| **Suit** | **Mark 50** · 50 open-source repositories, 85 releases shipped |
-| **Latest mission** | [Docs: README overview, engineering highlights, status and test commands](https://github.com/Dhiva-Labs/NearShare/pull/4) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare), merged Nov 12 |
-| **Latest drop** | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0), Nov 10 |
-| **Currently assembling** | [**idea-lab**](https://github.com/Dhiva-Labs/idea-lab), last push Nov 12 |
+| **Power level** | **Avenger** · 2,274 contributions, 250 pull requests merged |
+| **Suit** | **Mark 50** · 50 open-source repositories, 87 releases shipped |
+| **Latest mission** | [NearShare 1.1.0: redesigned window, smaller snap, tag-driven releases](https://github.com/Dhiva-Labs/NearShare/pull/7) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare), merged Nov 13 |
+| **Latest drop** | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0), Nov 13 |
+| **Currently assembling** | [**NearShare**](https://github.com/Dhiva-Labs/NearShare), last push Nov 13 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -189,12 +189,12 @@ impl Avenger for Dhivakar {
 <!-- LANGS:START -->
 <div align="center">
   <sub>Code across 50 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-44.3%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Dart-44.2%25-00B4AB?style=flat-square" alt="Dart" />
   <img src="https://img.shields.io/badge/Rust-27.3%25-dea584?style=flat-square" alt="Rust" />
   <img src="https://img.shields.io/badge/C-7.0%25-555555?style=flat-square" alt="C" />
-  <img src="https://img.shields.io/badge/TypeScript-4.7%25-3178c6?style=flat-square" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/TypeScript-4.6%25-3178c6?style=flat-square" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-3.8%25-f1e05a?style=flat-square" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Python-2.8%25-3572A5?style=flat-square" alt="Python" />
+  <img src="https://img.shields.io/badge/Python-2.9%25-3572A5?style=flat-square" alt="Python" />
   <img src="https://img.shields.io/badge/Shell-2.7%25-89e051?style=flat-square" alt="Shell" />
   <img src="https://img.shields.io/badge/C%2B%2B-2.0%25-f34b7d?style=flat-square" alt="C++" />
 </div>
@@ -209,14 +209,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [NearShare 1.1.0: redesigned window, smaller snap, tag-driven releases](https://github.com/Dhiva-Labs/NearShare/pull/7) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 13</sub>
+- 🟢 **Opened** [Say nearly five years of experience](https://github.com/dhivadhiva/dhivakar1010.com/pull/6) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 13</sub>
+- 🟣 **Merged** [Remove remotely hosted ONNX runtime URL (Chrome Web Store MV3 warning)](https://github.com/Dhiva-Labs/Cloakpaste/pull/8) in [Dhiva-Labs/Cloakpaste](https://github.com/Dhiva-Labs/Cloakpaste) · <sub>Nov 13</sub>
 - 🟣 **Merged** [Docs: README overview, engineering highlights, status and test commands](https://github.com/Dhiva-Labs/NearShare/pull/4) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 12</sub>
 - 🟣 **Merged** [Add unit tests for the BLE and mDNS discovery modules](https://github.com/Dhiva-Labs/NearShare/pull/5) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 12</sub>
 - 🟣 **Merged** [Make a missing Pillow fixture fail the tests instead of skipping them](https://github.com/Dhiva-Labs/DiskRescue/pull/12) in [Dhiva-Labs/DiskRescue](https://github.com/Dhiva-Labs/DiskRescue) · <sub>Nov 12</sub>
 - 🟣 **Merged** [README: engineering highlights, accurate install and release status, build and test steps](https://github.com/Dhiva-Labs/DiskRescue/pull/11) in [Dhiva-Labs/DiskRescue](https://github.com/Dhiva-Labs/DiskRescue) · <sub>Nov 12</sub>
 - 🟣 **Merged** [Test corpus generators](https://github.com/Dhiva-Labs/kilnfile/pull/5) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
-- 🟣 **Merged** [Kilnfile-worker with the Linux sandbox](https://github.com/Dhiva-Labs/kilnfile/pull/4) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
-- 🟣 **Merged** [Go CLI, worker protocol and runner](https://github.com/Dhiva-Labs/kilnfile/pull/3) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
-- 🟣 **Merged** [M0: prove the build (two bindings in one binary, own Crubit bridge)](https://github.com/Dhiva-Labs/kilnfile/pull/2) in [Dhiva-Labs/kilnfile](https://github.com/Dhiva-Labs/kilnfile) · <sub>Nov 12</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -225,12 +225,12 @@ impl Avenger for Dhivakar {
 <!-- RELEASES:START -->
 | Project | Release | Published |
 | --- | --- | --- |
+| [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0) | Nov 13 |
+| [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.2`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.2) | Nov 13 |
 | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) | [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0) | Nov 10 |
 | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) | [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0) | Nov 7 |
 | [**dl-image-tools**](https://github.com/Dhiva-Labs/dl-image-tools) | [`v1.0.1`](https://github.com/Dhiva-Labs/dl-image-tools/releases/tag/v1.0.1) | Nov 4 |
 | [**markdrop**](https://github.com/Dhiva-Labs/markdrop) | [`v0.1.1`](https://github.com/Dhiva-Labs/markdrop/releases/tag/v0.1.1) | Nov 4 |
-| [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.1`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.1) | Nov 4 |
-| [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.5.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.5.1) | Nov 3 |
 <!-- RELEASES:END -->
 
 <!-- ===== FEATURED ===== -->
@@ -238,12 +238,12 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/idea-lab"><img src="./profile/pin-1.svg" alt="idea-lab" /></a>
-  <a href="https://github.com/Dhiva-Labs/BranchPilot"><img src="./profile/pin-2.svg" alt="BranchPilot" /></a>
-  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-3.svg" alt="NearShare" /></a>
-  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-4.svg" alt="DiskRescue" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilnfile"><img src="./profile/pin-5.svg" alt="kilnfile" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-6.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-1.svg" alt="NearShare" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-2.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/Cloakpaste"><img src="./profile/pin-3.svg" alt="Cloakpaste" /></a>
+  <a href="https://github.com/Dhiva-Labs/idea-lab"><img src="./profile/pin-4.svg" alt="idea-lab" /></a>
+  <a href="https://github.com/Dhiva-Labs/BranchPilot"><img src="./profile/pin-5.svg" alt="BranchPilot" /></a>
+  <a href="https://github.com/Dhiva-Labs/DiskRescue"><img src="./profile/pin-6.svg" alt="DiskRescue" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
