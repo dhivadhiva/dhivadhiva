@@ -132,9 +132,9 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 15</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 16</sub>
 
-> J.A.R.V.I.S. runs on GitHub Actions now. He is fine with it.
+> The suit is nanotech. It is also 44% Dart.
 
 | | |
 | --- | --- |
@@ -142,7 +142,7 @@ impl Avenger for Dhivakar {
 | **Suit** | **Mark 50** · 50 open-source repositories, 87 releases shipped |
 | **Latest mission** | [Quote bridge commands so a fish login shell cannot reopen them](https://github.com/Dhiva-Labs/SecureShellGo/pull/14) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo), opened Nov 14 |
 | **Latest drop** | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0), Nov 13 |
-| **Currently assembling** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo), last push Nov 14 |
+| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 15 |
 <!-- BRIEFING:END -->
 
 </details>
