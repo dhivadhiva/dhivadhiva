@@ -132,17 +132,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 16</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 17</sub>
 
-> The suit is nanotech. It is also 44% Dart.
+> Mark I was built in a cave. Mark 49 was built in Chennai.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,284 contributions, 252 pull requests merged |
-| **Suit** | **Mark 50** · 50 open-source repositories, 87 releases shipped |
-| **Latest mission** | [Quote bridge commands so a fish login shell cannot reopen them](https://github.com/Dhiva-Labs/SecureShellGo/pull/14) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo), opened Nov 14 |
-| **Latest drop** | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0), Nov 13 |
-| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 15 |
+| **Power level** | **Avenger** · 2,321 contributions, 257 pull requests merged |
+| **Suit** | **Mark 50** · 50 open-source repositories, 91 releases shipped |
+| **Latest mission** | [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo), opened Nov 17 |
+| **Latest drop** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1), Nov 17 |
+| **Currently assembling** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo), last push Nov 17 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -189,14 +189,14 @@ impl Avenger for Dhivakar {
 <!-- LANGS:START -->
 <div align="center">
   <sub>Code across 50 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-45.2%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-26.8%25-dea584?style=flat-square" alt="Rust" />
-  <img src="https://img.shields.io/badge/C-6.9%25-555555?style=flat-square" alt="C" />
-  <img src="https://img.shields.io/badge/TypeScript-4.6%25-3178c6?style=flat-square" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-3.7%25-f1e05a?style=flat-square" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Python-2.8%25-3572A5?style=flat-square" alt="Python" />
-  <img src="https://img.shields.io/badge/Shell-2.7%25-89e051?style=flat-square" alt="Shell" />
-  <img src="https://img.shields.io/badge/C%2B%2B-2.0%25-f34b7d?style=flat-square" alt="C++" />
+  <img src="https://img.shields.io/badge/Dart-47.1%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-25.9%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/C-6.7%25-555555?style=flat-square" alt="C" />
+  <img src="https://img.shields.io/badge/TypeScript-4.4%25-3178c6?style=flat-square" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-3.6%25-f1e05a?style=flat-square" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-2.7%25-3572A5?style=flat-square" alt="Python" />
+  <img src="https://img.shields.io/badge/Shell-2.6%25-89e051?style=flat-square" alt="Shell" />
+  <img src="https://img.shields.io/badge/C%2B%2B-1.9%25-f34b7d?style=flat-square" alt="C++" />
 </div>
 <!-- LANGS:END -->
 
@@ -209,14 +209,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
-- 🟢 **Opened** [Quote bridge commands so a fish login shell cannot reopen them](https://github.com/Dhiva-Labs/SecureShellGo/pull/14) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 14</sub>
-- 🟢 **Opened** [Keep every setting through a backup](https://github.com/Dhiva-Labs/SecureShellGo/pull/13) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 14</sub>
-- 🟣 **Merged** [Release 1.6.0](https://github.com/Dhiva-Labs/SecureShellGo/pull/12) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 14</sub>
-- 🟣 **Merged** [Add the AI Bridge: read-only access for AI assistants, by host name](https://github.com/Dhiva-Labs/SecureShellGo/pull/11) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 14</sub>
-- 🟣 **Merged** [NearShare 1.1.0: redesigned window, smaller snap, tag-driven releases](https://github.com/Dhiva-Labs/NearShare/pull/7) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 13</sub>
-- 🟢 **Opened** [Say nearly five years of experience](https://github.com/dhivadhiva/dhivakar1010.com/pull/6) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 13</sub>
-- 🟣 **Merged** [Remove remotely hosted ONNX runtime URL (Chrome Web Store MV3 warning)](https://github.com/Dhiva-Labs/Cloakpaste/pull/8) in [Dhiva-Labs/Cloakpaste](https://github.com/Dhiva-Labs/Cloakpaste) · <sub>Nov 13</sub>
-- 🟣 **Merged** [Docs: README overview, engineering highlights, status and test commands](https://github.com/Dhiva-Labs/NearShare/pull/4) in [Dhiva-Labs/NearShare](https://github.com/Dhiva-Labs/NearShare) · <sub>Nov 12</sub>
+- 🟢 **Opened** [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo) · <sub>Nov 17</sub>
+- 🔴 **Closed** [Make an existing activity log owner-only on the first write](https://github.com/Dhiva-Labs/SecureShellGo/pull/18) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 17</sub>
+- 🟢 **Opened** [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 16</sub>
+- 🟢 **Opened** [Give slices a Name that no array can have](https://github.com/google/crubit/pull/3026) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 16</sub>
+- 🟢 **Opened** [Reject entries whose compression method is unsupported](https://github.com/google/safe-bindings/pull/282) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
+- 🟢 **Opened** [Reject entity declarations in XmlDocument::Parse](https://github.com/google/safe-bindings/pull/281) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
+- 🟢 **Opened** [Go back to collect() in RoaringBitmap32::ToVec](https://github.com/google/safe-bindings/pull/280) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
+- 🟣 **Merged** [Stop two bridge tests depending on the runner's speed](https://github.com/Dhiva-Labs/SecureShellGo/pull/17) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 16</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -225,12 +225,12 @@ impl Avenger for Dhivakar {
 <!-- RELEASES:START -->
 | Project | Release | Published |
 | --- | --- | --- |
+| [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1) | Nov 17 |
 | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0) | Nov 13 |
 | [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.2`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.2) | Nov 13 |
 | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) | [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0) | Nov 10 |
 | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) | [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0) | Nov 7 |
 | [**dl-image-tools**](https://github.com/Dhiva-Labs/dl-image-tools) | [`v1.0.1`](https://github.com/Dhiva-Labs/dl-image-tools/releases/tag/v1.0.1) | Nov 4 |
-| [**markdrop**](https://github.com/Dhiva-Labs/markdrop) | [`v0.1.1`](https://github.com/Dhiva-Labs/markdrop/releases/tag/v0.1.1) | Nov 4 |
 <!-- RELEASES:END -->
 
 <!-- ===== FEATURED ===== -->
@@ -463,16 +463,17 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**11 merged** and **10 in review**, across **10 projects** at **7 organizations**: Monero, Google, Rune, Microsoft, Discord, Coinbase and Base.
+**11 merged** and **16 in review**, across **12 projects** at **8 organizations**: Monero, Google, Rune, Microsoft, Discord, Coinbase, Base and rust-lang.
 
 <p align="center">
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 8 merged, 4 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 2 merged, 2 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/crubit%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 2 merged, 7 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 1 merged, 0 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Amicrosoft/vscode-cmake-tools&type=pullrequests" title="Microsoft · 0 merged, 1 in review"><img src="https://github.com/microsoft.png?size=88" width="44" height="44" alt="Microsoft" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Adiscord/embedded-app-sdk&type=pullrequests" title="Discord · 0 merged, 1 in review"><img src="https://github.com/discord.png?size=88" width="44" height="44" alt="Discord" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Acoinbase/coinbase-wallet-sdk&type=pullrequests" title="Coinbase · 0 merged, 1 in review"><img src="https://github.com/coinbase.png?size=88" width="44" height="44" alt="Coinbase" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Abase/account-sdk&type=pullrequests" title="Base · 0 merged, 1 in review"><img src="https://github.com/base.png?size=88" width="44" height="44" alt="Base" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Arust-lang/cargo&type=pullrequests" title="rust-lang · 0 merged, 1 in review"><img src="https://github.com/rust-lang.png?size=88" width="44" height="44" alt="rust-lang" /></a>&nbsp;&nbsp;
 </p>
 
 | Organization | Project | Pull request | Status |
@@ -492,12 +493,18 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
 | <img src="https://github.com/google.png?size=40" width="20" height="20" alt="Google" /> **Google** | [**google/safe-bindings**](https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva) | Constrain the lifetime of Regex::AsStr(), Match::Inner() and RegexFlagWithOptions::pattern() | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/257?style=flat-square&label=%23257)](https://github.com/google/safe-bindings/pull/257) |
 |  |  | Constrain the lifetime of results that borrow `text` | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/260?style=flat-square&label=%23260)](https://github.com/google/safe-bindings/pull/260) |
 |  |  | Fix out-of-bounds write, use-after-free and memory blowup | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/265?style=flat-square&label=%23265)](https://github.com/google/safe-bindings/pull/265) |
+|  |  | Go back to collect() in RoaringBitmap32::ToVec | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/280?style=flat-square&label=%23280)](https://github.com/google/safe-bindings/pull/280) |
+|  |  | Reject entity declarations in XmlDocument::Parse | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/281?style=flat-square&label=%23281)](https://github.com/google/safe-bindings/pull/281) |
+|  |  | Reject entries whose compression method is unsupported | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/282?style=flat-square&label=%23282)](https://github.com/google/safe-bindings/pull/282) |
+|  | [**google/crubit**](https://github.com/google/crubit/pulls?q=is%3Apr+author%3Adhivadhiva) | Give slices a Name that no array can have | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3026?style=flat-square&label=%233026)](https://github.com/google/crubit/pull/3026) |
+|  |  | Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3027?style=flat-square&label=%233027)](https://github.com/google/crubit/pull/3027) |
 |  | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 | <img src="https://github.com/microsoft.png?size=40" width="20" height="20" alt="Microsoft" /> **Microsoft** | [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
 | <img src="https://github.com/discord.png?size=40" width="20" height="20" alt="Discord" /> **Discord** | [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
 | <img src="https://github.com/coinbase.png?size=40" width="20" height="20" alt="Coinbase" /> **Coinbase** | [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
 | <img src="https://github.com/base.png?size=40" width="20" height="20" alt="Base" /> **Base** | [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
+| <img src="https://github.com/rust-lang.png?size=40" width="20" height="20" alt="rust-lang" /> **rust-lang** | [**rust-lang/cargo**](https://github.com/rust-lang/cargo/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix git checkout long paths | [![](https://img.shields.io/github/issues/detail/state/rust-lang/cargo/17752?style=flat-square&label=%2317752)](https://github.com/rust-lang/cargo/pull/17752) |
 <!-- UPSTREAM:END -->
 
 <!-- ===== SPONSOR ===== -->
