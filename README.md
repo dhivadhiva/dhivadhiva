@@ -132,17 +132,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 17</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 18</sub>
 
-> Mark I was built in a cave. Mark 49 was built in Chennai.
+> Repulsors charged. Lints at zero. Deploying.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,321 contributions, 257 pull requests merged |
+| **Power level** | **Avenger** · 2,322 contributions, 258 pull requests merged |
 | **Suit** | **Mark 50** · 50 open-source repositories, 91 releases shipped |
-| **Latest mission** | [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo), opened Nov 17 |
+| **Latest mission** | [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit), merged Nov 17 |
 | **Latest drop** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1), Nov 17 |
-| **Currently assembling** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo), last push Nov 17 |
+| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 17 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -209,9 +209,9 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 17</sub>
 - 🟢 **Opened** [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo) · <sub>Nov 17</sub>
 - 🔴 **Closed** [Make an existing activity log owner-only on the first write](https://github.com/Dhiva-Labs/SecureShellGo/pull/18) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 17</sub>
-- 🟢 **Opened** [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 16</sub>
 - 🟢 **Opened** [Give slices a Name that no array can have](https://github.com/google/crubit/pull/3026) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 16</sub>
 - 🟢 **Opened** [Reject entries whose compression method is unsupported](https://github.com/google/safe-bindings/pull/282) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
 - 🟢 **Opened** [Reject entity declarations in XmlDocument::Parse](https://github.com/google/safe-bindings/pull/281) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
@@ -463,11 +463,11 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**11 merged** and **16 in review**, across **12 projects** at **8 organizations**: Monero, Google, Rune, Microsoft, Discord, Coinbase, Base and rust-lang.
+**12 merged** and **15 in review**, across **12 projects** at **8 organizations**: Monero, Google, Rune, Microsoft, Discord, Coinbase, Base and rust-lang.
 
 <p align="center">
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 8 merged, 4 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/crubit%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 2 merged, 7 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/crubit%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 3 merged, 6 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 1 merged, 0 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Amicrosoft/vscode-cmake-tools&type=pullrequests" title="Microsoft · 0 merged, 1 in review"><img src="https://github.com/microsoft.png?size=88" width="44" height="44" alt="Microsoft" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Adiscord/embedded-app-sdk&type=pullrequests" title="Discord · 0 merged, 1 in review"><img src="https://github.com/discord.png?size=88" width="44" height="44" alt="Discord" /></a>&nbsp;&nbsp;
@@ -496,8 +496,8 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
 |  |  | Go back to collect() in RoaringBitmap32::ToVec | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/280?style=flat-square&label=%23280)](https://github.com/google/safe-bindings/pull/280) |
 |  |  | Reject entity declarations in XmlDocument::Parse | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/281?style=flat-square&label=%23281)](https://github.com/google/safe-bindings/pull/281) |
 |  |  | Reject entries whose compression method is unsupported | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/282?style=flat-square&label=%23282)](https://github.com/google/safe-bindings/pull/282) |
-|  | [**google/crubit**](https://github.com/google/crubit/pulls?q=is%3Apr+author%3Adhivadhiva) | Give slices a Name that no array can have | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3026?style=flat-square&label=%233026)](https://github.com/google/crubit/pull/3026) |
-|  |  | Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3027?style=flat-square&label=%233027)](https://github.com/google/crubit/pull/3027) |
+|  | [**google/crubit**](https://github.com/google/crubit/pulls?q=is%3Apr+author%3Adhivadhiva) | Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3027?style=flat-square&label=%233027)](https://github.com/google/crubit/pull/3027) |
+|  |  | Give slices a Name that no array can have | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3026?style=flat-square&label=%233026)](https://github.com/google/crubit/pull/3026) |
 |  | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 | <img src="https://github.com/microsoft.png?size=40" width="20" height="20" alt="Microsoft" /> **Microsoft** | [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |

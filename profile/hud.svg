@@ -25,12 +25,12 @@
 </g>
 <line x1="312" y1="28" x2="312" y2="302" stroke="#1E3A8A" stroke-width="1"/>
 <text x="336" y="42" class="k">J.A.R.V.I.S.</text>
-<text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 17</text>
+<text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 18</text>
 <text x="336" y="70" class="l l0"><tspan class="gold">›</tspan> Good morning, sir. Loading suit Mark 50…</text>
-<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,321 contributions · 1,917 commits</text>
+<text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,322 contributions · 1,918 commits</text>
 <text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 50 open-source repositories · 91 releases shipped</text>
-<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 257 of 288 (89%)</text>
-<text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Fix git checkout long paths</text>
+<text x="336" y="133" class="l l3"><tspan class="gold">›</tspan> Pull requests merged: 258 of 288 (90%)</text>
+<text x="336" y="154" class="l l4"><tspan class="gold">›</tspan> Latest mission: Remove duplicate Non-Rust-Movable Types ent…</text>
 <text x="336" y="175" class="l l5"><tspan class="gold">›</tspan> Threat scan: 0 unsafe blocks. Clearance: AVENGER</text>
 <text x="336" y="196" class="l l6"><tspan class="gold">›</tspan> All systems nominal. <tspan class="cur">▌</tspan></text>
 <text x="336" y="221" class="k">SUIT INTEGRITY · CODE BY LANGUAGE</text>
