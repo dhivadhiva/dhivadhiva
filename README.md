@@ -139,11 +139,11 @@ impl Avenger for Dhivakar {
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,322 contributions, 258 pull requests merged |
+| **Power level** | **Avenger** · 2,331 contributions, 262 pull requests merged |
 | **Suit** | **Mark 50** · 50 open-source repositories, 91 releases shipped |
-| **Latest mission** | [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit), merged Nov 17 |
+| **Latest mission** | [Say nearly five years of experience](https://github.com/dhivadhiva/dhivakar1010.com/pull/6) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com), merged Nov 18 |
 | **Latest drop** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1), Nov 17 |
-| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 17 |
+| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 18 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -210,14 +210,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟣 **Merged** [Say nearly five years of experience](https://github.com/dhivadhiva/dhivakar1010.com/pull/6) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 18</sub>
+- 🟣 **Merged** [Count the Cargo, FCMP++ and Crubit merges: 14 upstream PRs](https://github.com/dhivadhiva/dhivakar1010.com/pull/7) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 18</sub>
+- 🟣 **Merged** [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo) · <sub>Nov 18</sub>
+- 🟣 **Merged** [Include FCMP++ data in rctSig JSON](https://github.com/seraphis-migration/monero/pull/509) in [seraphis-migration/monero](https://github.com/seraphis-migration/monero) · <sub>Nov 18</sub>
 - 🟣 **Merged** [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 17</sub>
-- 🟢 **Opened** [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo) · <sub>Nov 17</sub>
 - 🔴 **Closed** [Make an existing activity log owner-only on the first write](https://github.com/Dhiva-Labs/SecureShellGo/pull/18) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 17</sub>
 - 🟢 **Opened** [Give slices a Name that no array can have](https://github.com/google/crubit/pull/3026) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 16</sub>
 - 🟢 **Opened** [Reject entries whose compression method is unsupported](https://github.com/google/safe-bindings/pull/282) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
-- 🟢 **Opened** [Reject entity declarations in XmlDocument::Parse](https://github.com/google/safe-bindings/pull/281) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
-- 🟢 **Opened** [Go back to collect() in RoaringBitmap32::ToVec](https://github.com/google/safe-bindings/pull/280) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
-- 🟣 **Merged** [Stop two bridge tests depending on the runner's speed](https://github.com/Dhiva-Labs/SecureShellGo/pull/17) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 16</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -464,17 +464,17 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**12 merged** and **15 in review**, across **12 projects** at **8 organizations**: Monero, Google, Rune, Microsoft, Discord, Coinbase, Base and rust-lang.
+**14 merged** and **13 in review**, across **12 projects** at **8 organizations**: Monero, Google, Rune, rust-lang, Microsoft, Discord, Coinbase and Base.
 
 <p align="center">
-  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 8 merged, 4 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 9 merged, 3 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/crubit%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 3 merged, 6 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 1 merged, 0 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Arust-lang/cargo&type=pullrequests" title="rust-lang · 1 merged, 0 in review"><img src="https://github.com/rust-lang.png?size=88" width="44" height="44" alt="rust-lang" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Amicrosoft/vscode-cmake-tools&type=pullrequests" title="Microsoft · 0 merged, 1 in review"><img src="https://github.com/microsoft.png?size=88" width="44" height="44" alt="Microsoft" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Adiscord/embedded-app-sdk&type=pullrequests" title="Discord · 0 merged, 1 in review"><img src="https://github.com/discord.png?size=88" width="44" height="44" alt="Discord" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Acoinbase/coinbase-wallet-sdk&type=pullrequests" title="Coinbase · 0 merged, 1 in review"><img src="https://github.com/coinbase.png?size=88" width="44" height="44" alt="Coinbase" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Abase/account-sdk&type=pullrequests" title="Base · 0 merged, 1 in review"><img src="https://github.com/base.png?size=88" width="44" height="44" alt="Base" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Arust-lang/cargo&type=pullrequests" title="rust-lang · 0 merged, 1 in review"><img src="https://github.com/rust-lang.png?size=88" width="44" height="44" alt="rust-lang" /></a>&nbsp;&nbsp;
 </p>
 
 | Organization | Project | Pull request | Status |
@@ -501,11 +501,11 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
 |  |  | Give slices a Name that no array can have | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3026?style=flat-square&label=%233026)](https://github.com/google/crubit/pull/3026) |
 |  | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
+| <img src="https://github.com/rust-lang.png?size=40" width="20" height="20" alt="rust-lang" /> **rust-lang** | [**rust-lang/cargo**](https://github.com/rust-lang/cargo/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix git checkout long paths | [![](https://img.shields.io/github/issues/detail/state/rust-lang/cargo/17752?style=flat-square&label=%2317752)](https://github.com/rust-lang/cargo/pull/17752) |
 | <img src="https://github.com/microsoft.png?size=40" width="20" height="20" alt="Microsoft" /> **Microsoft** | [**microsoft/vscode-cmake-tools**](https://github.com/microsoft/vscode-cmake-tools/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix build-before-run skipping the build when relaunching within 10 seconds (#5132) | [![](https://img.shields.io/github/issues/detail/state/microsoft/vscode-cmake-tools/5157?style=flat-square&label=%235157)](https://github.com/microsoft/vscode-cmake-tools/pull/5157) |
 | <img src="https://github.com/discord.png?size=40" width="20" height="20" alt="Discord" /> **Discord** | [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
 | <img src="https://github.com/coinbase.png?size=40" width="20" height="20" alt="Coinbase" /> **Coinbase** | [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
 | <img src="https://github.com/base.png?size=40" width="20" height="20" alt="Base" /> **Base** | [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
-| <img src="https://github.com/rust-lang.png?size=40" width="20" height="20" alt="rust-lang" /> **rust-lang** | [**rust-lang/cargo**](https://github.com/rust-lang/cargo/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix git checkout long paths | [![](https://img.shields.io/github/issues/detail/state/rust-lang/cargo/17752?style=flat-square&label=%2317752)](https://github.com/rust-lang/cargo/pull/17752) |
 <!-- UPSTREAM:END -->
 
 <!-- ===== SPONSOR ===== -->
