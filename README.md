@@ -49,7 +49,7 @@
 
 I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. No vibranium, no super-soldier serum: a background in **AI / ML** (PG Certification, IIT Guwahati), a lot of Rust, and work that spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the organizations whose code I build on: the **Monero** ecosystem (8 merged in monero-lws), **Google** (2 merged in safe-bindings, plus protobuf.dart), **Microsoft** (CMake Tools for VS Code), **Discord** (Embedded App SDK) and **Coinbase** and **Base** (wallet SDKs). The newest release is [**Circuit Lab**](https://circuitlab.dhivalabs.com), a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser.
+Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the organizations whose code I build on: **Rust** (merged in Cargo), the **Monero** ecosystem (8 merged in monero-lws, 1 in the FCMP++ codebase), **Google** (2 merged in safe-bindings, 1 in Crubit, plus protobuf.dart), **Rune** (merged), **Microsoft** (CMake Tools for VS Code), **Discord** (Embedded App SDK) and **Coinbase** and **Base** (wallet SDKs). The newest release is [**Circuit Lab**](https://circuitlab.dhivalabs.com), a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser.
 
 ```rust
 //! suit_up.rs · recompiled every morning by the GitHub Actions arc reactor
@@ -60,7 +60,7 @@ struct Dhivakar {
     education: &'static str,
     focus:     [&'static str; 5],
     shipping:  [&'static str; 6],
-    upstream:  [&'static str; 10],
+    upstream:  [&'static str; 12],
 }
 
 impl Avenger for Dhivakar {
@@ -73,8 +73,9 @@ impl Avenger for Dhivakar {
                         "Machine Intelligence", "Embedded Systems", "Full-Stack"],
             shipping:  ["Snap Store", "Launchpad PPA", "Microsoft Store",
                         "Chrome Web Store", "Firefox Add-ons", "GitHub Releases"],
-            upstream:  ["vtnerd/monero-lws", "monero-project/monero",
-                        "seraphis-migration/monero", "google/safe-bindings",
+            upstream:  ["rust-lang/cargo", "vtnerd/monero-lws",
+                        "monero-project/monero", "seraphis-migration/monero",
+                        "google/safe-bindings", "google/crubit",
                         "google/protobuf.dart", "microsoft/vscode-cmake-tools",
                         "discord/embedded-app-sdk", "coinbase/coinbase-wallet-sdk",
                         "base/account-sdk", "unstablebuild/rune"],
@@ -126,7 +127,7 @@ impl Avenger for Dhivakar {
 | **Arc reactor** | Rust · Dart / Flutter · C / C++ · Python · Go |
 | **Suit** | Mark ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.repos&label=&color=B91C1C) · one mark per open-source repository, upgraded automatically |
 | **Power level** | ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.rank&label=&color=7E22CE) · ranked daily from ![](https://img.shields.io/badge/dynamic/json?style=flat-square&url=https://raw.githubusercontent.com/dhivadhiva/dhivadhiva/main/profile/numbers.json&query=$.contributions&label=&color=334155) contributions |
-| **Known associates** | Monero (monero-lws, wallet, FCMP++), Google (safe-bindings, protobuf.dart), Microsoft (CMake Tools), Discord (Embedded App SDK), Coinbase and Base (wallet SDKs), Rune |
+| **Known associates** | Rust (Cargo), Monero (monero-lws, wallet, FCMP++), Google (safe-bindings, Crubit, protobuf.dart), Microsoft (CMake Tools), Discord (Embedded App SDK), Coinbase and Base (wallet SDKs), Rune |
 | **A.I. assistant** | J.A.R.V.I.S., running on GitHub Actions. Reboots daily at 06:00 IST, never asks for a raise. |
 | **Protocols** | **House Party**: every app on every platform, deployed at once · **Clean Slate**: `clippy -D warnings` before every release · **Veronica**: the daily build that drops a fresh suit each morning |
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
