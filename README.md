@@ -49,7 +49,7 @@
 
 I'm **Dhivakar Rajaram**, Founder and Principal Investigator at **Dhiva Labs**, an independent software R&D lab in Chennai, India. No vibranium, no super-soldier serum: a background in **AI / ML** (PG Certification, IIT Guwahati), a lot of Rust, and work that spans applied cryptography, machine intelligence, embedded systems and full-stack engineering.
 
-Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the organizations whose code I build on: **Rust** (merged in Cargo), the **Monero** ecosystem (8 merged in monero-lws, 1 in the FCMP++ codebase), **Google** (2 merged in safe-bindings, 1 in Crubit, plus protobuf.dart), **Rune** (merged), **Microsoft** (CMake Tools for VS Code), **Discord** (Embedded App SDK) and **Coinbase** and **Base** (wallet SDKs). The newest release is [**Circuit Lab**](https://circuitlab.dhivalabs.com), a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser.
+Dhiva Labs is my workshop: Stark Tower minus the budget, Malibu minus the ocean, Chennai with the humidity. I turn research into shipped products: apps for Linux, Windows and Android, from a Monero wallet and a disk-recovery suite to an API workbench and a Linux ↔ Windows remote desktop. They ship through Google Play, the Snap Store, a Launchpad PPA, the Microsoft Store, the Chrome Web Store, Firefox Add-ons and GitHub Releases, and I send fixes upstream to the organizations whose code I build on: **Rust** (merged in Cargo), the **Monero** ecosystem (8 merged in monero-lws, 1 in the FCMP++ codebase), **Google** (2 merged in safe-bindings, 1 in Crubit, plus protobuf.dart), **Rune** (merged), **Microsoft** (CMake Tools for VS Code), **Discord** (Embedded App SDK) and **Coinbase** and **Base** (wallet SDKs). The newest release is [**Circuit Lab**](https://circuitlab.dhivalabs.com), a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser.
 
 ```rust
 //! suit_up.rs · recompiled every morning by the GitHub Actions arc reactor
@@ -71,8 +71,9 @@ impl Avenger for Dhivakar {
             education: "PG Certification, AI & ML — IIT Guwahati",
             focus:     ["Cross-platform apps", "Cryptography & Blockchain",
                         "Machine Intelligence", "Embedded Systems", "Full-Stack"],
-            shipping:  ["Snap Store", "Launchpad PPA", "Microsoft Store",
-                        "Chrome Web Store", "Firefox Add-ons", "GitHub Releases"],
+            shipping:  ["Google Play", "Snap Store", "Launchpad PPA",
+                        "Microsoft Store", "Chrome Web Store", "Firefox Add-ons",
+                        "GitHub Releases"],
             upstream:  ["rust-lang/cargo", "vtnerd/monero-lws",
                         "monero-project/monero", "seraphis-migration/monero",
                         "google/safe-bindings", "google/crubit",
@@ -313,6 +314,7 @@ An independent software lab that builds finished products and custom engineering
 **Shipping on**
 
 <a href="https://github.com/Dhiva-Labs"><img src="https://img.shields.io/badge/GitHub_Releases-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Releases" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.dhivalabs.api_workbench"><img src="https://img.shields.io/badge/Google_Play-01875F?style=for-the-badge&logo=googleplay&logoColor=white" alt="Google Play" /></a>
 <a href="https://snapcraft.io/publisher/dhivakar1010"><img src="https://img.shields.io/badge/Snap_Store-82BEA0?style=for-the-badge&logo=snapcraft&logoColor=white" alt="Snap Store" /></a>
 <a href="https://launchpad.net/~dhiva-labs/+archive/ubuntu/apps"><img src="https://img.shields.io/badge/Launchpad_PPA-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Launchpad PPA" /></a>
 <a href="https://apps.microsoft.com/search/publisher?name=Dhiva-Labs"><img src="https://img.shields.io/badge/Microsoft_Store-0078D4?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIgMmg5LjV2OS41SDJ6TTEyLjUgMkgyMnY5LjVoLTkuNXpNMiAxMi41aDkuNVYyMkgyek0xMi41IDEyLjVIMjJWMjJoLTkuNXoiLz48L3N2Zz4=" alt="Microsoft Store" /></a>
@@ -327,6 +329,9 @@ sudo add-apt-repository ppa:dhiva-labs/apps && sudo apt install apiworkbench
 
 # Any Linux with snapd
 sudo snap install apiworkbench
+
+# Android
+# Google Play: https://play.google.com/store/apps/details?id=com.dhivalabs.api_workbench
 ```
 
 <details open>
