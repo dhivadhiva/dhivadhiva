@@ -133,9 +133,9 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 18</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 19</sub>
 
-> Repulsors charged. Lints at zero. Deploying.
+> Hint: six stones are hiding above this dossier. Hover each one.
 
 | | |
 | --- | --- |
