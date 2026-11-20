@@ -133,17 +133,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 19</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 20</sub>
 
-> Hint: six stones are hiding above this dossier. Hover each one.
+> Hint: the footer has a post-credits scene. Hover over it.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,331 contributions, 262 pull requests merged |
+| **Power level** | **Avenger** · 2,378 contributions, 265 pull requests merged |
 | **Suit** | **Mark 50** · 50 open-source repositories, 91 releases shipped |
-| **Latest mission** | [Say nearly five years of experience](https://github.com/dhivadhiva/dhivakar1010.com/pull/6) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com), merged Nov 18 |
+| **Latest mission** | [Start load tests without waiting for the temp folder sweep](https://github.com/Dhiva-Labs/ApiWorkbench/pull/73) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench), opened Nov 19 |
 | **Latest drop** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1), Nov 17 |
-| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 18 |
+| **Currently assembling** | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench), last push Nov 19 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -190,9 +190,9 @@ impl Avenger for Dhivakar {
 <!-- LANGS:START -->
 <div align="center">
   <sub>Code across 50 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-47.1%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-25.9%25-dea584?style=flat-square" alt="Rust" />
-  <img src="https://img.shields.io/badge/C-6.7%25-555555?style=flat-square" alt="C" />
+  <img src="https://img.shields.io/badge/Dart-47.3%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-25.8%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/C-6.6%25-555555?style=flat-square" alt="C" />
   <img src="https://img.shields.io/badge/TypeScript-4.4%25-3178c6?style=flat-square" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-3.6%25-f1e05a?style=flat-square" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-2.7%25-3572A5?style=flat-square" alt="Python" />
@@ -210,14 +210,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
-- 🟣 **Merged** [Say nearly five years of experience](https://github.com/dhivadhiva/dhivakar1010.com/pull/6) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 18</sub>
-- 🟣 **Merged** [Count the Cargo, FCMP++ and Crubit merges: 14 upstream PRs](https://github.com/dhivadhiva/dhivakar1010.com/pull/7) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 18</sub>
-- 🟣 **Merged** [Fix git checkout long paths](https://github.com/rust-lang/cargo/pull/17752) in [rust-lang/cargo](https://github.com/rust-lang/cargo) · <sub>Nov 18</sub>
-- 🟣 **Merged** [Include FCMP++ data in rctSig JSON](https://github.com/seraphis-migration/monero/pull/509) in [seraphis-migration/monero](https://github.com/seraphis-migration/monero) · <sub>Nov 18</sub>
-- 🟣 **Merged** [Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md](https://github.com/google/crubit/pull/3027) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 17</sub>
-- 🔴 **Closed** [Make an existing activity log owner-only on the first write](https://github.com/Dhiva-Labs/SecureShellGo/pull/18) in [Dhiva-Labs/SecureShellGo](https://github.com/Dhiva-Labs/SecureShellGo) · <sub>Nov 17</sub>
-- 🟢 **Opened** [Give slices a Name that no array can have](https://github.com/google/crubit/pull/3026) in [google/crubit](https://github.com/google/crubit) · <sub>Nov 16</sub>
-- 🟢 **Opened** [Reject entries whose compression method is unsupported](https://github.com/google/safe-bindings/pull/282) in [google/safe-bindings](https://github.com/google/safe-bindings) · <sub>Nov 16</sub>
+- 🟢 **Opened** [Start load tests without waiting for the temp folder sweep](https://github.com/Dhiva-Labs/ApiWorkbench/pull/73) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
+- 🟢 **Opened** [Leave secrets out of workspace exports and ask before scripts of reopened requests](https://github.com/Dhiva-Labs/ApiWorkbench/pull/71) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
+- 🟢 **Opened** [README: link the Google Play listing](https://github.com/Dhiva-Labs/ApiWorkbench/pull/70) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
+- 🟣 **Merged** [Harden redirect handling and credential forwarding](https://github.com/Dhiva-Labs/ApiWorkbench/pull/65) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
+- 🟢 **Opened** [Add Google Play to the shipping channels](https://github.com/dhivadhiva/dhivadhiva/pull/2) in [dhivadhiva/dhivadhiva](https://github.com/dhivadhiva/dhivadhiva) · <sub>Nov 19</sub>
+- 🟢 **Opened** [Add Google Play: ApiWorkbench is live there](https://github.com/dhivadhiva/dhivakar1010.com/pull/8) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 19</sub>
+- 🟣 **Merged** [Make imported collections safe by default and keep secrets out of exports](https://github.com/Dhiva-Labs/ApiWorkbench/pull/66) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
+- 🟢 **Opened** [Keep credentials in the system keychain and the data folder private](https://github.com/Dhiva-Labs/ApiWorkbench/pull/68) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -239,12 +239,12 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-1.svg" alt="SecureShellGo" /></a>
-  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-2.svg" alt="NearShare" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-3.svg" alt="kilonova" /></a>
-  <a href="https://github.com/Dhiva-Labs/Cloakpaste"><img src="./profile/pin-4.svg" alt="Cloakpaste" /></a>
-  <a href="https://github.com/Dhiva-Labs/idea-lab"><img src="./profile/pin-5.svg" alt="idea-lab" /></a>
-  <a href="https://github.com/Dhiva-Labs/BranchPilot"><img src="./profile/pin-6.svg" alt="BranchPilot" /></a>
+  <a href="https://github.com/Dhiva-Labs/ApiWorkbench"><img src="./profile/pin-1.svg" alt="ApiWorkbench" /></a>
+  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-2.svg" alt="SecureShellGo" /></a>
+  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-3.svg" alt="NearShare" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-4.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/Cloakpaste"><img src="./profile/pin-5.svg" alt="Cloakpaste" /></a>
+  <a href="https://github.com/Dhiva-Labs/idea-lab"><img src="./profile/pin-6.svg" alt="idea-lab" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
