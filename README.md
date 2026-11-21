@@ -134,17 +134,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 20</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 21</sub>
 
-> Hint: the footer has a post-credits scene. Hover over it.
+> Hint: the source of this README has a Level 7 message at the very top.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,378 contributions, 265 pull requests merged |
-| **Suit** | **Mark 50** · 50 open-source repositories, 91 releases shipped |
-| **Latest mission** | [Start load tests without waiting for the temp folder sweep](https://github.com/Dhiva-Labs/ApiWorkbench/pull/73) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench), opened Nov 19 |
-| **Latest drop** | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1), Nov 17 |
-| **Currently assembling** | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench), last push Nov 19 |
+| **Power level** | **Avenger** · 2,455 contributions, 274 pull requests merged |
+| **Suit** | **Mark 51** · 51 open-source repositories, 92 releases shipped |
+| **Latest mission** | [Guard IncomingPayloadManager::custom_save_path_ with its mutex](https://github.com/google/nearby/pull/4836) in [google/nearby](https://github.com/google/nearby), opened Nov 20 |
+| **Latest drop** | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench) [`v1.5.0`](https://github.com/Dhiva-Labs/ApiWorkbench/releases/tag/v1.5.0), Nov 20 |
+| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 20 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -190,12 +190,12 @@ impl Avenger for Dhivakar {
 
 <!-- LANGS:START -->
 <div align="center">
-  <sub>Code across 50 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-47.3%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-25.8%25-dea584?style=flat-square" alt="Rust" />
+  <sub>Code across 51 Dhiva Labs repositories, by size</sub><br/>
+  <img src="https://img.shields.io/badge/Dart-47.1%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-26.2%25-dea584?style=flat-square" alt="Rust" />
   <img src="https://img.shields.io/badge/C-6.6%25-555555?style=flat-square" alt="C" />
-  <img src="https://img.shields.io/badge/TypeScript-4.4%25-3178c6?style=flat-square" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-3.6%25-f1e05a?style=flat-square" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-4.3%25-3178c6?style=flat-square" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-3.5%25-f1e05a?style=flat-square" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-2.7%25-3572A5?style=flat-square" alt="Python" />
   <img src="https://img.shields.io/badge/Shell-2.6%25-89e051?style=flat-square" alt="Shell" />
   <img src="https://img.shields.io/badge/C%2B%2B-1.9%25-f34b7d?style=flat-square" alt="C++" />
@@ -211,14 +211,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
-- 🟢 **Opened** [Start load tests without waiting for the temp folder sweep](https://github.com/Dhiva-Labs/ApiWorkbench/pull/73) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
-- 🟢 **Opened** [Leave secrets out of workspace exports and ask before scripts of reopened requests](https://github.com/Dhiva-Labs/ApiWorkbench/pull/71) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
-- 🟢 **Opened** [README: link the Google Play listing](https://github.com/Dhiva-Labs/ApiWorkbench/pull/70) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
-- 🟣 **Merged** [Harden redirect handling and credential forwarding](https://github.com/Dhiva-Labs/ApiWorkbench/pull/65) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
-- 🟢 **Opened** [Add Google Play to the shipping channels](https://github.com/dhivadhiva/dhivadhiva/pull/2) in [dhivadhiva/dhivadhiva](https://github.com/dhivadhiva/dhivadhiva) · <sub>Nov 19</sub>
-- 🟢 **Opened** [Add Google Play: ApiWorkbench is live there](https://github.com/dhivadhiva/dhivakar1010.com/pull/8) in [dhivadhiva/dhivakar1010.com](https://github.com/dhivadhiva/dhivakar1010.com) · <sub>Nov 19</sub>
-- 🟣 **Merged** [Make imported collections safe by default and keep secrets out of exports](https://github.com/Dhiva-Labs/ApiWorkbench/pull/66) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
-- 🟢 **Opened** [Keep credentials in the system keychain and the data folder private](https://github.com/Dhiva-Labs/ApiWorkbench/pull/68) in [Dhiva-Labs/ApiWorkbench](https://github.com/Dhiva-Labs/ApiWorkbench) · <sub>Nov 19</sub>
+- 🟢 **Opened** [Guard IncomingPayloadManager::custom_save_path_ with its mutex](https://github.com/google/nearby/pull/4836) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Fix C API endpoint ID conversion, status mapping and Dart options](https://github.com/google/nearby/pull/4835) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Bounds-check BLE, Bluetooth and Wi-Fi LAN connection info parsing](https://github.com/google/nearby/pull/4834) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Fix Weave multi-packet receive and handshake packet size parsing](https://github.com/google/nearby/pull/4833) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Fix URL fragment, port, userinfo and IPv6 parsing and UrlEncode padding](https://github.com/google/nearby/pull/4832) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Fix Uuid ordering and the empty-input name-based constructor](https://github.com/google/nearby/pull/4831) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Propagate WifiLan server socket failures from StartAcceptingConnections](https://github.com/google/nearby/pull/4830) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
+- 🟢 **Opened** [Make DCT endpoint ID generation independent of char signedness](https://github.com/google/nearby/pull/4829) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -227,12 +227,12 @@ impl Avenger for Dhivakar {
 <!-- RELEASES:START -->
 | Project | Release | Published |
 | --- | --- | --- |
+| [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench) | [`v1.5.0`](https://github.com/Dhiva-Labs/ApiWorkbench/releases/tag/v1.5.0) | Nov 20 |
 | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1) | Nov 17 |
 | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0) | Nov 13 |
 | [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.2`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.2) | Nov 13 |
 | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) | [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0) | Nov 10 |
 | [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) | [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0) | Nov 7 |
-| [**dl-image-tools**](https://github.com/Dhiva-Labs/dl-image-tools) | [`v1.0.1`](https://github.com/Dhiva-Labs/dl-image-tools/releases/tag/v1.0.1) | Nov 4 |
 <!-- RELEASES:END -->
 
 <!-- ===== FEATURED ===== -->
@@ -240,12 +240,12 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/ApiWorkbench"><img src="./profile/pin-1.svg" alt="ApiWorkbench" /></a>
-  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-2.svg" alt="SecureShellGo" /></a>
-  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-3.svg" alt="NearShare" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-4.svg" alt="kilonova" /></a>
-  <a href="https://github.com/Dhiva-Labs/Cloakpaste"><img src="./profile/pin-5.svg" alt="Cloakpaste" /></a>
-  <a href="https://github.com/Dhiva-Labs/idea-lab"><img src="./profile/pin-6.svg" alt="idea-lab" /></a>
+  <a href="https://github.com/Dhiva-Labs/hopwyn"><img src="./profile/pin-1.svg" alt="hopwyn" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-2.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/ApiWorkbench"><img src="./profile/pin-3.svg" alt="ApiWorkbench" /></a>
+  <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-4.svg" alt="SecureShellGo" /></a>
+  <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-5.svg" alt="NearShare" /></a>
+  <a href="https://github.com/Dhiva-Labs/Cloakpaste"><img src="./profile/pin-6.svg" alt="Cloakpaste" /></a>
 </div>
 
 <p align="center"><sub>Picked daily: the six Dhiva Labs projects with the newest commits</sub></p>
@@ -469,11 +469,11 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**14 merged** and **13 in review**, across **12 projects** at **8 organizations**: Monero, Google, Rune, rust-lang, Microsoft, Discord, Coinbase and Base.
+**14 merged** and **23 in review**, across **13 projects** at **8 organizations**: Monero, Google, Rune, rust-lang, Microsoft, Discord, Coinbase and Base.
 
 <p align="center">
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 9 merged, 3 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/crubit%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 3 merged, 6 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Agoogle/nearby%20repo%3Agoogle/crubit%20repo%3Agoogle/safe-bindings%20repo%3Agoogle/protobuf.dart&type=pullrequests" title="Google · 3 merged, 16 in review"><img src="https://github.com/google.png?size=88" width="44" height="44" alt="Google" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Aunstablebuild/rune&type=pullrequests" title="Rune · 1 merged, 0 in review"><img src="https://github.com/unstablebuild.png?size=88" width="44" height="44" alt="Rune" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Arust-lang/cargo&type=pullrequests" title="rust-lang · 1 merged, 0 in review"><img src="https://github.com/rust-lang.png?size=88" width="44" height="44" alt="rust-lang" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Amicrosoft/vscode-cmake-tools&type=pullrequests" title="Microsoft · 0 merged, 1 in review"><img src="https://github.com/microsoft.png?size=88" width="44" height="44" alt="Microsoft" /></a>&nbsp;&nbsp;
@@ -504,6 +504,16 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
 |  |  | Reject entries whose compression method is unsupported | [![](https://img.shields.io/github/issues/detail/state/google/safe-bindings/282?style=flat-square&label=%23282)](https://github.com/google/safe-bindings/pull/282) |
 |  | [**google/crubit**](https://github.com/google/crubit/pulls?q=is%3Apr+author%3Adhivadhiva) | Remove duplicate Non-Rust-Movable Types entry from SUMMARY.md | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3027?style=flat-square&label=%233027)](https://github.com/google/crubit/pull/3027) |
 |  |  | Give slices a Name that no array can have | [![](https://img.shields.io/github/issues/detail/state/google/crubit/3026?style=flat-square&label=%233026)](https://github.com/google/crubit/pull/3026) |
+|  | [**google/nearby**](https://github.com/google/nearby/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix use-after-free in NcCloseService | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4827?style=flat-square&label=%234827)](https://github.com/google/nearby/pull/4827) |
+|  |  | Untrack outgoing payloads whose send task exits early | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4828?style=flat-square&label=%234828)](https://github.com/google/nearby/pull/4828) |
+|  |  | Make DCT endpoint ID generation independent of char signedness | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4829?style=flat-square&label=%234829)](https://github.com/google/nearby/pull/4829) |
+|  |  | Propagate WifiLan server socket failures from StartAcceptingConnections | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4830?style=flat-square&label=%234830)](https://github.com/google/nearby/pull/4830) |
+|  |  | Fix Uuid ordering and the empty-input name-based constructor | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4831?style=flat-square&label=%234831)](https://github.com/google/nearby/pull/4831) |
+|  |  | Fix URL fragment, port, userinfo and IPv6 parsing and UrlEncode padding | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4832?style=flat-square&label=%234832)](https://github.com/google/nearby/pull/4832) |
+|  |  | Fix Weave multi-packet receive and handshake packet size parsing | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4833?style=flat-square&label=%234833)](https://github.com/google/nearby/pull/4833) |
+|  |  | Bounds-check BLE, Bluetooth and Wi-Fi LAN connection info parsing | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4834?style=flat-square&label=%234834)](https://github.com/google/nearby/pull/4834) |
+|  |  | Fix C API endpoint ID conversion, status mapping and Dart options | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4835?style=flat-square&label=%234835)](https://github.com/google/nearby/pull/4835) |
+|  |  | Guard IncomingPayloadManager::custom_save_path_ with its mutex | [![](https://img.shields.io/github/issues/detail/state/google/nearby/4836?style=flat-square&label=%234836)](https://github.com/google/nearby/pull/4836) |
 |  | [**google/protobuf.dart**](https://github.com/google/protobuf.dart/pulls?q=is%3Apr+author%3Adhivadhiva) | Use Int64.ZERO as the default for 64-bit integer fields | [![](https://img.shields.io/github/issues/detail/state/google/protobuf.dart/1114?style=flat-square&label=%231114)](https://github.com/google/protobuf.dart/pull/1114) |
 | <img src="https://github.com/unstablebuild.png?size=40" width="20" height="20" alt="Rune" /> **Rune** | [**unstablebuild/rune**](https://github.com/unstablebuild/rune/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix building Rune on platforms other than Linux and macOS | [![](https://img.shields.io/github/issues/detail/state/unstablebuild/rune/218?style=flat-square&label=%23218)](https://github.com/unstablebuild/rune/pull/218) |
 | <img src="https://github.com/rust-lang.png?size=40" width="20" height="20" alt="rust-lang" /> **rust-lang** | [**rust-lang/cargo**](https://github.com/rust-lang/cargo/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix git checkout long paths | [![](https://img.shields.io/github/issues/detail/state/rust-lang/cargo/17752?style=flat-square&label=%2317752)](https://github.com/rust-lang/cargo/pull/17752) |
