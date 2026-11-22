@@ -134,17 +134,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 21</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 22</sub>
 
-> Hint: the source of this README has a Level 7 message at the very top.
+> Debugging is just time travel with a worse interface.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,455 contributions, 274 pull requests merged |
-| **Suit** | **Mark 51** · 51 open-source repositories, 92 releases shipped |
+| **Power level** | **Avenger** · 2,464 contributions, 274 pull requests merged |
+| **Suit** | **Mark 51** · 51 open-source repositories, 93 releases shipped |
 | **Latest mission** | [Guard IncomingPayloadManager::custom_save_path_ with its mutex](https://github.com/google/nearby/pull/4836) in [google/nearby](https://github.com/google/nearby), opened Nov 20 |
-| **Latest drop** | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench) [`v1.5.0`](https://github.com/Dhiva-Labs/ApiWorkbench/releases/tag/v1.5.0), Nov 20 |
-| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 20 |
+| **Latest drop** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) [`v0.2.0`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.2.0), Nov 21 |
+| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 21 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -191,9 +191,9 @@ impl Avenger for Dhivakar {
 <!-- LANGS:START -->
 <div align="center">
   <sub>Code across 51 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-47.1%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-26.2%25-dea584?style=flat-square" alt="Rust" />
-  <img src="https://img.shields.io/badge/C-6.6%25-555555?style=flat-square" alt="C" />
+  <img src="https://img.shields.io/badge/Dart-46.9%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-26.3%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/C-6.5%25-555555?style=flat-square" alt="C" />
   <img src="https://img.shields.io/badge/TypeScript-4.3%25-3178c6?style=flat-square" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-3.5%25-f1e05a?style=flat-square" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-2.7%25-3572A5?style=flat-square" alt="Python" />
@@ -227,12 +227,12 @@ impl Avenger for Dhivakar {
 <!-- RELEASES:START -->
 | Project | Release | Published |
 | --- | --- | --- |
+| [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) | [`v0.2.0`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.2.0) | Nov 21 |
 | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench) | [`v1.5.0`](https://github.com/Dhiva-Labs/ApiWorkbench/releases/tag/v1.5.0) | Nov 20 |
 | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1) | Nov 17 |
 | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0) | Nov 13 |
 | [**Cloakpaste**](https://github.com/Dhiva-Labs/Cloakpaste) | [`v0.1.2`](https://github.com/Dhiva-Labs/Cloakpaste/releases/tag/v0.1.2) | Nov 13 |
 | [**circuit_lab**](https://github.com/dhivadhiva/circuit_lab) | [`v1.0.0`](https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0) | Nov 10 |
-| [**dl_prism**](https://github.com/Dhiva-Labs/dl_prism) | [`v0.2.0`](https://github.com/Dhiva-Labs/dl_prism/releases/tag/v0.2.0) | Nov 7 |
 <!-- RELEASES:END -->
 
 <!-- ===== FEATURED ===== -->
