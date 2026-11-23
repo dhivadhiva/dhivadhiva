@@ -134,17 +134,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 22</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 23</sub>
 
-> Debugging is just time travel with a worse interface.
+> Rust is the arc reactor. Flutter is the suit. Coffee is the vibranium.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,464 contributions, 274 pull requests merged |
+| **Power level** | **Avenger** · 2,469 contributions, 275 pull requests merged |
 | **Suit** | **Mark 51** · 51 open-source repositories, 93 releases shipped |
-| **Latest mission** | [Guard IncomingPayloadManager::custom_save_path_ with its mutex](https://github.com/google/nearby/pull/4836) in [google/nearby](https://github.com/google/nearby), opened Nov 20 |
+| **Latest mission** | [Fix QUIC use-after-free during handshake and mp4 heap buffer overflow](https://github.com/nginx/nginx/pull/2020) in [nginx/nginx](https://github.com/nginx/nginx), opened Nov 23 |
 | **Latest drop** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) [`v0.2.0`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.2.0), Nov 21 |
-| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 21 |
+| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 23 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -211,14 +211,14 @@ impl Avenger for Dhivakar {
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY:START -->
+- 🟢 **Opened** [Fix QUIC use-after-free during handshake and mp4 heap buffer overflow](https://github.com/nginx/nginx/pull/2020) in [nginx/nginx](https://github.com/nginx/nginx) · <sub>Nov 23</sub>
+- 🟣 **Merged** [Describe Hopwyn's supply-chain checks as they are today](https://github.com/Dhiva-Labs/hopwyn/pull/1) in [Dhiva-Labs/hopwyn](https://github.com/Dhiva-Labs/hopwyn) · <sub>Nov 22</sub>
 - 🟢 **Opened** [Guard IncomingPayloadManager::custom_save_path_ with its mutex](https://github.com/google/nearby/pull/4836) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 - 🟢 **Opened** [Fix C API endpoint ID conversion, status mapping and Dart options](https://github.com/google/nearby/pull/4835) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 - 🟢 **Opened** [Bounds-check BLE, Bluetooth and Wi-Fi LAN connection info parsing](https://github.com/google/nearby/pull/4834) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 - 🟢 **Opened** [Fix Weave multi-packet receive and handshake packet size parsing](https://github.com/google/nearby/pull/4833) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 - 🟢 **Opened** [Fix URL fragment, port, userinfo and IPv6 parsing and UrlEncode padding](https://github.com/google/nearby/pull/4832) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 - 🟢 **Opened** [Fix Uuid ordering and the empty-input name-based constructor](https://github.com/google/nearby/pull/4831) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
-- 🟢 **Opened** [Propagate WifiLan server socket failures from StartAcceptingConnections](https://github.com/google/nearby/pull/4830) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
-- 🟢 **Opened** [Make DCT endpoint ID generation independent of char signedness](https://github.com/google/nearby/pull/4829) in [google/nearby](https://github.com/google/nearby) · <sub>Nov 20</sub>
 <!-- ACTIVITY:END -->
 
 <!-- ===== RELEASES ===== -->
@@ -469,7 +469,7 @@ sudo snap install apiworkbench
 Pull requests sent upstream to the organizations whose code I build on, grouped by organization with merged work first. Hover a logo for the count, or click it for the pull requests. The table is generated from GitHub every day, so new ones show up here on their own; pull requests closed without a merge are left out.
 
 <!-- UPSTREAM:START -->
-**14 merged** and **23 in review**, across **13 projects** at **8 organizations**: Monero, Google, Rune, rust-lang, Microsoft, Discord, Coinbase and Base.
+**14 merged** and **24 in review**, across **14 projects** at **9 organizations**: Monero, Google, Rune, rust-lang, Microsoft, Discord, Coinbase, Base and nginx.
 
 <p align="center">
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Avtnerd/monero-lws%20repo%3Aseraphis-migration/monero%20repo%3Amonero-project/monero&type=pullrequests" title="Monero · 9 merged, 3 in review"><img src="https://github.com/monero-project.png?size=88" width="44" height="44" alt="Monero" /></a>&nbsp;&nbsp;
@@ -480,6 +480,7 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Adiscord/embedded-app-sdk&type=pullrequests" title="Discord · 0 merged, 1 in review"><img src="https://github.com/discord.png?size=88" width="44" height="44" alt="Discord" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Acoinbase/coinbase-wallet-sdk&type=pullrequests" title="Coinbase · 0 merged, 1 in review"><img src="https://github.com/coinbase.png?size=88" width="44" height="44" alt="Coinbase" /></a>&nbsp;&nbsp;
   <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Abase/account-sdk&type=pullrequests" title="Base · 0 merged, 1 in review"><img src="https://github.com/base.png?size=88" width="44" height="44" alt="Base" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/search?q=is%3Apr%20author%3Adhivadhiva%20repo%3Anginx/nginx&type=pullrequests" title="nginx · 0 merged, 1 in review"><img src="https://github.com/nginx.png?size=88" width="44" height="44" alt="nginx" /></a>&nbsp;&nbsp;
 </p>
 
 | Organization | Project | Pull request | Status |
@@ -521,6 +522,7 @@ Pull requests sent upstream to the organizations whose code I build on, grouped 
 | <img src="https://github.com/discord.png?size=40" width="20" height="20" alt="Discord" /> **Discord** | [**discord/embedded-app-sdk**](https://github.com/discord/embedded-app-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep XHR requests async when patchUrlMappings wraps a two-argument open | [![](https://img.shields.io/github/issues/detail/state/discord/embedded-app-sdk/394?style=flat-square&label=%23394)](https://github.com/discord/embedded-app-sdk/pull/394) |
 | <img src="https://github.com/coinbase.png?size=40" width="20" height="20" alt="Coinbase" /> **Coinbase** | [**coinbase/coinbase-wallet-sdk**](https://github.com/coinbase/coinbase-wallet-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/coinbase/coinbase-wallet-sdk/1938?style=flat-square&label=%231938)](https://github.com/coinbase/coinbase-wallet-sdk/pull/1938) |
 | <img src="https://github.com/base.png?size=40" width="20" height="20" alt="Base" /> **Base** | [**base/account-sdk**](https://github.com/base/account-sdk/pulls?q=is%3Apr+author%3Adhivadhiva) | Keep analytics errors out of the app console | [![](https://img.shields.io/github/issues/detail/state/base/account-sdk/421?style=flat-square&label=%23421)](https://github.com/base/account-sdk/pull/421) |
+| <img src="https://github.com/nginx.png?size=40" width="20" height="20" alt="nginx" /> **nginx** | [**nginx/nginx**](https://github.com/nginx/nginx/pulls?q=is%3Apr+author%3Adhivadhiva) | Fix QUIC use-after-free during handshake and mp4 heap buffer overflow | [![](https://img.shields.io/github/issues/detail/state/nginx/nginx/2020?style=flat-square&label=%232020)](https://github.com/nginx/nginx/pull/2020) |
 <!-- UPSTREAM:END -->
 
 <!-- ===== SPONSOR ===== -->
