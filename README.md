@@ -134,17 +134,17 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 24</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 25</sub>
 
-> The daily build is the only Avenger that never misses a call.
+> Snap. Half the bugs are gone. The other half are in the issue tracker.
 
 | | |
 | --- | --- |
-| **Power level** | **Avenger** · 2,471 contributions, 275 pull requests merged |
-| **Suit** | **Mark 51** · 51 open-source repositories, 94 releases shipped |
+| **Power level** | **Avenger** · 2,473 contributions, 275 pull requests merged |
+| **Suit** | **Mark 51** · 51 open-source repositories, 95 releases shipped |
 | **Latest mission** | [Fix QUIC use-after-free during handshake and mp4 heap buffer overflow](https://github.com/nginx/nginx/pull/2020) in [nginx/nginx](https://github.com/nginx/nginx), opened Nov 23 |
-| **Latest drop** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) [`v0.3.0`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.3.0), Nov 23 |
-| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 23 |
+| **Latest drop** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) [`v0.3.1`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.3.1), Nov 24 |
+| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 24 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -191,8 +191,8 @@ impl Avenger for Dhivakar {
 <!-- LANGS:START -->
 <div align="center">
   <sub>Code across 51 Dhiva Labs repositories, by size</sub><br/>
-  <img src="https://img.shields.io/badge/Dart-46.8%25-00B4AB?style=flat-square" alt="Dart" />
-  <img src="https://img.shields.io/badge/Rust-26.4%25-dea584?style=flat-square" alt="Rust" />
+  <img src="https://img.shields.io/badge/Dart-46.7%25-00B4AB?style=flat-square" alt="Dart" />
+  <img src="https://img.shields.io/badge/Rust-26.5%25-dea584?style=flat-square" alt="Rust" />
   <img src="https://img.shields.io/badge/C-6.5%25-555555?style=flat-square" alt="C" />
   <img src="https://img.shields.io/badge/TypeScript-4.3%25-3178c6?style=flat-square" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-3.5%25-f1e05a?style=flat-square" alt="JavaScript" />
@@ -227,7 +227,7 @@ impl Avenger for Dhivakar {
 <!-- RELEASES:START -->
 | Project | Release | Published |
 | --- | --- | --- |
-| [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) | [`v0.3.0`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.3.0) | Nov 23 |
+| [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) | [`v0.3.1`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.3.1) | Nov 24 |
 | [**ApiWorkbench**](https://github.com/Dhiva-Labs/ApiWorkbench) | [`v1.5.0`](https://github.com/Dhiva-Labs/ApiWorkbench/releases/tag/v1.5.0) | Nov 20 |
 | [**SecureShellGo**](https://github.com/Dhiva-Labs/SecureShellGo) | [`v1.8.1`](https://github.com/Dhiva-Labs/SecureShellGo/releases/tag/v1.8.1) | Nov 17 |
 | [**NearShare**](https://github.com/Dhiva-Labs/NearShare) | [`v1.1.0`](https://github.com/Dhiva-Labs/NearShare/releases/tag/v1.1.0) | Nov 13 |
