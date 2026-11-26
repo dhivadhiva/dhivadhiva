@@ -134,9 +134,9 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 25</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 26</sub>
 
-> Snap. Half the bugs are gone. The other half are in the issue tracker.
+> Every unsafe block is a Skrull. Trust nothing until it is verified.
 
 | | |
 | --- | --- |
@@ -144,7 +144,7 @@ impl Avenger for Dhivakar {
 | **Suit** | **Mark 51** · 51 open-source repositories, 95 releases shipped |
 | **Latest mission** | [Fix QUIC use-after-free during handshake and mp4 heap buffer overflow](https://github.com/nginx/nginx/pull/2020) in [nginx/nginx](https://github.com/nginx/nginx), opened Nov 23 |
 | **Latest drop** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) [`v0.3.1`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.3.1), Nov 24 |
-| **Currently assembling** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn), last push Nov 24 |
+| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 25 |
 <!-- BRIEFING:END -->
 
 </details>
