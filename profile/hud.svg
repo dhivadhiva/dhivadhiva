@@ -25,7 +25,7 @@
 </g>
 <line x1="312" y1="28" x2="312" y2="302" stroke="#1E3A8A" stroke-width="1"/>
 <text x="336" y="42" class="k">J.A.R.V.I.S.</text>
-<text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 27</text>
+<text x="852" y="42" text-anchor="end" class="dim">boot sequence · Nov 28</text>
 <text x="336" y="70" class="l l0"><tspan class="gold">›</tspan> Good morning, sir. Loading suit Mark 51…</text>
 <text x="336" y="91" class="l l1"><tspan class="gold">›</tspan> Arc reactor: 2,473 contributions · 2,031 commits</text>
 <text x="336" y="112" class="l l2"><tspan class="gold">›</tspan> Armory: 51 open-source repositories · 95 releases shipped</text>

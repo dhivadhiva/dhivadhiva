@@ -134,9 +134,9 @@ impl Avenger for Dhivakar {
 | **Post-credits scene** | iOS and macOS are next. Nobody leaves before the credits end. |
 
 <!-- BRIEFING:START -->
-**📡 Daily mission briefing** · <sub>regenerated Nov 27</sub>
+**📡 Daily mission briefing** · <sub>regenerated Nov 28</sub>
 
-> The suit upgrades itself: one mark per open-source repository.
+> Whatever it takes: ship it, then fix it upstream.
 
 | | |
 | --- | --- |
@@ -144,7 +144,7 @@ impl Avenger for Dhivakar {
 | **Suit** | **Mark 51** · 51 open-source repositories, 95 releases shipped |
 | **Latest mission** | [Fix QUIC use-after-free during handshake and mp4 heap buffer overflow](https://github.com/nginx/nginx/pull/2020) in [nginx/nginx](https://github.com/nginx/nginx), opened Nov 23 |
 | **Latest drop** | [**hopwyn**](https://github.com/Dhiva-Labs/hopwyn) [`v0.3.1`](https://github.com/Dhiva-Labs/hopwyn/releases/tag/v0.3.1), Nov 24 |
-| **Currently assembling** | [**.github**](https://github.com/Dhiva-Labs/.github), last push Nov 26 |
+| **Currently assembling** | [**kilonova**](https://github.com/Dhiva-Labs/kilonova), last push Nov 27 |
 <!-- BRIEFING:END -->
 
 </details>
@@ -240,8 +240,8 @@ impl Avenger for Dhivakar {
 
 <!-- FEATURED:START -->
 <div align="center">
-  <a href="https://github.com/Dhiva-Labs/hopwyn"><img src="./profile/pin-1.svg" alt="hopwyn" /></a>
-  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-2.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/kilonova"><img src="./profile/pin-1.svg" alt="kilonova" /></a>
+  <a href="https://github.com/Dhiva-Labs/hopwyn"><img src="./profile/pin-2.svg" alt="hopwyn" /></a>
   <a href="https://github.com/Dhiva-Labs/ApiWorkbench"><img src="./profile/pin-3.svg" alt="ApiWorkbench" /></a>
   <a href="https://github.com/Dhiva-Labs/SecureShellGo"><img src="./profile/pin-4.svg" alt="SecureShellGo" /></a>
   <a href="https://github.com/Dhiva-Labs/NearShare"><img src="./profile/pin-5.svg" alt="NearShare" /></a>
